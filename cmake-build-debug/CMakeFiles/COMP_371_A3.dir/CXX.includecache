@@ -366,14 +366,6 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../GLM/glm/detail/func_vector_relational.hpp
 
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.cpp
-KeyboardControls.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
-../Loaders/ShaderLoader.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
-iostream
--
-
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
 glew.h
 -
@@ -383,10 +375,6 @@ GLFW/glfw3.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
 ../GLM/glm/gtc/matrix_transform.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_fixes.hpp
-cmath
--
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle.hpp
 
@@ -402,32 +390,6 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/
 type_vec4.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4.hpp
 
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_common.hpp
-setup.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
-precision.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/precision.hpp
-type_int.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_int.hpp
-_fixes.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_fixes.hpp
-func_common.inl
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_common.inl
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_common.inl
-func_vector_relational.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_vector_relational.hpp
-type_vec2.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec2.hpp
-type_vec3.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec3.hpp
-type_vec4.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4.hpp
-_vectorize.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_vectorize.hpp
-limits
--
-
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_exponential.hpp
 type_vec1.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec1.hpp
@@ -441,18 +403,6 @@ cmath
 -
 func_exponential.inl
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_exponential.inl
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_exponential.inl
-func_vector_relational.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_vector_relational.hpp
-_vectorize.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_vectorize.hpp
-limits
--
-cmath
--
-cassert
--
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_geometric.hpp
 type_vec3.hpp
@@ -525,18 +475,6 @@ _vectorize.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_vectorize.hpp
 cmath
 -
-limits
--
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_vector_relational.hpp
-precision.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/precision.hpp
-setup.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
-func_vector_relational.inl
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_vector_relational.inl
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_vector_relational.inl
 limits
 -
 
@@ -739,22 +677,6 @@ precision.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/precision.hpp
 type_int.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_int.hpp
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec1.hpp
-../fwd.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/fwd.hpp
-type_vec.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec.hpp
-_swizzle.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle.hpp
-_swizzle_func.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle_func.hpp
-cstddef
--
-type_vec1.inl
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec1.inl
-
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec1.inl
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec2.hpp
 type_vec.hpp

@@ -18,8 +18,14 @@ glm::mat4 View;
 GLuint red_channel_id;
 GLuint blue_channel_id;
 GLuint green_channel_id;
-GLuint light_position;
-GLuint light_color;
+GLuint light_position_1;
+GLuint light_color_1;
+GLuint light_position_2;
+GLuint light_color_2;
+GLuint light_position_3;
+GLuint light_color_3;
+GLuint light_position_4;
+GLuint light_color_4;
 GLuint view_position;
 
 GLuint lightOn; //a flag to determine whether or not the light should be on (1 is on, 0 is off)
@@ -57,13 +63,31 @@ void setUniforms()
     lightOn = glGetUniformLocation(programID, "light_on");
     glUniform1i(lightOn, 1);
 
-    //this is the uniform that defines the position of the light
-    light_position = glGetUniformLocation(programID, "light_position");
-    glUniform3fv(light_position, 1, glm::value_ptr(glm::vec3(0, 20, 5)));
+    //these are the uniforms that define the position of the lights
+    light_position_1 = glGetUniformLocation(programID, "light_position_1");
+    glUniform3fv(light_position_1, 1, glm::value_ptr(glm::vec3(10, 15, 5)));
 
-    //this is uniform that defines the color of the light
-    light_color = glGetUniformLocation(programID, "light_color");
-    glUniform3fv(light_color, 1, glm::value_ptr(glm::vec3(0.8,0.8,0.8)));
+    light_position_2 = glGetUniformLocation(programID, "light_position_2");
+    glUniform3fv(light_position_2, 1, glm::value_ptr(glm::vec3(-10, 15, 5)));
+
+    light_position_3 = glGetUniformLocation(programID, "light_position_3");
+    glUniform3fv(light_position_3, 1, glm::value_ptr(glm::vec3(0, 15, 5)));
+
+    light_position_4 = glGetUniformLocation(programID, "light_position_4");
+    glUniform3fv(light_position_4, 1, glm::value_ptr(glm::vec3(0, 0, 25)));
+
+    //these are the uniforms that define the colors of the lights
+    light_color_1 = glGetUniformLocation(programID, "light_color_1");
+    glUniform3fv(light_color_1, 1, glm::value_ptr(glm::vec3(0.2,0.05,0.05)));
+
+    light_color_2 = glGetUniformLocation(programID, "light_color_2");
+    glUniform3fv(light_color_2, 1, glm::value_ptr(glm::vec3(0.05,0.2,0.05)));
+
+    light_color_3 = glGetUniformLocation(programID, "light_color_3");
+    glUniform3fv(light_color_3, 1, glm::value_ptr(glm::vec3(0.05,0.05,0.2)));
+
+    light_color_4 = glGetUniformLocation(programID, "light_color_4");
+    glUniform3fv(light_color_4, 1, glm::value_ptr(glm::vec3(0.05,0.05,0.05)));
 
     //this is the view position of the camera. This is important for calculating the impact of the specular light
     //component.
@@ -210,7 +234,7 @@ static GLFWwindow* initialize()
 
     // Make the window's context current
     glfwMakeContextCurrent(window);
-
+    glClearColor(0.8, 0.8, 0.8, 1); //makes the background color of the window light gray
     //we should also set the keyboard input callback method
     glfwSetKeyCallback(window, keyboard_callback);
     glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
@@ -241,6 +265,7 @@ int main()
     //we can do this using the method that we have defined
     std::vector<glm::vec3> vertices, normals;
     std::vector<glm::vec2> uvs;
+
     //we try to load the object file and if we fail, then we simply exit the program since we won't be able to draw anything
     if(!LoadOBJ("../ObjectFiles/heracles.obj", vertices, normals, uvs))
         return -1;
