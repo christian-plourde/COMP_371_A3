@@ -32,6 +32,7 @@ GLuint view_position;
 
 GLuint lightOn; //a flag to determine whether or not the light should be on (1 is on, 0 is off)
 GLboolean gouraud_flag; //this determines if we use gouraud or not (alternative is phong) for lighting
+GLuint gouraudUsed; //will be used as a flag to determine which shading should be used.
 GLuint normal_as_color; //this is a flag to determine if the normal should be used as color (M key toggles on/off)
 GLuint gray_scale; //this is a flag to determine if the scene should be rendered in grayscale or not (key G)
 GLuint programID; //this variable will be assigned the program ID of the shader program
@@ -65,6 +66,20 @@ void setUniforms()
     lightOn = glGetUniformLocation(programID, "light_on");
     glUniform1i(lightOn, 1);
 
+    //we also need to set the flag to determine if the normal should be used as the color
+    normal_as_color = glGetUniformLocation(programID, "normal_as_color");
+    glUniform1i(normal_as_color, 0);
+
+    //we also need to set the flag to determine if the scene should be rendered in grayscale or not
+    //initially it will be set to not do it in grayscale.
+    gray_scale = glGetUniformLocation(programID, "gray_scale");
+    glUniform1i(gray_scale, 0);
+
+    //this is the view position of the camera. This is important for calculating the impact of the specular light
+    //component.
+    view_position = glGetUniformLocation(programID, "view_position");
+    glUniform3fv(view_position, 1, glm::value_ptr(glm::vec3(100,100,100)));
+
     //these are the uniforms that define the position of the lights
     light_position_1 = glGetUniformLocation(programID, "light_position_1");
     glUniform3fv(light_position_1, 1, glm::value_ptr(glm::vec3(10, 15, 5)));
@@ -91,19 +106,9 @@ void setUniforms()
     light_color_4 = glGetUniformLocation(programID, "light_color_4");
     glUniform3fv(light_color_4, 1, glm::value_ptr(glm::vec3(0.05,0.05,0.05)));
 
-    //this is the view position of the camera. This is important for calculating the impact of the specular light
-    //component.
-    view_position = glGetUniformLocation(programID, "view_position");
-    glUniform3fv(view_position, 1, glm::value_ptr(glm::vec3(100,100,100)));
+    gouraudUsed = glGetUniformLocation(programID, "gouraudUsed");
+    glUniform1i(gouraudUsed, 0);
 
-    //we also need to set the flag to determine if the normal should be used as the color
-    normal_as_color = glGetUniformLocation(programID, "normal_as_color");
-    glUniform1i(normal_as_color, 0);
-
-    //we also need to set the flag to determine if the scene should be rendered in grayscale or not
-    //initially it will be set to not do it in grayscale.
-    gray_scale = glGetUniformLocation(programID, "gray_scale");
-    glUniform1i(gray_scale, 0);
 }
 
 /*
@@ -331,7 +336,7 @@ int main()
     //now we load the shader program and assign it tour our program id
     //initially, we use the Phong illumination model
     gouraud_flag = GL_FALSE;
-    programID = LoadShaders("../Shaders/PhongVertexShader.glsl", "../Shaders/PhongFragmentShader.glsl");
+    programID = LoadShaders("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     glUseProgram(programID);
 
     //in order for this object to be viewed from a perspective view, we need a Model View Projection matrix
@@ -389,6 +394,11 @@ int main()
         //here we need to specify the number of vertices we wish to draw
         //for this assignment, they should be drawn using triangles
         glDrawArrays(GL_TRIANGLES, 0, vertices.size());
+        GLenum err;
+        while ((err = glGetError()) != GL_NO_ERROR) {
+            std::cerr << "OpenGL error: " << err << std::endl;
+        }
+
         glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
 

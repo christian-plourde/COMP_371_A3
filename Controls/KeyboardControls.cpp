@@ -273,21 +273,21 @@ void key_press_6(GLuint program_ID)
 
 void key_press_5(GLuint& program_ID, GLboolean& gouraud)
 {
-    //there are two cases, either gouraud is true, in which case, we should load the phong shaders and flip it, or
+    //there are two cases, either gouraud is true, in which case, we should switch the value of the uniform for gouraud
     //it is false, and we should load the gouraud shaders and flip it.
     if(gouraud)
     {
         std::cout << "Switching to Phong Illumination Model..." << std::endl;
-        program_ID = LoadShaders("../Shaders/PhongVertexShader.glsl", "../Shaders/PhongFragmentShader.glsl");
-        glUseProgram(program_ID);
+        GLuint gouraudUsed = glGetUniformLocation(program_ID, "gouraudUsed");
+        glUniform1i(gouraudUsed, 0);
         gouraud = GL_FALSE;
     }
 
     else
     {
         std::cout << "Switching to Gouraud Illumination Model..." << std::endl;
-        program_ID = LoadShaders("../Shaders/GouraudVertexShader.glsl", "../Shaders/GouraudFragmentShader.glsl");
-        glUseProgram(program_ID);
+        GLuint gouraudUsed = glGetUniformLocation(program_ID, "gouraudUsed");
+        glUniform1i(gouraudUsed, 1);
         gouraud = GL_TRUE;
     }
 }

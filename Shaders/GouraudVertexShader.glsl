@@ -23,6 +23,7 @@ uniform mat4 model_matrix;
 uniform mat4 view_matrix;
 uniform mat4 projection_matrix;
 uniform int normal_as_color;
+uniform int gouraudUsed;
 
 out vec3 fragment_position;
 out vec3 normal;
