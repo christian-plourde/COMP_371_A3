@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 #include <glew.h>
 #include <GLFW/glfw3.h>
 #include "GLM/glm/matrix.hpp"
@@ -294,6 +296,38 @@ int main()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*indices.size(), &indices.front(), GL_STATIC_DRAW);
 
+    //we will also need to load a floor in order to implement the shadows
+    std::vector<glm::vec3> floor_vertices, floor_normals;
+    std::vector<glm::vec2> floor_uvs;
+    std::vector<int> floor_indices; //this will hold the indices for the EBO
+
+    //we try to load the object file and if we fail, then we simply exit the program since we won't be able to draw anything
+    if(!LoadOBJ("../ObjectFiles/floor.obj",floor_indices, floor_vertices, floor_normals, floor_uvs))
+        return -1;
+
+    GLuint FloorVertexArrayID; //this is our reference to our vao
+    glGenVertexArrays(1, &FloorVertexArrayID); //this will generate the actual array for us and we want only one
+    glBindVertexArray(FloorVertexArrayID); //then we make it the current one (pass to GPU)
+
+    //Now in order for openGL to be able to draw this triangle we need to pass it then data by creating a vertex buffer
+    //object
+    GLuint FloorVertexBuffer;
+    glGenBuffers(1, &FloorVertexBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, FloorVertexBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*floor_vertices.size(), &floor_vertices.front(), GL_STATIC_DRAW);
+
+    //for the lighting, we also need the normals, therefore we should create another vbo
+
+    GLuint FloorNormalBuffer;
+    glGenBuffers(1, &FloorNormalBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, FloorNormalBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*floor_normals.size(), &floor_normals.front(), GL_STATIC_DRAW);
+
+    GLuint FloorEBO;
+    glGenBuffers(1, &FloorEBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, FloorEBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*floor_indices.size(), &floor_indices.front(), GL_STATIC_DRAW);
+
     //now we load the shader program and assign it tour our program id
     //initially, we use the Phong illumination model
     gouraud_flag = GL_FALSE;
@@ -336,7 +370,7 @@ int main()
         //last closest item (obviously) and we won't have anything drawn
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        //now we can draw our triangles
+        //DRAWING HERACLES
 
         //to do this we need to tell open GL about our vertex array (id 0)
         glEnableVertexAttribArray(0);
@@ -348,8 +382,6 @@ int main()
         glBindBuffer(GL_ARRAY_BUFFER, normalBuffer);
         glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
-        //this will allow us to access that buffer in GLSL
-
         //this configures the z-buffer so that only elements that are closer will be drawn
         glEnable(GL_DEPTH_TEST);
         glDepthFunc(GL_LESS);
@@ -360,6 +392,26 @@ int main()
         glDisableVertexAttribArray(0);
         glDisableVertexAttribArray(1);
 
+        //HERACLES DRAWING COMPLETE
+
+        //DRAWING CUBES
+        //now that we have drawn Heracles, we should switch to our cube VAO
+        glBindVertexArray(FloorVertexArrayID);
+        //to do this we need to tell open GL about our vertex array (id 0)
+        glEnableVertexAttribArray(0);
+        glBindBuffer(GL_ARRAY_BUFFER, FloorVertexBuffer);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+        //we also need to enable the normals array
+        glEnableVertexAttribArray(1);
+        glBindBuffer(GL_ARRAY_BUFFER, FloorNormalBuffer);
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+        glDrawArrays(GL_TRIANGLES, 0, floor_vertices.size());
+        glDisableVertexAttribArray(0);
+        glDisableVertexAttribArray(1);
+
+        //CUBE DRAWING COMPLETE
+
         // Swap front and back buffers
         glfwSwapBuffers(window);
 
@@ -369,7 +421,6 @@ int main()
 
         //before dealing with the mouse input, we need to get the current position of the mouse and compare it to
         //the old. Since we don't care about x, we can just pass 0.
-
         glfwGetCursorPos(window, &newMouseY, 0);
 
         if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS && newMouseY > oldMouseY)

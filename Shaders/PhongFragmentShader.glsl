@@ -6,8 +6,6 @@ out vec3 color;
 uniform float red_channel;
 uniform float green_channel;
 uniform float blue_channel;
-
-//the components for Phong Lighting
 uniform vec3 light_color_1;
 uniform vec3 light_color_2;
 uniform vec3 light_color_3;

@@ -66,7 +66,7 @@ void key_press_left_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the left arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //counterclockwise fashion).
-    View = glm::rotate(View, glm::radians(0.2f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(0.5f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -75,7 +75,7 @@ void key_press_right_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Proje
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.2f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(-0.5f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -84,7 +84,7 @@ void key_press_up_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projecti
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.2f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(-0.5f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -93,7 +93,7 @@ void key_press_down_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(0.2f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(0.5f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
