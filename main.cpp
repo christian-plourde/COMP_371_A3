@@ -30,6 +30,7 @@ GLuint light_position_4;
 GLuint light_color_4;
 GLuint view_position;
 
+GLboolean four_lights_on;
 GLuint lightOn; //a flag to determine whether or not the light should be on (1 is on, 0 is off)
 GLboolean gouraud_flag; //this determines if we use gouraud or not (alternative is phong) for lighting
 GLuint gouraudUsed; //will be used as a flag to determine which shading should be used.
@@ -82,7 +83,7 @@ void setUniforms()
 
     //these are the uniforms that define the position of the lights
     light_position_1 = glGetUniformLocation(programID, "light_position_1");
-    glUniform3fv(light_position_1, 1, glm::value_ptr(glm::vec3(10, 15, 5)));
+    glUniform3fv(light_position_1, 1, glm::value_ptr(glm::vec3(0, 20, 10)));
 
     light_position_2 = glGetUniformLocation(programID, "light_position_2");
     glUniform3fv(light_position_2, 1, glm::value_ptr(glm::vec3(-10, 15, 5)));
@@ -95,16 +96,16 @@ void setUniforms()
 
     //these are the uniforms that define the colors of the lights
     light_color_1 = glGetUniformLocation(programID, "light_color_1");
-    glUniform3fv(light_color_1, 1, glm::value_ptr(glm::vec3(0.2,0.05,0.05)));
+    glUniform3fv(light_color_1, 1, glm::value_ptr(glm::vec3(0.8,0.2,0.2)));
 
     light_color_2 = glGetUniformLocation(programID, "light_color_2");
-    glUniform3fv(light_color_2, 1, glm::value_ptr(glm::vec3(0.05,0.2,0.05)));
+    glUniform3fv(light_color_2, 1, glm::value_ptr(glm::vec3(0,0,0)));
 
     light_color_3 = glGetUniformLocation(programID, "light_color_3");
-    glUniform3fv(light_color_3, 1, glm::value_ptr(glm::vec3(0.05,0.05,0.2)));
+    glUniform3fv(light_color_3, 1, glm::value_ptr(glm::vec3(0,0,0)));
 
     light_color_4 = glGetUniformLocation(programID, "light_color_4");
-    glUniform3fv(light_color_4, 1, glm::value_ptr(glm::vec3(0.05,0.05,0.05)));
+    glUniform3fv(light_color_4, 1, glm::value_ptr(glm::vec3(0,0,0)));
 
     gouraudUsed = glGetUniformLocation(programID, "gouraudUsed");
     glUniform1i(gouraudUsed, 0);
@@ -208,7 +209,6 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
     if(glfwGetKey(window, GLFW_KEY_5) == GLFW_PRESS)
     {
         key_press_5(programID, gouraud_flag);
-        setUniforms();
     }
 
     if(glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
@@ -216,6 +216,9 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 
     if(glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
         key_press_g(programID);
+
+    if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS)
+        key_press_F1(programID, four_lights_on);
 }
 
 /*
@@ -253,6 +256,8 @@ static GLFWwindow* initialize()
         std::cout << "Failed to initialize GLEW" << std::endl;
         return nullptr;
     }
+
+    four_lights_on = GL_FALSE; //toggle mechanism for the f1 key being pressed.
 
     return window;
 }

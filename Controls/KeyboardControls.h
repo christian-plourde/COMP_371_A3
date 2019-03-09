@@ -196,3 +196,9 @@ void key_press_m(GLuint program_ID);
  * rendering mode by flipping the flag in the shader program.
  */
 void key_press_g(GLuint program_ID);
+
+/*
+ * This defines what happens when the 'F1' key is pressed. When this occurs, the 4 lights in the scene should be
+ * enabled. If the key has not been pressed, then there should only be one light on the scene.
+ */
+void key_press_F1(GLuint program_ID, GLboolean& lights_on);

@@ -1,5 +1,6 @@
 #include "KeyboardControls.h"
 #include "../Loaders/ShaderLoader.h"
+#include "../GLM/glm/gtc/type_ptr.hpp"
 #include <iostream>
 
 void key_press_w(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm::mat4& Model, GLuint& ShaderID)
@@ -66,7 +67,7 @@ void key_press_left_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the left arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //counterclockwise fashion).
-    View = glm::rotate(View, glm::radians(0.5f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(0.8f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -75,7 +76,7 @@ void key_press_right_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Proje
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.5f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(-0.8f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -84,7 +85,7 @@ void key_press_up_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projecti
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.5f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(-0.8f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -93,7 +94,7 @@ void key_press_down_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(0.5f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(0.8f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -120,7 +121,7 @@ void key_press_e(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
 {
     //when the n key is pressed, the OBJECT itself (not the camera) should be rotated about the z-axis.
     //in order to do this, we want to modify the Model matrix
-    Model = glm::rotate(Model, glm::radians(0.2f), glm::vec3(0,0,1));
+    Model = glm::rotate(Model, glm::radians(0.8f), glm::vec3(0,0,1));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "model_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &Model[0][0]);
 }
@@ -329,5 +330,33 @@ void key_press_g(GLuint program_ID)
     {
         GLuint flag_location = glGetUniformLocation(program_ID, "gray_scale");
         glUniform1i(flag_location, 1);
+    }
+}
+
+void key_press_F1(GLuint program_ID, GLboolean& lights_on)
+{
+    //when the F1 key is pressed, it should toggle between the scene having the 4 lights or only one
+    //in order to do this, we can
+    if(lights_on)
+    {
+        //if the lights are on, we should make all of them dark except the first light and change its color
+        //and position to match the definition in part B
+
+        glUniform3fv(glGetUniformLocation(program_ID, "light_position_1"), 1, glm::value_ptr(glm::vec3(0,20,10)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_1"), 1, glm::value_ptr(glm::vec3(0.8,0.2,0.2)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_2"), 1, glm::value_ptr(glm::vec3(0,0,0)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_3"), 1, glm::value_ptr(glm::vec3(0,0,0)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_4"), 1, glm::value_ptr(glm::vec3(0,0,0)));
+        lights_on = GL_FALSE;
+    }
+
+    else
+    {
+        glUniform3fv(glGetUniformLocation(program_ID, "light_position_1"), 1, glm::value_ptr(glm::vec3(10,15,5)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_1"), 1, glm::value_ptr(glm::vec3(0.2,0.05,0.05)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_2"), 1, glm::value_ptr(glm::vec3(0.05,0.2,0.05)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_3"), 1, glm::value_ptr(glm::vec3(0.05,0.05,0.2)));
+        glUniform3fv(glGetUniformLocation(program_ID, "light_color_4"), 1, glm::value_ptr(glm::vec3(0.05,0.05,0.05)));
+        lights_on = GL_TRUE;
     }
 }

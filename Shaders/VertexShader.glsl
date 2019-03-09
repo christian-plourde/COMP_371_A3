@@ -44,10 +44,10 @@ void main()
 
         //diffuse light
         float diffuse_coeff = 0.75f;
-        vec3 light_direction_1 = normalize(light_position_1 - vertexPosition_modelspace);
-        vec3 light_direction_2 = normalize(light_position_2 - vertexPosition_modelspace);
-        vec3 light_direction_3 = normalize(light_position_3 - vertexPosition_modelspace);
-        vec3 light_direction_4 = normalize(light_position_4 - vertexPosition_modelspace);
+        vec3 light_direction_1 = normalize(light_position_1 - fragment_position);
+        vec3 light_direction_2 = normalize(light_position_2 - fragment_position);
+        vec3 light_direction_3 = normalize(light_position_3 - fragment_position);
+        vec3 light_direction_4 = normalize(light_position_4 - fragment_position);
         float diffuse_strength_1 = max(dot(normalize(normal), light_direction_1), 0.0f);
         float diffuse_strength_2 = max(dot(normalize(normal), light_direction_2), 0.0f);
         float diffuse_strength_3 = max(dot(normalize(normal), light_direction_3), 0.0f);
@@ -56,7 +56,7 @@ void main()
 
         //specular light
         float spec_coeff = 1.0f;
-        vec3 view_direction = normalize(view_position - vertexPosition_modelspace);
+        vec3 view_direction = normalize(view_position - fragment_position);
         vec3 reflect_light_direction_1 = reflect(-light_direction_1, normalize(normal));
         vec3 reflect_light_direction_2 = reflect(-light_direction_2, normalize(normal));
         vec3 reflect_light_direction_3 = reflect(-light_direction_3, normalize(normal));
@@ -74,7 +74,7 @@ void main()
 
         else
         {
-            vertex_color = (specular + ambient + diffuse)*vec3(red_channel, green_channel, blue_channel);
+            vertex_color = (specular + ambient + diffuse)*vec3(red_channel,green_channel,blue_channel);
         }
     }
 
