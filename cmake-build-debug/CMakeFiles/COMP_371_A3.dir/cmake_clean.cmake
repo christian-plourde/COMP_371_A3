@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj"
+  "CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj"
   "COMP_371_A3.pdb"
   "COMP_371_A3.exe"
   "COMP_371_A3.exe.manifest"

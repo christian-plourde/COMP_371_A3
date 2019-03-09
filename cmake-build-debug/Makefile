@@ -203,6 +203,33 @@ Loaders/ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.s
 .PHONY : Loaders/ShaderLoader.cpp.s
 
+Utilities/Light.obj: Utilities/Light.cpp.obj
+
+.PHONY : Utilities/Light.obj
+
+# target to build an object file
+Utilities/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
+.PHONY : Utilities/Light.cpp.obj
+
+Utilities/Light.i: Utilities/Light.cpp.i
+
+.PHONY : Utilities/Light.i
+
+# target to preprocess a source file
+Utilities/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i
+.PHONY : Utilities/Light.cpp.i
+
+Utilities/Light.s: Utilities/Light.cpp.s
+
+.PHONY : Utilities/Light.s
+
+# target to generate assembly for a file
+Utilities/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s
+.PHONY : Utilities/Light.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... Loaders/ShaderLoader.obj
 	@echo ... Loaders/ShaderLoader.i
 	@echo ... Loaders/ShaderLoader.s
+	@echo ... Utilities/Light.obj
+	@echo ... Utilities/Light.i
+	@echo ... Utilities/Light.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

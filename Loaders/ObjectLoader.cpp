@@ -1,14 +1,15 @@
 #include "ObjectLoader.h"
 #include <iostream>
 #include <fstream>
+#include <stdio.h>
 
 /*
  * This is the implementation of the function to load an obj file into three different vectors
  */
-bool LoadOBJ(const char* filepath, std::vector<glm::vec3>& out_vertices, std::vector<glm::vec3>& out_normals, std::vector<glm::vec2>& out_uvs)
+bool LoadOBJ(const char* filepath, std::vector<int> vertexIndices, std::vector<glm::vec3>& out_vertices, std::vector<glm::vec3>& out_normals, std::vector<glm::vec2>& out_uvs)
 {
     //these vectors will hold our data temporarily until we are ready to return it
-    std::vector<int> vertexIndices, normalIndices, uvIndices;
+    std::vector<int> normalIndices, uvIndices;
     std::vector<glm::vec3> tempVertices;
     std::vector<glm::vec3> tempNormals;
     std::vector<glm::vec2> tempUVS;

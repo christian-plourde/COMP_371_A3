@@ -16,4 +16,4 @@
  * @param out_uvs: A vector of type glm::vec2 that will hold all the uv values. Passed by reference.
  * @return A boolean specifying if the operation ws successful or not.
  */
-bool LoadOBJ(const char* filepath, std::vector<glm::vec3>& out_vertices, std::vector<glm::vec3>& out_normals, std::vector<glm::vec2>& out_uvs);
+bool LoadOBJ(const char* filepath, std::vector<int> vertexIndices, std::vector<glm::vec3>& out_vertices, std::vector<glm::vec3>& out_normals, std::vector<glm::vec2>& out_uvs);

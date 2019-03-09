@@ -265,12 +265,12 @@ int main()
     //we can do this using the method that we have defined
     std::vector<glm::vec3> vertices, normals;
     std::vector<glm::vec2> uvs;
+    std::vector<int> indices; //this will hold the indices for the EBO
 
     //we try to load the object file and if we fail, then we simply exit the program since we won't be able to draw anything
-    if(!LoadOBJ("../ObjectFiles/heracles.obj", vertices, normals, uvs))
+    if(!LoadOBJ("../ObjectFiles/heracles.obj",indices, vertices, normals, uvs))
         return -1;
 
-    //We will try to create a cube by using a vertex array object
     GLuint VertexArrayID; //this is our reference to our vao
     glGenVertexArrays(1, &VertexArrayID); //this will generate the actual array for us and we want only one
     glBindVertexArray(VertexArrayID); //then we make it the current one (pass to GPU)
@@ -283,10 +283,16 @@ int main()
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*vertices.size(), &vertices.front(), GL_STATIC_DRAW);
 
     //for the lighting, we also need the normals, therefore we should create another vbo
+
     GLuint normalBuffer;
     glGenBuffers(1, &normalBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, normalBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*normals.size(), &normals.front(), GL_STATIC_DRAW);
+
+    GLuint EBO;
+    glGenBuffers(1, &EBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*indices.size(), &indices.front(), GL_STATIC_DRAW);
 
     //now we load the shader program and assign it tour our program id
     //initially, we use the Phong illumination model
@@ -330,7 +336,8 @@ int main()
         //last closest item (obviously) and we won't have anything drawn
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        //now we can draw our triangle
+        //now we can draw our triangles
+
         //to do this we need to tell open GL about our vertex array (id 0)
         glEnableVertexAttribArray(0);
         glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
