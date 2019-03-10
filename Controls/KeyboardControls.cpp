@@ -8,7 +8,7 @@ void key_press_w(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
     //when the w key is pressed on the keyboard, we should move the camera toward the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //out shader
-    View = glm::translate(View, glm::vec3(0, 0 , -0.2));
+    View = glm::translate(View, glm::vec3(0, 0 , -1));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -18,7 +18,7 @@ void key_press_s(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
     //when the s key is pressed on the keyboard, we should move the camera away from the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    View = glm::translate(View, glm::vec3(0, 0 , 0.2));
+    View = glm::translate(View, glm::vec3(0, 0 , 1));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -28,7 +28,7 @@ void key_press_a(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
     //when the a key is pressed on the keyboard, we should move the camera to the left the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    View = glm::translate(View, glm::vec3(-0.2, 0 , 0));
+    View = glm::translate(View, glm::vec3(-1, 0 , 0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -38,7 +38,7 @@ void key_press_d(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
     //when the d key is pressed on the keyboard, we should move the camera to the right of the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    View = glm::translate(View, glm::vec3(0.2, 0 , 0));
+    View = glm::translate(View, glm::vec3(1, 0 , 0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -67,7 +67,7 @@ void key_press_left_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the left arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //counterclockwise fashion).
-    View = glm::rotate(View, glm::radians(0.8f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(1.5f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -76,7 +76,7 @@ void key_press_right_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Proje
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.8f), glm::vec3(0,1,0));
+    View = glm::rotate(View, glm::radians(-1.5f), glm::vec3(0,1,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -85,7 +85,7 @@ void key_press_up_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projecti
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(-0.8f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(-1.5f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -94,7 +94,7 @@ void key_press_down_arrow(GLFWwindow* window, glm::mat4& View, glm::mat4& Projec
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    View = glm::rotate(View, glm::radians(0.8f), glm::vec3(1,0,0));
+    View = glm::rotate(View, glm::radians(1.5f), glm::vec3(1,0,0));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "view_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &View[0][0]);
 }
@@ -121,7 +121,7 @@ void key_press_e(GLFWwindow* window, glm::mat4& View, glm::mat4& Projection, glm
 {
     //when the n key is pressed, the OBJECT itself (not the camera) should be rotated about the z-axis.
     //in order to do this, we want to modify the Model matrix
-    Model = glm::rotate(Model, glm::radians(0.8f), glm::vec3(0,0,1));
+    Model = glm::rotate(Model, glm::radians(1.5f), glm::vec3(0,0,1));
     GLuint MatrixID = glGetUniformLocation(ShaderID, "model_matrix");
     glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &Model[0][0]);
 }
@@ -359,4 +359,14 @@ void key_press_F1(GLuint program_ID, GLboolean& lights_on)
         glUniform3fv(glGetUniformLocation(program_ID, "light_color_4"), 1, glm::value_ptr(glm::vec3(0.05,0.05,0.05)));
         lights_on = GL_TRUE;
     }
+}
+
+void key_press_F2(GLuint program_ID)
+{
+    //first make sure only one light is being used (the one in the assignment description)
+    glUniform3fv(glGetUniformLocation(program_ID, "light_position_1"), 1, glm::value_ptr(glm::vec3(0,20,10)));
+    glUniform3fv(glGetUniformLocation(program_ID, "light_color_1"), 1, glm::value_ptr(glm::vec3(0.8,0.2,0.2)));
+    glUniform3fv(glGetUniformLocation(program_ID, "light_color_2"), 1, glm::value_ptr(glm::vec3(0,0,0)));
+    glUniform3fv(glGetUniformLocation(program_ID, "light_color_3"), 1, glm::value_ptr(glm::vec3(0,0,0)));
+    glUniform3fv(glGetUniformLocation(program_ID, "light_color_4"), 1, glm::value_ptr(glm::vec3(0,0,0)));
 }

@@ -202,3 +202,9 @@ void key_press_g(GLuint program_ID);
  * enabled. If the key has not been pressed, then there should only be one light on the scene.
  */
 void key_press_F1(GLuint program_ID, GLboolean& lights_on);
+
+/*
+ * This defines what occurs when the 'F2' key is pressed. When this occurs, we should render the scene with two-pass
+ * shadow mapping. Also, before doing anything, we should set the scene with only the one light.
+ */
+void key_press_F2(GLuint program_ID);
