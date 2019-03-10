@@ -3,6 +3,31 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <iostream>
+
+#define ASSERT(x) if (!(x)) __debugbreak();
+#define GLCall(x) GLClearError();\
+x;\
+ASSERT(GLLogCall(#x, __FILE__, __LINE__));
+
+/*
+ * GL error handling mechanism
+ */
+
+static void GLClearError()
+{
+    while(glGetError() != GL_NO_ERROR);
+}
+
+static bool GLLogCall(const char* function, const char* file, int line)
+{
+    while(GLenum error = glGetError())
+    {
+        std::cout << "[OpenGL Error] (" << error << "): " << function << " " << file << ":" << line << std::endl;
+        return false;
+    }
+    return true;
+}
 
 //this file contains the function definition for the shader loader function
 
@@ -64,25 +89,25 @@ GLuint LoadShaders(const char* vertex_file_path, const char* fragment_file_path)
 
     //first we will compile the vertex shader source code
     char const* VertexSourcePointer = VertexShaderCode.c_str();
-    glShaderSource(VertexShaderID, 1, &VertexSourcePointer, NULL);
-    glCompileShader(VertexShaderID);
+    GLCall(glShaderSource(VertexShaderID, 1, &VertexSourcePointer, NULL));
+    GLCall(glCompileShader(VertexShaderID));
 
     //now that this is done, we can compile our fragment shader
     char const* FragmentSourcePointer = FragmentShaderCode.c_str();
-    glShaderSource(FragmentShaderID, 1, &FragmentSourcePointer, NULL);
-    glCompileShader(FragmentShaderID);
+    GLCall(glShaderSource(FragmentShaderID, 1, &FragmentSourcePointer, NULL));
+    GLCall(glCompileShader(FragmentShaderID));
 
     //now that both have been compiled we need to link them together
     GLuint ProgramID = glCreateProgram();
-    glAttachShader(ProgramID, VertexShaderID);
-    glAttachShader(ProgramID, FragmentShaderID);
-    glLinkProgram(ProgramID);
+    GLCall(glAttachShader(ProgramID, VertexShaderID));
+    GLCall(glAttachShader(ProgramID, FragmentShaderID));
+    GLCall(glLinkProgram(ProgramID));
 
     //now that the program has been linked we can detach and delete the shaders and return the program id
-    glDetachShader(ProgramID, VertexShaderID);
-    glDetachShader(ProgramID, FragmentShaderID);
-    glDeleteShader(VertexShaderID);
-    glDeleteShader(FragmentShaderID);
+    GLCall(glDetachShader(ProgramID, VertexShaderID));
+    GLCall(glDetachShader(ProgramID, FragmentShaderID));
+    GLCall(glDeleteShader(VertexShaderID));
+    GLCall(glDeleteShader(FragmentShaderID));
 
     return ProgramID;
 }

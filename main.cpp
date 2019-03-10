@@ -10,6 +10,12 @@
 #include "Loaders/ObjectLoader.h"
 #include "Controls/KeyboardControls.h"
 
+#define ASSERT(x) if (!(x)) __debugbreak();
+#define GLCall(x) GLClearError();\
+x;\
+ASSERT(GLLogCall(#x, __FILE__, __LINE__));
+
+#pragma region VariableDeclaration
 //definition of all the uniforms
 GLint view_mat_ID;
 GLint model_mat_ID;
@@ -33,12 +39,14 @@ GLint view_position;
 //definition of the buffers
 GLuint vertexBuffer;
 GLuint normalBuffer;
+GLuint textureBuffer;
 std::vector<glm::vec3> vertices, normals;
 std::vector<glm::vec2> uvs;
 std::vector<int> indices; //this will hold the indices for the EBO
 GLuint FloorVertexArrayID; //this is our reference to our vao
 GLuint FloorVertexBuffer;
 GLuint FloorNormalBuffer;
+GLuint FloorTextureBuffer;
 std::vector<glm::vec3> floor_vertices, floor_normals;
 std::vector<glm::vec2> floor_uvs;
 std::vector<int> floor_indices; //this will hold the indices for the EBO
@@ -53,10 +61,32 @@ GLboolean gouraud_flag; //this determines if we use gouraud or not (alternative 
 GLint gouraudUsed; //will be used as a flag to determine which shading should be used.
 GLint normal_as_color; //this is a flag to determine if the normal should be used as color (M key toggles on/off)
 GLint gray_scale; //this is a flag to determine if the scene should be rendered in grayscale or not (key G)
+GLuint shadowProgramID;
 GLuint depthMapProgramID; //the id for the shader program used to render the depth map
 GLuint programID; //this variable will be assigned the program ID of the shader program
                   //since we need it to modify the color channels, we will make it global
                   //so we can use it in the keyboard callback method
+
+#pragma endregion VariableDeclaration
+
+/*
+ * GL error handling mechanism
+ */
+
+static void GLClearError()
+{
+    while(glGetError() != GL_NO_ERROR);
+}
+
+static bool GLLogCall(const char* function, const char* file, int line)
+{
+    while(GLenum error = glGetError())
+    {
+        std::cout << "[OpenGL Error] (" << error << "): " << function << " " << file << ":" << line << std::endl;
+        return false;
+    }
+    return true;
+}
 
 /*
  * Method to reset the values of all the uniforms for the new program id when we switch shaders.
@@ -307,6 +337,9 @@ void Render()
     glBindBuffer(GL_ARRAY_BUFFER, normalBuffer);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
+    //we also need the textures
+
+
     //this configures the z-buffer so that only elements that are closer will be drawn
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
@@ -314,33 +347,38 @@ void Render()
     //here we need to specify the number of vertices we wish to draw
     //for this assignment, they should be drawn using triangles
     glDrawArrays(GL_TRIANGLES, 0, vertices.size());
-    GLenum err;
-    while ((err = glGetError()) != GL_NO_ERROR) {
-        std::cerr << "OpenGL error: " << err << std::endl;
-    }
 
     glDisableVertexAttribArray(0);
     glDisableVertexAttribArray(1);
 
     //HERACLES DRAWING COMPLETE
 
-    //DRAWING CUBES
+    //GLCall(glUseProgram(shadowProgramID));
+    //DRAWING FLOOR
     //now that we have drawn Heracles, we should switch to our cube VAO
-    glBindVertexArray(FloorVertexArrayID);
+    GLCall(glBindVertexArray(FloorVertexArrayID));
     //to do this we need to tell open GL about our vertex array (id 0)
-    glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, FloorVertexBuffer);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+    GLCall(glEnableVertexAttribArray(0));
+    GLCall(glBindBuffer(GL_ARRAY_BUFFER, FloorVertexBuffer));
+    GLCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0));
 
     //we also need to enable the normals array
-    glEnableVertexAttribArray(1);
-    glBindBuffer(GL_ARRAY_BUFFER, FloorNormalBuffer);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-    glDrawArrays(GL_TRIANGLES, 0, floor_vertices.size());
-    glDisableVertexAttribArray(0);
-    glDisableVertexAttribArray(1);
+    GLCall(glEnableVertexAttribArray(1));
+    GLCall(glBindBuffer(GL_ARRAY_BUFFER, FloorNormalBuffer));
+    GLCall(glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0));
 
-    //CUBE DRAWING COMPLETE
+    //and the textures
+    GLCall(glEnableVertexAttribArray(2));
+    GLCall(glBindBuffer(GL_ARRAY_BUFFER, FloorTextureBuffer));
+    GLCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0));
+
+
+    GLCall(glDrawArrays(GL_TRIANGLES, 0, floor_vertices.size()));
+    GLCall(glDisableVertexAttribArray(0));
+    GLCall(glDisableVertexAttribArray(1));
+    GLCall(glDisableVertexAttribArray(2));
+
+    //FLOOR DRAWING COMPLETE
 
     // Swap front and back buffers
     glfwSwapBuffers(window);
@@ -373,8 +411,8 @@ void DepthMapPass()
     glUseProgram(depthMapProgramID);
 
     //next we establish the light_matrix that will be used.
-    float near_plane = 0.0f, far_plane = 100.0f;
-    glm::mat4 lightProjection = glm::ortho(-10.0f, 10.0f, -10.0f, 10.0f, near_plane, far_plane);
+    float near_plane = 1.0f, far_plane = 7.5f;
+    glm::mat4 lightProjection = glm::ortho(-100.0f, 100.0f, -100.0f, 100.0f, near_plane, far_plane);
 
     glm::mat4 lightView = glm::lookAt(glm::vec3(0,20,10), glm::vec3(0,0,0), glm::vec3(0,0,0));
 
@@ -414,10 +452,14 @@ int main()
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*vertices.size(), &vertices.front(), GL_STATIC_DRAW);
 
     //for the lighting, we also need the normals, therefore we should create another vbo
-
     glGenBuffers(1, &normalBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, normalBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*normals.size(), &normals.front(), GL_STATIC_DRAW);
+
+    //in order to do the shadows we will also need the texture coordinates so we should load those as well
+    glGenBuffers(1, &textureBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec2)*uvs.size(), &uvs.front(), GL_STATIC_DRAW);
 
     GLuint EBO;
     glGenBuffers(1, &EBO);
@@ -447,6 +489,11 @@ int main()
     glGenBuffers(1, &FloorNormalBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, FloorNormalBuffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*floor_normals.size(), &floor_normals.front(), GL_STATIC_DRAW);
+
+    //we will also need the textures to draw shadows
+    glGenBuffers(1, &FloorTextureBuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, FloorTextureBuffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec2)*floor_uvs.size(), &floor_uvs.front(), GL_STATIC_DRAW);
 
     GLuint FloorEBO;
     glGenBuffers(1, &FloorEBO);
@@ -488,6 +535,9 @@ int main()
     //we should also load the depth map shader set
     depthMapProgramID = LoadShaders("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
 
+    //load the shaders for drawing the shadows
+    shadowProgramID = LoadShaders("../Shaders/ShadowVertexShader.glsl", "../Shaders/ShadowFragmentShader.glsl");
+
     /************************************* DONE SHADER LOADING ***************************************************/
 
     /************************************* MODEL VIEW PROJECTION INSTANTIATION **************************************/
@@ -520,21 +570,20 @@ int main()
     while (!glfwWindowShouldClose(window))
     {
         //first pass, in which we render to the depth map
-        glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
-        glBindFramebuffer(GL_FRAMEBUFFER, depthBuffer);
-        glClear(GL_DEPTH_BUFFER_BIT);
+        GLCall(glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT));
+        GLCall(glBindFramebuffer(GL_FRAMEBUFFER, depthBuffer));
+        GLCall(glClear(GL_DEPTH_BUFFER_BIT));
         DepthMapPass();
-        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        GLCall(glBindFramebuffer(GL_FRAMEBUFFER, 0));
 
         //once we are done with this, we should switch back to our actual program
-        glUseProgram(programID);
+        GLCall(glUseProgram(programID));
 
         //second pass where we actually render the scene
-        glViewport(0, 0, width, height);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glBindTexture(GL_TEXTURE_2D, depthMap);
-        Render();
-
+        GLCall(glViewport(0, 0, width, height));
+        GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
+        GLCall(glBindTexture(GL_TEXTURE_2D, depthMap));
+        GLCall(Render());
     }
 
     glfwTerminate();
