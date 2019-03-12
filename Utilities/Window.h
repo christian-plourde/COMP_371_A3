@@ -1,10 +1,12 @@
+#ifndef COMP_371_A3_WINDOW
+#define COMP_371_A3_WINDOW
+
 #include <glew.h>
 #include <GLFW/glfw3.h>
 #include "glm.hpp"
 #include "MVP.h"
-
-#ifndef COMP_371_A3_WINDOW
-#define COMP_371_A3_WINDOW
+#include "Shader.h"
+#include "ErrorHandlingFunctions.h"
 
 class Window
 {
@@ -15,7 +17,8 @@ class Window
         glm::vec3 back_color;
         GLFWwindow* window_handle;
         MVP* mvp;
-        GLuint programID; //the id of the currently bound shader
+        Shader* shader;
+        GLFWwindow* initHandle();
 
     public:
         Window();
@@ -26,9 +29,12 @@ class Window
         inline int getWidth(){return width;}
         inline glm::vec3 getBackColor(){return back_color;}
         inline MVP* getMVP(){return mvp;}
-        inline GLuint getShaderID(){return programID;}
-        inline void setShaderID(GLuint newID){programID = newID;}
-        GLFWwindow* getHandle();
+        inline bool isGouraudUsed(){return shader -> isGouraudUsed();}
+        void toggleLightModel();
+        inline Shader* getShader(){return shader;}
+        inline GLuint getShaderID(){return shader -> getID();}
+        void setShader(Shader* s);
+        inline GLFWwindow* getHandle(){return window_handle;}
         void setBackColor(float red, float green, float blue);
         void set_keyboard_callback(GLFWkeyfun);
         void set_mouse_callback(GLFWmousebuttonfun);

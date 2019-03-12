@@ -2,8 +2,7 @@
 
 Window::Window() : width(800), height(800), title("Window"), back_color(glm::vec3(0,0,0))
 {
-    window_handle = glfwCreateWindow(width, height, title, NULL, NULL);
-    glfwMakeContextCurrent(window_handle);
+    window_handle = initHandle();
     glClearColor(back_color.x, back_color.y, back_color.z, 1);
     glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
     glewExperimental = GL_TRUE;
@@ -13,8 +12,7 @@ Window::Window() : width(800), height(800), title("Window"), back_color(glm::vec
 
 Window::Window(int width, int height, const char* title) : width(800), height(800), back_color(glm::vec3(0,0,0))
 {
-    window_handle = glfwCreateWindow(width, height, title, NULL, NULL);
-    glfwMakeContextCurrent(window_handle);
+    window_handle = initHandle();
     glClearColor(back_color.x, back_color.y, back_color.z, 1);
     glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
     glewExperimental = GL_TRUE;
@@ -25,6 +23,7 @@ Window::Window(int width, int height, const char* title) : width(800), height(80
 Window::~Window()
 {
     delete mvp;
+    delete shader;
 }
 
 void Window::setBackColor(float red, float green, float blue)
@@ -33,7 +32,7 @@ void Window::setBackColor(float red, float green, float blue)
     glClearColor(back_color.x, back_color.y, back_color.z, 1);
 }
 
-GLFWwindow* Window::getHandle()
+GLFWwindow* Window::initHandle()
 {
     // Initialize the library
     if (!glfwInit())
@@ -70,6 +69,20 @@ void Window::set_keyboard_callback(GLFWkeyfun function)
 void Window::set_mouse_callback(GLFWmousebuttonfun function)
 {
     glfwSetMouseButtonCallback(window_handle, function);
+}
+
+void Window::setShader(Shader* shader)
+{
+    this -> shader = shader;
+    glUseProgram(shader -> getID());
+}
+
+void Window::toggleLightModel()
+{
+    if(isGouraudUsed())
+        shader -> setGouraudLighting(false);
+    else
+        shader -> setGouraudLighting(true);
 }
 
 

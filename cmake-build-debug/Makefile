@@ -230,6 +230,60 @@ Loaders/ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.s
 .PHONY : Loaders/ShaderLoader.cpp.s
 
+Utilities/DepthMap.obj: Utilities/DepthMap.cpp.obj
+
+.PHONY : Utilities/DepthMap.obj
+
+# target to build an object file
+Utilities/DepthMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj
+.PHONY : Utilities/DepthMap.cpp.obj
+
+Utilities/DepthMap.i: Utilities/DepthMap.cpp.i
+
+.PHONY : Utilities/DepthMap.i
+
+# target to preprocess a source file
+Utilities/DepthMap.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.i
+.PHONY : Utilities/DepthMap.cpp.i
+
+Utilities/DepthMap.s: Utilities/DepthMap.cpp.s
+
+.PHONY : Utilities/DepthMap.s
+
+# target to generate assembly for a file
+Utilities/DepthMap.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.s
+.PHONY : Utilities/DepthMap.cpp.s
+
+Utilities/ErrorHandlingFunction.obj: Utilities/ErrorHandlingFunction.cpp.obj
+
+.PHONY : Utilities/ErrorHandlingFunction.obj
+
+# target to build an object file
+Utilities/ErrorHandlingFunction.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj
+.PHONY : Utilities/ErrorHandlingFunction.cpp.obj
+
+Utilities/ErrorHandlingFunction.i: Utilities/ErrorHandlingFunction.cpp.i
+
+.PHONY : Utilities/ErrorHandlingFunction.i
+
+# target to preprocess a source file
+Utilities/ErrorHandlingFunction.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.i
+.PHONY : Utilities/ErrorHandlingFunction.cpp.i
+
+Utilities/ErrorHandlingFunction.s: Utilities/ErrorHandlingFunction.cpp.s
+
+.PHONY : Utilities/ErrorHandlingFunction.s
+
+# target to generate assembly for a file
+Utilities/ErrorHandlingFunction.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.s
+.PHONY : Utilities/ErrorHandlingFunction.cpp.s
+
 Utilities/Light.obj: Utilities/Light.cpp.obj
 
 .PHONY : Utilities/Light.obj
@@ -283,6 +337,114 @@ Utilities/MVP.s: Utilities/MVP.cpp.s
 Utilities/MVP.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s
 .PHONY : Utilities/MVP.cpp.s
+
+Utilities/Object.obj: Utilities/Object.cpp.obj
+
+.PHONY : Utilities/Object.obj
+
+# target to build an object file
+Utilities/Object.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
+.PHONY : Utilities/Object.cpp.obj
+
+Utilities/Object.i: Utilities/Object.cpp.i
+
+.PHONY : Utilities/Object.i
+
+# target to preprocess a source file
+Utilities/Object.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.i
+.PHONY : Utilities/Object.cpp.i
+
+Utilities/Object.s: Utilities/Object.cpp.s
+
+.PHONY : Utilities/Object.s
+
+# target to generate assembly for a file
+Utilities/Object.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.s
+.PHONY : Utilities/Object.cpp.s
+
+Utilities/ObjectContainer.obj: Utilities/ObjectContainer.cpp.obj
+
+.PHONY : Utilities/ObjectContainer.obj
+
+# target to build an object file
+Utilities/ObjectContainer.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
+.PHONY : Utilities/ObjectContainer.cpp.obj
+
+Utilities/ObjectContainer.i: Utilities/ObjectContainer.cpp.i
+
+.PHONY : Utilities/ObjectContainer.i
+
+# target to preprocess a source file
+Utilities/ObjectContainer.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.i
+.PHONY : Utilities/ObjectContainer.cpp.i
+
+Utilities/ObjectContainer.s: Utilities/ObjectContainer.cpp.s
+
+.PHONY : Utilities/ObjectContainer.s
+
+# target to generate assembly for a file
+Utilities/ObjectContainer.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.s
+.PHONY : Utilities/ObjectContainer.cpp.s
+
+Utilities/Shader.obj: Utilities/Shader.cpp.obj
+
+.PHONY : Utilities/Shader.obj
+
+# target to build an object file
+Utilities/Shader.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
+.PHONY : Utilities/Shader.cpp.obj
+
+Utilities/Shader.i: Utilities/Shader.cpp.i
+
+.PHONY : Utilities/Shader.i
+
+# target to preprocess a source file
+Utilities/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.i
+.PHONY : Utilities/Shader.cpp.i
+
+Utilities/Shader.s: Utilities/Shader.cpp.s
+
+.PHONY : Utilities/Shader.s
+
+# target to generate assembly for a file
+Utilities/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.s
+.PHONY : Utilities/Shader.cpp.s
+
+Utilities/Uniform.obj: Utilities/Uniform.cpp.obj
+
+.PHONY : Utilities/Uniform.obj
+
+# target to build an object file
+Utilities/Uniform.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj
+.PHONY : Utilities/Uniform.cpp.obj
+
+Utilities/Uniform.i: Utilities/Uniform.cpp.i
+
+.PHONY : Utilities/Uniform.i
+
+# target to preprocess a source file
+Utilities/Uniform.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.i
+.PHONY : Utilities/Uniform.cpp.i
+
+Utilities/Uniform.s: Utilities/Uniform.cpp.s
+
+.PHONY : Utilities/Uniform.s
+
+# target to generate assembly for a file
+Utilities/Uniform.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.s
+.PHONY : Utilities/Uniform.cpp.s
 
 Utilities/Window.obj: Utilities/Window.cpp.obj
 
@@ -359,12 +521,30 @@ help:
 	@echo ... Loaders/ShaderLoader.obj
 	@echo ... Loaders/ShaderLoader.i
 	@echo ... Loaders/ShaderLoader.s
+	@echo ... Utilities/DepthMap.obj
+	@echo ... Utilities/DepthMap.i
+	@echo ... Utilities/DepthMap.s
+	@echo ... Utilities/ErrorHandlingFunction.obj
+	@echo ... Utilities/ErrorHandlingFunction.i
+	@echo ... Utilities/ErrorHandlingFunction.s
 	@echo ... Utilities/Light.obj
 	@echo ... Utilities/Light.i
 	@echo ... Utilities/Light.s
 	@echo ... Utilities/MVP.obj
 	@echo ... Utilities/MVP.i
 	@echo ... Utilities/MVP.s
+	@echo ... Utilities/Object.obj
+	@echo ... Utilities/Object.i
+	@echo ... Utilities/Object.s
+	@echo ... Utilities/ObjectContainer.obj
+	@echo ... Utilities/ObjectContainer.i
+	@echo ... Utilities/ObjectContainer.s
+	@echo ... Utilities/Shader.obj
+	@echo ... Utilities/Shader.i
+	@echo ... Utilities/Shader.s
+	@echo ... Utilities/Uniform.obj
+	@echo ... Utilities/Uniform.i
+	@echo ... Utilities/Uniform.s
 	@echo ... Utilities/Window.obj
 	@echo ... Utilities/Window.i
 	@echo ... Utilities/Window.s

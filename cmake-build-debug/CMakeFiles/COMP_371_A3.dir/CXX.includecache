@@ -926,6 +926,20 @@ glew.h
 GLFW/glfw3.h
 -
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
+glew.h
+-
+Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
+ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+glew.h
+-
+iostream
+-
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
 glm.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
@@ -942,6 +956,44 @@ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.h
 iostream
 -
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
+glew.h
+-
+../Loaders/ObjectLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
+vector
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
+ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
+Object.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
+glew.h
+-
+../Loaders/ShaderLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+Uniform.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
+vector
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
+../GLM/glm/gtc/type_ptr.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
+Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
+glew.h
+-
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
 glew.h
 -
@@ -951,6 +1003,10 @@ glm.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
 MVP.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
+Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
+ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp
 iostream
@@ -981,4 +1037,12 @@ Utilities/Light.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
 Utilities/Window.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+Utilities/Object.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
+Utilities/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+Utilities/ObjectContainer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
+Utilities/DepthMap.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
 

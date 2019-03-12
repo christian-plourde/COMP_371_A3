@@ -110,6 +110,15 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunction.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
@@ -120,6 +129,30 @@
 			<Option target="COMP_371_A3"/>
 		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.cpp">

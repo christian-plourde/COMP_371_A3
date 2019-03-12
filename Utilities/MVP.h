@@ -20,7 +20,7 @@ class MVP
         void setProjection(float, int, int, float, float); //must be called after window has been initialized
         inline glm::mat4 getModel(){return Model;}
         inline glm::mat4 getView(){return View;}
-        inline glm::mat4 getProjection(){return getProjection();}
+        inline glm::mat4 getProjection(){return Projection;}
 };
 
 #endif

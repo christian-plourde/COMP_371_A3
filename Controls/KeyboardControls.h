@@ -170,7 +170,7 @@ void key_press_6(Window*);
  * We pass the program_id by reference since it will eventually point to the new shader program, and also a flag
  * indicating if we are currently using gouraud lighting or not. This flag will get flipped by the method.
  */
-void key_press_5(Window*, GLboolean& gouraud);
+void key_press_5(Window*);
 
 /*
  * This method defines what happens when the 'm' key is pressed. When this occurs, the normal_as_color uniform should
@@ -188,7 +188,7 @@ void key_press_g(Window*);
  * This defines what happens when the 'F1' key is pressed. When this occurs, the 4 lights in the scene should be
  * enabled. If the key has not been pressed, then there should only be one light on the scene.
  */
-void key_press_F1(Window*, GLboolean& lights_on);
+void key_press_F1(Window*);
 
 /*
  * This defines what occurs when the 'F2' key is pressed. When this occurs, we should render the scene with two-pass
