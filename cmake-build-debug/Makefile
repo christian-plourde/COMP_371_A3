@@ -149,6 +149,33 @@ Controls/KeyboardControls.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s
 .PHONY : Controls/KeyboardControls.cpp.s
 
+Controls/MouseControls.obj: Controls/MouseControls.cpp.obj
+
+.PHONY : Controls/MouseControls.obj
+
+# target to build an object file
+Controls/MouseControls.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj
+.PHONY : Controls/MouseControls.cpp.obj
+
+Controls/MouseControls.i: Controls/MouseControls.cpp.i
+
+.PHONY : Controls/MouseControls.i
+
+# target to preprocess a source file
+Controls/MouseControls.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.i
+.PHONY : Controls/MouseControls.cpp.i
+
+Controls/MouseControls.s: Controls/MouseControls.cpp.s
+
+.PHONY : Controls/MouseControls.s
+
+# target to generate assembly for a file
+Controls/MouseControls.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.s
+.PHONY : Controls/MouseControls.cpp.s
+
 Loaders/ObjectLoader.obj: Loaders/ObjectLoader.cpp.obj
 
 .PHONY : Loaders/ObjectLoader.obj
@@ -203,6 +230,87 @@ Loaders/ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.s
 .PHONY : Loaders/ShaderLoader.cpp.s
 
+Utilities/Light.obj: Utilities/Light.cpp.obj
+
+.PHONY : Utilities/Light.obj
+
+# target to build an object file
+Utilities/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
+.PHONY : Utilities/Light.cpp.obj
+
+Utilities/Light.i: Utilities/Light.cpp.i
+
+.PHONY : Utilities/Light.i
+
+# target to preprocess a source file
+Utilities/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i
+.PHONY : Utilities/Light.cpp.i
+
+Utilities/Light.s: Utilities/Light.cpp.s
+
+.PHONY : Utilities/Light.s
+
+# target to generate assembly for a file
+Utilities/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s
+.PHONY : Utilities/Light.cpp.s
+
+Utilities/MVP.obj: Utilities/MVP.cpp.obj
+
+.PHONY : Utilities/MVP.obj
+
+# target to build an object file
+Utilities/MVP.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj
+.PHONY : Utilities/MVP.cpp.obj
+
+Utilities/MVP.i: Utilities/MVP.cpp.i
+
+.PHONY : Utilities/MVP.i
+
+# target to preprocess a source file
+Utilities/MVP.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i
+.PHONY : Utilities/MVP.cpp.i
+
+Utilities/MVP.s: Utilities/MVP.cpp.s
+
+.PHONY : Utilities/MVP.s
+
+# target to generate assembly for a file
+Utilities/MVP.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s
+.PHONY : Utilities/MVP.cpp.s
+
+Utilities/Window.obj: Utilities/Window.cpp.obj
+
+.PHONY : Utilities/Window.obj
+
+# target to build an object file
+Utilities/Window.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj
+.PHONY : Utilities/Window.cpp.obj
+
+Utilities/Window.i: Utilities/Window.cpp.i
+
+.PHONY : Utilities/Window.i
+
+# target to preprocess a source file
+Utilities/Window.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i
+.PHONY : Utilities/Window.cpp.i
+
+Utilities/Window.s: Utilities/Window.cpp.s
+
+.PHONY : Utilities/Window.s
+
+# target to generate assembly for a file
+Utilities/Window.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s
+.PHONY : Utilities/Window.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -242,12 +350,24 @@ help:
 	@echo ... Controls/KeyboardControls.obj
 	@echo ... Controls/KeyboardControls.i
 	@echo ... Controls/KeyboardControls.s
+	@echo ... Controls/MouseControls.obj
+	@echo ... Controls/MouseControls.i
+	@echo ... Controls/MouseControls.s
 	@echo ... Loaders/ObjectLoader.obj
 	@echo ... Loaders/ObjectLoader.i
 	@echo ... Loaders/ObjectLoader.s
 	@echo ... Loaders/ShaderLoader.obj
 	@echo ... Loaders/ShaderLoader.i
 	@echo ... Loaders/ShaderLoader.s
+	@echo ... Utilities/Light.obj
+	@echo ... Utilities/Light.i
+	@echo ... Utilities/Light.s
+	@echo ... Utilities/MVP.obj
+	@echo ... Utilities/MVP.i
+	@echo ... Utilities/MVP.s
+	@echo ... Utilities/Window.obj
+	@echo ... Utilities/Window.i
+	@echo ... Utilities/Window.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

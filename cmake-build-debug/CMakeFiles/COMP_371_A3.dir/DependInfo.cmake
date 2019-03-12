@@ -5,8 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj"
+  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -375,6 +375,20 @@ GLFW/glfw3.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
 ../GLM/glm/gtc/matrix_transform.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
+../Utilities/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.h
+glew.h
+-
+GLFW/glfw3.h
+-
+../GLM/glm/matrix.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
+../GLM/glm/gtc/matrix_transform.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
+../Utilities/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle.hpp
 
@@ -912,6 +926,32 @@ glew.h
 GLFW/glfw3.h
 -
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
+../GLM/glm/gtc/type_ptr.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
+glew.h
+-
+iostream
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
+iostream
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+glew.h
+-
+GLFW/glfw3.h
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/glm.hpp
+MVP.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp
 iostream
 -
@@ -935,4 +975,10 @@ Loaders/ObjectLoader.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
 Controls/KeyboardControls.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
+Controls/MouseControls.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.h
+Utilities/Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
+Utilities/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
 

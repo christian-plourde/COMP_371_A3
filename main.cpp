@@ -9,6 +9,9 @@
 #include "Loaders/ShaderLoader.h"
 #include "Loaders/ObjectLoader.h"
 #include "Controls/KeyboardControls.h"
+#include "Controls/MouseControls.h"
+#include "Utilities/Light.h"
+#include "Utilities/Window.h"
 
 #define ASSERT(x) if (!(x)) __debugbreak();
 #define GLCall(x) GLClearError();\
@@ -16,6 +19,9 @@ x;\
 ASSERT(GLLogCall(#x, __FILE__, __LINE__));
 
 #pragma region VariableDeclaration
+
+Window* myWindow; //the glfw window
+
 //definition of all the uniforms
 GLint view_mat_ID;
 GLint model_mat_ID;
@@ -26,14 +32,10 @@ glm::mat4 View;
 GLint red_channel_id;
 GLint blue_channel_id;
 GLint green_channel_id;
-GLint light_position_1;
-GLint light_color_1;
-GLint light_position_2;
-GLint light_color_2;
-GLint light_position_3;
-GLint light_color_3;
-GLint light_position_4;
-GLint light_color_4;
+Light* light_1;
+Light* light_2;
+Light* light_3;
+Light* light_4;
 GLint view_position;
 
 //definition of the buffers
@@ -88,6 +90,127 @@ static bool GLLogCall(const char* function, const char* file, int line)
     return true;
 }
 
+void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
+{
+    /*
+     * This defines what happens when the escape key is pressed. In our case, we would like the escape key to close
+     * the currently used window
+     */
+    if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+    {
+        glfwSetWindowShouldClose(window, true);
+    }
+
+    //here we define what occurs if specific keys are pressed
+    //the functions are defined in the keyboard controls file, we are simply calling them based on
+    //which key is pressed
+
+    if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        key_press_w(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        key_press_s(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        key_press_a(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        key_press_d(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
+        key_press_o(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
+        key_press_p(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+        key_press_left_arrow(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+        key_press_right_arrow(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+        key_press_up_arrow(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+        key_press_down_arrow(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
+        key_press_b(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS)
+        key_press_n(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+        key_press_e(myWindow);
+
+
+    if(glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
+        key_press_j(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
+        key_press_l(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
+        key_press_i(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
+        key_press_k(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_PAGE_UP) == GLFW_PRESS)
+        key_press_pg_up(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
+        key_press_pg_down(myWindow);
+
+    //controls what occurs when the '1' key is pressed
+    if(glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS)
+        key_press_1(myWindow);
+
+    //controls what happens when the '2' key is pressed
+    if(glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS)
+        key_press_2(myWindow);
+
+    //controls what happens when the '3' key is pressed
+    if(glfwGetKey(window, GLFW_KEY_3) == GLFW_PRESS)
+        key_press_3(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_4) == GLFW_PRESS)
+        key_press_4(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_6) == GLFW_PRESS)
+        key_press_6(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_5) == GLFW_PRESS)
+    {
+        key_press_5(myWindow, gouraud_flag);
+    }
+
+
+    if(glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
+        key_press_m(myWindow);
+
+    if(glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
+        key_press_g(myWindow);
+
+
+    if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS)
+        key_press_F1(myWindow, four_lights_on);
+
+
+    if(glfwGetKey(window, GLFW_KEY_F2) == GLFW_PRESS)
+        key_press_F2(myWindow);
+}
+
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+    if(button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+        key_press_lm_button_down(myWindow);
+
+    if(button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_PRESS)
+        key_press_rm_button_down(myWindow);
+}
+
 /*
  * Method to reset the values of all the uniforms for the new program id when we switch shaders.
  */
@@ -129,188 +252,25 @@ void setUniforms()
     view_position = glGetUniformLocation(programID, "view_position");
     glUniform3fv(view_position, 1, glm::value_ptr(glm::vec3(100,100,100)));
 
-    //these are the uniforms that define the position of the lights
-    light_position_1 = glGetUniformLocation(programID, "light_position_1");
-    glUniform3fv(light_position_1, 1, glm::value_ptr(glm::vec3(0, 20, 10)));
+    light_1 = new Light(0, 20, 10, 0.8, 0.2, 0.2);
+    light_1 -> addToProgram(programID, "light_position_1", "light_color_1");
+    delete light_1;
 
-    light_position_2 = glGetUniformLocation(programID, "light_position_2");
-    glUniform3fv(light_position_2, 1, glm::value_ptr(glm::vec3(-10, 15, 5)));
+    light_2 = new Light(-10, 15, 5, 0, 0, 0);
+    light_2 -> addToProgram(programID, "light_position_2", "light_color_2");
+    delete light_2;
 
-    light_position_3 = glGetUniformLocation(programID, "light_position_3");
-    glUniform3fv(light_position_3, 1, glm::value_ptr(glm::vec3(0, 15, 5)));
+    light_3 = new Light(0, 15, 5, 0, 0, 0);
+    light_3 -> addToProgram(programID, "light_position_3", "light_color_3");
+    delete light_3;
 
-    light_position_4 = glGetUniformLocation(programID, "light_position_4");
-    glUniform3fv(light_position_4, 1, glm::value_ptr(glm::vec3(0, 0, 25)));
-
-    //these are the uniforms that define the colors of the lights
-    light_color_1 = glGetUniformLocation(programID, "light_color_1");
-    glUniform3fv(light_color_1, 1, glm::value_ptr(glm::vec3(0.8,0.2,0.2)));
-
-    light_color_2 = glGetUniformLocation(programID, "light_color_2");
-    glUniform3fv(light_color_2, 1, glm::value_ptr(glm::vec3(0,0,0)));
-
-    light_color_3 = glGetUniformLocation(programID, "light_color_3");
-    glUniform3fv(light_color_3, 1, glm::value_ptr(glm::vec3(0,0,0)));
-
-    light_color_4 = glGetUniformLocation(programID, "light_color_4");
-    glUniform3fv(light_color_4, 1, glm::value_ptr(glm::vec3(0,0,0)));
+    light_4 = new Light(0, 0, 25, 0, 0, 0);
+    light_4 -> addToProgram(programID, "light_position_4", "light_color_4");
+    delete light_4;
 
     gouraudUsed = glGetUniformLocation(programID, "gouraudUsed");
     glUniform1i(gouraudUsed, 0);
 
-}
-
-/*
- * This is the method that will execute when there is input from the keyboard.
- * For this method to be a valid callback method for the keyboard, it must match the proper signature,
- * which is the one used for this method.
- */
-void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
-{
-    /*
-     * This defines what happens when the escape key is pressed. In our case, we would like the escape key to close
-     * the currently used window
-     */
-    if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-    {
-        glfwSetWindowShouldClose(window, true);
-    }
-
-    //here we define what occurs if specific keys are pressed
-    //the functions are defined in the keyboard controls file, we are simply calling them based on
-    //which key is pressed
-    if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        key_press_w(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        key_press_s(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        key_press_a(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        key_press_d(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
-        key_press_o(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
-        key_press_p(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
-        key_press_left_arrow(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
-        key_press_right_arrow(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-        key_press_up_arrow(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-        key_press_down_arrow(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
-        key_press_b(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS)
-        key_press_n(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
-        key_press_e(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
-        key_press_j(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
-        key_press_l(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
-        key_press_i(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
-        key_press_k(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_PAGE_UP) == GLFW_PRESS)
-        key_press_pg_up(window, View, Projection, Model, programID);
-
-    if(glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
-        key_press_pg_down(window, View, Projection, Model, programID);
-
-    //controls what occurs when the '1' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS)
-        key_press_1(programID);
-
-    //controls what happens when the '2' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS)
-        key_press_2(programID);
-
-    //controls what happens when the '3' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_3) == GLFW_PRESS)
-        key_press_3(programID);
-
-    if(glfwGetKey(window, GLFW_KEY_4) == GLFW_PRESS)
-        key_press_4(programID);
-
-    if(glfwGetKey(window, GLFW_KEY_6) == GLFW_PRESS)
-        key_press_6(programID);
-
-    if(glfwGetKey(window, GLFW_KEY_5) == GLFW_PRESS)
-    {
-        key_press_5(programID, gouraud_flag);
-    }
-
-    if(glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
-        key_press_m(programID);
-
-    if(glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
-        key_press_g(programID);
-
-    if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS)
-        key_press_F1(programID, four_lights_on);
-
-    if(glfwGetKey(window, GLFW_KEY_F2) == GLFW_PRESS)
-        key_press_F2(programID);
-}
-
-/*
- * Method to handle the initialization process of the window
- */
-static GLFWwindow* initialize()
-{
-    GLFWwindow* window;
-
-    // Initialize the library
-    if (!glfwInit())
-        return nullptr;
-
-    // Create a windowed mode window and its OpenGL context
-    int width =  800;
-    int height = 800;
-    window = glfwCreateWindow(width, height, "COMP 371 A3", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return nullptr;
-    }
-
-    // Make the window's context current
-    glfwMakeContextCurrent(window);
-    glClearColor(0.8, 0.8, 0.8, 1); //makes the background color of the window light gray
-    //we should also set the keyboard input callback method
-    glfwSetKeyCallback(window, keyboard_callback);
-    glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
-
-    glewExperimental = GL_TRUE;
-
-    if (GLEW_OK != glewInit())
-    {
-        std::cout << "Failed to initialize GLEW" << std::endl;
-        return nullptr;
-    }
-
-    four_lights_on = GL_FALSE; //toggle mechanism for the f1 key being pressed.
-
-    return window;
 }
 
 /*
@@ -353,7 +313,6 @@ void Render()
 
     //HERACLES DRAWING COMPLETE
 
-    //GLCall(glUseProgram(shadowProgramID));
     //DRAWING FLOOR
     //now that we have drawn Heracles, we should switch to our cube VAO
     GLCall(glBindVertexArray(FloorVertexArrayID));
@@ -368,10 +327,9 @@ void Render()
     GLCall(glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0));
 
     //and the textures
-    GLCall(glEnableVertexAttribArray(2));
-    GLCall(glBindBuffer(GL_ARRAY_BUFFER, FloorTextureBuffer));
-    GLCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0));
-
+    //GLCall(glEnableVertexAttribArray(2));
+    //GLCall(glBindBuffer(GL_ARRAY_BUFFER, FloorTextureBuffer));
+    //GLCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0));
 
     GLCall(glDrawArrays(GL_TRIANGLES, 0, floor_vertices.size()));
     GLCall(glDisableVertexAttribArray(0));
@@ -391,12 +349,13 @@ void Render()
     //the old. Since we don't care about x, we can just pass 0.
     glfwGetCursorPos(window, &newMouseY, 0);
 
+    /*
     if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS && newMouseY > oldMouseY)
         key_press_lm_button_up(window, View, Projection, Model, programID);
 
     if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS && newMouseY < oldMouseY)
         key_press_lm_button_down(window, View, Projection, Model, programID);
-
+    */
     //update the last position of the mouse
     oldMouseY = newMouseY;
 }
@@ -422,8 +381,11 @@ void DepthMapPass()
 
 int main()
 {
-    std::cout << glfwGetVersionString() << std::endl;
-    window = initialize();
+    myWindow = new Window();
+    window = myWindow -> getHandle();
+    myWindow -> set_keyboard_callback(keyboard_callback);
+    myWindow -> set_mouse_callback(mouse_button_callback);
+    myWindow -> setBackColor(0.8, 0.8, 0.8);
 
     if(window == nullptr)
     {
@@ -531,6 +493,7 @@ int main()
     gouraud_flag = GL_FALSE;
     programID = LoadShaders("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     glUseProgram(programID);
+    myWindow -> setShaderID(programID);
 
     //we should also load the depth map shader set
     depthMapProgramID = LoadShaders("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
@@ -583,9 +546,10 @@ int main()
         GLCall(glViewport(0, 0, width, height));
         GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
         GLCall(glBindTexture(GL_TEXTURE_2D, depthMap));
-        GLCall(Render());
+        Render();
     }
 
+    delete window;
     glfwTerminate();
 
     return 0;

@@ -112,12 +112,72 @@ CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Controls\KeyboardControls.cpp" -o CMakeFiles\COMP_371_A3.dir\Controls\KeyboardControls.cpp.s
 
+CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: ../Utilities/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp"
+
+CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.i
+
+CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.s
+
+CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: ../Utilities/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp"
+
+CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.i
+
+CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.s
+
+CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: ../Utilities/MVP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp"
+
+CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.i
+
+CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.s
+
+CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj: ../Controls/MouseControls.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Controls\MouseControls.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Controls\MouseControls.cpp"
+
+CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Controls\MouseControls.cpp" > CMakeFiles\COMP_371_A3.dir\Controls\MouseControls.cpp.i
+
+CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Controls\MouseControls.cpp" -o CMakeFiles\COMP_371_A3.dir\Controls\MouseControls.cpp.s
+
 # Object files for target COMP_371_A3
 COMP_371_A3_OBJECTS = \
 "CMakeFiles/COMP_371_A3.dir/main.cpp.obj" \
 "CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj" \
 "CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj"
+"CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj"
 
 # External object files for target COMP_371_A3
 COMP_371_A3_EXTERNAL_OBJECTS =
@@ -126,13 +186,17 @@ COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/main.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/build.make
 COMP_371_A3.exe: glew32.dll
 COMP_371_A3.exe: glfw3.dll
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/linklibs.rsp
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/objects1.rsp
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable COMP_371_A3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable COMP_371_A3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP_371_A3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -7,7 +7,7 @@ find_package(OpenGL REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Loaders/ShaderLoader.cpp Loaders/ObjectLoader.cpp Controls/KeyboardControls.cpp)
+set(SOURCE_FILES main.cpp Loaders/ShaderLoader.cpp Loaders/ObjectLoader.cpp Controls/KeyboardControls.cpp Utilities/Light.cpp Utilities/Window.cpp Utilities/MVP.cpp Controls/MouseControls.cpp)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/GLM/glm)
 
