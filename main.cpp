@@ -19,8 +19,6 @@
 
 Window* myWindow; //the glfw window
 
-GLuint depthMapProgramID; //the id for the shader program used to render the depth map
-
 void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
     /*
@@ -94,39 +92,14 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
     if(glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
         key_press_pg_down(myWindow);
 
-    //controls what occurs when the '1' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS)
-        key_press_1(myWindow);
-
-    //controls what happens when the '2' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS)
-        key_press_2(myWindow);
-
-    //controls what happens when the '3' key is pressed
-    if(glfwGetKey(window, GLFW_KEY_3) == GLFW_PRESS)
-        key_press_3(myWindow);
-
-    if(glfwGetKey(window, GLFW_KEY_4) == GLFW_PRESS)
-        key_press_4(myWindow);
-
-    if(glfwGetKey(window, GLFW_KEY_6) == GLFW_PRESS)
-        key_press_6(myWindow);
-
-    if(glfwGetKey(window, GLFW_KEY_5) == GLFW_PRESS)
-    {
-        key_press_5(myWindow);
-    }
-
     if(glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
         key_press_m(myWindow);
 
     if(glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
         key_press_g(myWindow);
 
-
     if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS)
         key_press_F1(myWindow);
-
 
     if(glfwGetKey(window, GLFW_KEY_F2) == GLFW_PRESS)
         key_press_F2(myWindow);
@@ -141,35 +114,12 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
         key_press_rm_button_down(myWindow);
 }
 
-/*
- * This method takes care of arranging the proper shader program for the first pass render in the depth map so that
- * we render to the depth map and not the actual scene.
- */
-void DepthMapPass()
-{
-    //first set the program id to use our depth map shaders
-    glUseProgram(depthMapProgramID);
-
-    //next we establish the light_matrix that will be used.
-    float near_plane = 1.0f, far_plane = 7.5f;
-    glm::mat4 lightProjection = glm::ortho(-100.0f, 100.0f, -100.0f, 100.0f, near_plane, far_plane);
-
-    glm::mat4 lightView = glm::lookAt(glm::vec3(0,20,10), glm::vec3(0,0,0), glm::vec3(0,0,0));
-
-    glm::mat4 lightSpaceMatrix = lightProjection * lightView;
-    glUniform4fv(glGetUniformLocation(myWindow->getShaderID(), "light_matrix"), 1, glm::value_ptr(lightSpaceMatrix));
-}
-
 int main()
 {
     myWindow = new Window();
     myWindow -> set_keyboard_callback(keyboard_callback);
     myWindow -> set_mouse_callback(mouse_button_callback);
     myWindow -> setBackColor(0.8, 0.8, 0.8);
-    Shader* depthMapShader = new Shader("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
-    DepthMap depthMap;
-    depthMap.load();
-    depthMap.setShader(depthMapShader);
 
     Shader* basicShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     myWindow -> setShader(basicShader);
@@ -228,43 +178,8 @@ int main()
     objects.addObject(heracles);
     objects.addObject(floor);
 
-    /******************************************* DEPTH MAP DEFINITION ****************************************/
-
-
-    /****************************************** END DEPTH MAP DEFINITION *************************************/
-
-    /************************************* SHADER LOADING ***************************************************/
-    //now we load the shader program and assign it to our program id
-    //initially, we use the Phong illumination model
-
-    //we should also load the depth map shader set
-    depthMapProgramID = LoadShaders("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
-
-    /************************************* DONE SHADER LOADING ***************************************************/
-
-    /************************************* MODEL VIEW PROJECTION INSTANTIATION **************************************/
-    //in order for this object to be viewed from a perspective view, we need a Model View Projection matrix
-    //we wish to draw the triangle from a perspective view
-    //this is the projection matrix for a perspective view
-
-
-    /************************************* DONE MODEL VIEW PROJECTION INSTANTIATION ******************************/
-
-    //we need to define two doubles to hold the old and new positions of the mouse cursor so we can check
-    //which direction the user is moving the mouse in.
-
-    // Loop until the user closes the window
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
-        //first pass, in which we render to the depth map
-        /*
-        GLCall(glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT));
-        GLCall(glBindFramebuffer(GL_FRAMEBUFFER, depthBuffer));
-        GLCall(glClear(GL_DEPTH_BUFFER_BIT));
-        DepthMapPass();
-        GLCall(glBindFramebuffer(GL_FRAMEBUFFER, 0));
-         */
-
         objects.DrawAll(false);
     }
 

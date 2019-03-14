@@ -135,44 +135,6 @@ void key_press_pg_up(Window*);
 void key_press_pg_down(Window*);
 
 /*
- * This method defines what occurs when the '1' key is pressed. When this occurs, if the 'red' channel in the fragment
- * has a value of 1.0, then the value should be changed to 0.0 (off) and vice-versa.
- */
-void key_press_1(Window*);
-
-/*
- * This method defines what occurs when the '2' key is pressed. When this occurs, if the 'green' channel in the fragment
- * has a value of 1.0, then the value should be changed to 0.0 (off) and vice-versa.
- */
-void key_press_2(Window*);
-
-/*
- * This method defines what occurs when the '3' key is pressed. When this occurs, if the 'blue' channel in the fragment
- * has a value of 1.0, then the value should be changed to 0.0 (off) and vice-versa.
- */
-void key_press_3(Window*);
-
-/*
- * This method defines what occurs when the '4' key is pressed. When this occurs, all the color channels are turned
- * on.
- */
-void key_press_4(Window*);
-
-/*
- * This method defines what happens when the '6' key is pressed. When this occurs, the lights should be toggled on
- * and off.
- */
-void key_press_6(Window*);
-
-/*
- * This method defines what happens when the '5' key is pressed. When this occurs, the lighting model should toggle
- * between Gouraud and Phong. This will be done by loading the appropriate shaders, one done for each lighting model.
- * We pass the program_id by reference since it will eventually point to the new shader program, and also a flag
- * indicating if we are currently using gouraud lighting or not. This flag will get flipped by the method.
- */
-void key_press_5(Window*);
-
-/*
  * This method defines what happens when the 'm' key is pressed. When this occurs, the normal_as_color uniform should
  * be toggled between 0 and 1, to determine if the normal should be used as the fragment color or not.
  */
