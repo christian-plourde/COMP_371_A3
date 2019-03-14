@@ -4,7 +4,7 @@
 MVP::MVP()
 {
     Model = glm::mat4(1.0f);
-    View = glm::lookAt(glm::vec3(0,0,-40),glm::vec3(0,0,0), glm::vec3(0, 1, 0));
+    View = glm::lookAt(glm::vec3(60,0,20),glm::vec3(0,0,0), glm::vec3(0, 0, 1));
     Projection = glm::mat4(1.0f);
 }
 

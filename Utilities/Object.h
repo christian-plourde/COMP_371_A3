@@ -23,6 +23,7 @@ class Object
         GLuint mesh_type;
         const char* filepath;
         Window* window;
+        Shader* shader;
 
     public:
         Object(const char* filepath);
@@ -39,6 +40,8 @@ class Object
         inline Window* getWindow(){return window;}
         inline const char* getFilePath(){return filepath;}
         inline void setMeshType(GLuint mesh){mesh_type = mesh;}
+        inline Shader* getShader(){return shader;}
+        inline void setShader(Shader* s){shader = s;}
 };
 
 #endif

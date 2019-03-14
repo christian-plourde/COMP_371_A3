@@ -29,8 +29,6 @@ class Window
         inline int getWidth(){return width;}
         inline glm::vec3 getBackColor(){return back_color;}
         inline MVP* getMVP(){return mvp;}
-        inline bool isGouraudUsed(){return shader -> isGouraudUsed();}
-        void toggleLightModel();
         inline Shader* getShader(){return shader;}
         inline GLuint getShaderID(){return shader -> getID();}
         void setShader(Shader* s);

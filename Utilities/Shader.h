@@ -16,7 +16,6 @@ class Shader
         const char* fragment_shader_filepath;
         GLuint id;
         std::vector<Uniform> uniforms;
-        int light_count;
         bool gouraud_lighting; //true for gouraud, false for phong
         bool lights_on;
 
@@ -24,8 +23,6 @@ class Shader
         Shader(const char* vertex_filepath, const char* fragment_filepath);
         ~Shader();
         inline GLuint getID(){return id;}
-        inline bool isGouraudUsed(){return gouraud_lighting;}
-        inline void setGouraudLighting(bool val){gouraud_lighting = val;}
         inline bool lightsOn(){return lights_on;}
         inline void setLightsOn(bool val){lights_on = val;}
         void addUniform(const char* name);
@@ -36,6 +33,7 @@ class Shader
         void setUniformData(const char* name, float);
         void setUniformData(const char* name, int);
         void setUniformData(const char* name, glm::vec3);
+        void use();
 };
 
 #endif

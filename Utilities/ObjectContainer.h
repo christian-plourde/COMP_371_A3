@@ -11,7 +11,6 @@ class ObjectContainer
     public:
         ObjectContainer();
         ~ObjectContainer();
-        void DrawAll(bool use_textures);
         void addObject(Object obj);
 };
 

@@ -73,6 +73,7 @@ void Object::Draw(bool use_textures)
 
 void Object::DrawAsSingle(bool use_textures)
 {
+    shader -> use();
     GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 
     Draw(use_textures);

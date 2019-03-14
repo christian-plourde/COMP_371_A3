@@ -121,7 +121,13 @@ int main()
     myWindow -> set_mouse_callback(mouse_button_callback);
     myWindow -> setBackColor(0.8, 0.8, 0.8);
 
+    Object heracles("../ObjectFiles/heracles.obj");
+    heracles.setWindow(myWindow);
+    heracles.load();
+
     Shader* basicShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
+    heracles.setShader(basicShader);
+    heracles.getShader() -> use();
     myWindow -> setShader(basicShader);
     basicShader -> addUniform("view_matrix");
     basicShader -> setUniformData("view_matrix", myWindow -> getMVP() -> getView());
@@ -130,7 +136,7 @@ int main()
     basicShader -> addUniform("projection_matrix");
     basicShader -> setUniformData("projection_matrix", myWindow -> getMVP() -> getProjection());
     basicShader -> addUniform("view_position");
-    basicShader -> setUniformData("view_position", glm::vec3(100, 100, 100));
+    basicShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
     Light light1(0, 20, 10, 0.2, 0.05, 0.05);
     Light light2(-10, 15, 5, 0.05, 0.2, 0.05);
     Light light3(0, 15, 5, 0.05, 0.05, 0.2);
@@ -152,21 +158,11 @@ int main()
     basicShader -> setUniformData("light_color_3", light3.getColor());
     basicShader -> setUniformData("light_color_4", light4.getColor());
 
-    Object heracles("../ObjectFiles/heracles.obj");
-    heracles.setWindow(myWindow);
-    heracles.load();
-
-    Object floor("../ObjectFiles/floor.obj");
-    floor.setWindow(myWindow);
-    floor.load();
-
-    ObjectContainer objects;
-    objects.addObject(heracles);
-    objects.addObject(floor);
 
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
-        objects.DrawAll(false);
+
+        heracles.DrawAsSingle(false);
     }
 
     delete myWindow;

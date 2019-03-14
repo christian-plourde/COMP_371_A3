@@ -7,7 +7,6 @@ Shader::Shader(const char*vertex_filepath, const char *fragment_filepath)
     this -> vertex_shader_filepath = vertex_filepath;
     this -> fragment_shader_filepath = fragment_filepath;
     id = LoadShaders(vertex_filepath, fragment_filepath);
-    light_count = 0;
     gouraud_lighting = false;
     lights_on = false;
 }
@@ -72,5 +71,10 @@ void Shader::setUniformData(const char *name, glm::vec3 vector)
 {
     GLint id = getUniformID(name);
     glUniform3fv(id, 1, glm::value_ptr(vector));
+}
+
+void Shader::use()
+{
+    glUseProgram(id);
 }
 

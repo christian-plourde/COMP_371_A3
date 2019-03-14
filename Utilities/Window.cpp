@@ -74,15 +74,6 @@ void Window::set_mouse_callback(GLFWmousebuttonfun function)
 void Window::setShader(Shader* shader)
 {
     this -> shader = shader;
-    glUseProgram(shader -> getID());
-}
-
-void Window::toggleLightModel()
-{
-    if(isGouraudUsed())
-        shader -> setGouraudLighting(false);
-    else
-        shader -> setGouraudLighting(true);
 }
 
 
