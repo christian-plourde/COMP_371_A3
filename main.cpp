@@ -122,7 +122,6 @@ int main()
 
     Shader* floorShader = new Shader("../Shaders/FloorVertexShader.glsl", "../Shaders/FloorFragmentShader.glsl");
     floor.setShader(floorShader);
-    floor.getShader() -> use();
     floorShader -> addUniform("view_matrix");
     floorShader -> setUniformData("view_matrix", floor.getMVP() -> getView());
     floorShader -> addUniform("model_matrix");
@@ -154,7 +153,6 @@ int main()
 
     Shader* heraclesShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     heracles.setShader(heraclesShader);
-    heracles.getShader() -> use();
     heraclesShader -> addUniform("view_matrix");
     heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
     heraclesShader -> addUniform("model_matrix");
@@ -191,8 +189,9 @@ int main()
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
         myWindow->PrepareDraw();
-        floor.Draw(false);
         heracles.Draw(false);
+        floor.Draw(false);
+
         myWindow->EndDraw();
     }
 

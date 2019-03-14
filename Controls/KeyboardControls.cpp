@@ -12,7 +12,6 @@ void key_press_w(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(0, 0 , -1)));
 
@@ -31,7 +30,6 @@ void key_press_s(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(0, 0 , 1)));
 
@@ -49,7 +47,6 @@ void key_press_a(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(-1, 0 , 0)));
 
@@ -67,7 +64,6 @@ void key_press_d(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(1, 0 , 0)));
 
@@ -85,7 +81,6 @@ void key_press_o(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0.9f, 0.9f, 0.9f)));
 
@@ -103,7 +98,6 @@ void key_press_p(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1.1f, 1.1f, 1.1f)));
 
@@ -120,7 +114,6 @@ void key_press_left_arrow(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(1.5f), glm::vec3(0,1,0)));
 
@@ -137,7 +130,6 @@ void key_press_right_arrow(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(-1.5f), glm::vec3(0,1,0)));
 
@@ -154,7 +146,6 @@ void key_press_up_arrow(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(-1.5f), glm::vec3(1,0,0)));
 
@@ -168,7 +159,6 @@ void key_press_down_arrow(ObjectContainer* objects) {
     //clockwise fashion).
     for (int i = 0; i < objects->size; i++) {
         if (!objects->getObject(i)->isStatic()) {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setView(
                     glm::rotate(objects->getObject(i)->getMVP()->getView(), glm::radians(1.5f), glm::vec3(1, 0, 0)));
 
@@ -186,7 +176,6 @@ void key_press_b(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(-1.5f), glm::vec3(1,0,0)));
 
@@ -203,7 +192,6 @@ void key_press_n(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(1.5f), glm::vec3(0,1,0)));
 
@@ -220,7 +208,6 @@ void key_press_e(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(1.5f), glm::vec3(0,0,1)));
 
@@ -238,7 +225,6 @@ void key_press_j(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1,0,0)));
 
@@ -256,7 +242,6 @@ void key_press_l(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(-1,0,0)));
 
@@ -274,7 +259,6 @@ void key_press_i(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,1,0)));
 
@@ -292,7 +276,6 @@ void key_press_k(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,-1,0)));
 
@@ -310,7 +293,6 @@ void key_press_pg_up(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,0,1)));
 
@@ -328,7 +310,6 @@ void key_press_pg_down(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-            objects->getObject(i)->getShader()->use();
             objects->getObject(i)->getMVP()->setModel(
                     glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,0,-1)));
 
@@ -345,7 +326,7 @@ void key_press_F1(ObjectContainer* objects)
     {
         if(objects->getObject(i)->getShader()->lightsOn())
         {
-            objects->getObject(i)->getShader()->use();
+
             //if the lights are on make them all dark
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
@@ -356,7 +337,7 @@ void key_press_F1(ObjectContainer* objects)
 
         else
         {
-            objects->getObject(i)->getShader()->use();
+
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
@@ -373,7 +354,7 @@ void key_press_F2(ObjectContainer* objects)
         if(objects->getObject(i)->getShader()->lightsOn())
         {
             //if the lights are on make them all dark
-            objects->getObject(i)->getShader()->use();
+
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0,0,0));
@@ -383,7 +364,7 @@ void key_press_F2(ObjectContainer* objects)
 
         else
         {
-            objects->getObject(i)->getShader()->use();
+
             objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,20,10));
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));

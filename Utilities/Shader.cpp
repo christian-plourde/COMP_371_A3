@@ -14,6 +14,7 @@ Shader::~Shader(){}
 
 void Shader::addUniform(const char *name)
 {
+    this -> use();
     Uniform uniform(name); //create a new uniform
     //we need to get its id in the shader
     uniform.setID(glGetUniformLocation(id, uniform.getName()));
@@ -33,6 +34,7 @@ GLint Shader::getUniformID(const char *name)
 
 float Shader::getFloatUniformData(const char *name)
 {
+    this -> use();
     //method to get the data in a float uniform
     GLint uniform_id = getUniformID(name);
     float result;
@@ -42,6 +44,7 @@ float Shader::getFloatUniformData(const char *name)
 
 int Shader::getIntegerUniformData(const char *name)
 {
+    this -> use();
     GLint uniform_id = getUniformID(name);
     int result;
     glGetUniformiv(id, uniform_id, &result);
@@ -50,24 +53,28 @@ int Shader::getIntegerUniformData(const char *name)
 
 void Shader::setUniformData(const char *name, glm::mat4 matrix)
 {
+    this -> use();
     GLint id = getUniformID(name);
     glUniformMatrix4fv(id, 1, GL_FALSE, &(matrix[0][0]));
 }
 
 void Shader::setUniformData(const char *name, float value)
 {
+    this -> use();
     GLint id = getUniformID(name);
     glUniform1f(id, value);
 }
 
 void Shader::setUniformData(const char *name, int value)
 {
+    this -> use();
     GLint id = getUniformID(name);
     glUniform1i(id, value);
 }
 
 void Shader::setUniformData(const char *name, glm::vec3 vector)
 {
+    this -> use();
     GLint id = getUniformID(name);
     glUniform3fv(id, 1, glm::value_ptr(vector));
 }
