@@ -366,16 +366,6 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../GLM/glm/detail/func_vector_relational.hpp
 
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.cpp
-KeyboardControls.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
-../Loaders/ShaderLoader.h
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
-../GLM/glm/gtc/type_ptr.hpp
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
-iostream
--
-
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
 glew.h
 -
@@ -926,6 +916,14 @@ glew.h
 GLFW/glfw3.h
 -
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
+glew.h
+-
+Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
+ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
 glew.h
 -
@@ -1001,4 +999,40 @@ Shader.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
 ErrorHandlingFunctions.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+glew.h
+-
+GLFW/glfw3.h
+-
+GLM/glm/matrix.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
+GLM/glm/gtc/matrix_transform.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
+GLM/glm/gtc/type_ptr.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
+Loaders/ShaderLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+Loaders/ObjectLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
+Controls/KeyboardControls.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h
+Utilities/Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
+Utilities/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+Utilities/Object.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
+Utilities/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
+Utilities/ObjectContainer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
+Utilities/DepthMap.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
 

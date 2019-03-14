@@ -12,7 +12,6 @@ void key_press_w(ObjectContainer* objects)
     {
         if(!objects->getObject(i) -> isStatic())
         {
-
             objects->getObject(i)->getMVP()->setView(
                     glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(0, 0 , -1)));
 
@@ -366,10 +365,26 @@ void key_press_F1(ObjectContainer* objects)
 
 void key_press_F2(ObjectContainer* objects)
 {
-    //first make sure only one light is being used (the one in the assignment description)
-    //window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));
-    //window -> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
-    //window -> getShader() -> setUniformData("light_color_2", glm::vec3(0,0,0));
-    //window -> getShader() -> setUniformData("light_color_3", glm::vec3(0,0,0));
-    //window -> getShader() -> setUniformData("light_color_4", glm::vec3(0,0,0));
+    for(int i = 0; i < objects->size; i++)
+    {
+        if(objects->getObject(i)->getShader()->lightsOn())
+        {
+            //if the lights are on make them all dark
+            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader() -> setLightsOn(false);
+        }
+
+        else
+        {
+            objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,20,10));
+            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
+            objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
+            objects->getObject(i)-> getShader() -> setLightsOn(true);
+        }
+    }
 }

@@ -20,7 +20,6 @@ uniform mat4 projection_matrix;
 
 out vec3 fragment_position;
 out vec3 normal;
-out vec3 vertex_color;
 
 void main()
 {
