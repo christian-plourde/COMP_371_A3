@@ -40,13 +40,23 @@ void DepthMap::setShader(Shader *s)
     this -> shader = s;
 }
 
-void DepthMap::RenderToTexture(Window *window, ObjectContainer *o)
+void DepthMap::RenderToTexture(ObjectContainer *o)
 {
     //in this method we want to render the scene from the perspective of the depth map
     shader -> use();
+    GLCall(glViewport(0,0, SHADOW_WIDTH, SHADOW_HEIGHT));
+    GLCall(glBindFramebuffer(GL_FRAMEBUFFER, frame_buffer));
+    GLCall(glClear(GL_DEPTH_BUFFER_BIT));
     for(int i = 0; i < o->size; i++)
     {
         //draw each object using the shader bound to the depth map
-
+        o->getObject(i)->Draw(false);
     }
+    GLCall(glBindFramebuffer(GL_FRAMEBUFFER, 0));
+}
+
+void DepthMap::BindTexture()
+{
+    GLCall(glActiveTexture(GL_TEXTURE0));
+    GLCall(glBindTexture(GL_TEXTURE_2D, depth_tex));
 }

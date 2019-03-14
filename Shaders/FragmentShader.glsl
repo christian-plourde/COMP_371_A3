@@ -15,7 +15,6 @@ uniform vec3 view_position;
 
 in vec3 fragment_position;
 in vec3 normal;
-in vec3 vertex_color;
 
 void main()
 {

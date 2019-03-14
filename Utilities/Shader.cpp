@@ -79,6 +79,13 @@ void Shader::setUniformData(const char *name, glm::vec3 vector)
     glUniform3fv(id, 1, glm::value_ptr(vector));
 }
 
+void Shader::setUniformData(const char *name, GLuint value)
+{
+    this -> use();
+    GLint id = getUniformID(name);
+    glUniform1i(id, value);
+}
+
 void Shader::use()
 {
     glUseProgram(id);

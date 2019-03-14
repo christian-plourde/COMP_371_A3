@@ -42,10 +42,18 @@ bool Object::load()
     return true;
 }
 
+void Object::setViewPort()
+{
+    //reset the viewport
+    GLCall(glViewport(0,0,screen_width, screen_height));
+    GLCall(glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT));
+}
+
 void Object::Draw(bool use_textures, bool use_shader)
 {
     if(use_shader)
         shader -> use();
+
     //now we can set enable the buffers in our vao
     GLCall(glEnableVertexAttribArray(0));
     GLCall(glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer));

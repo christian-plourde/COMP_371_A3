@@ -26,6 +26,8 @@ class Object
         Shader* shader;
         MVP* mvp;
         bool static_mode;
+        int screen_width;
+        int screen_height;
 
     public:
         Object(const char* filepath);
@@ -33,6 +35,7 @@ class Object
         bool load();
         void Draw(bool use_textures, bool use_shader);
         void Draw();
+        void setViewPort();
         void Draw(bool use_shader);
         inline std::vector<glm::vec3> getVertices(){return vertices;}
         inline std::vector<glm::vec3> getNormals(){return normals;}
@@ -48,6 +51,10 @@ class Object
         inline void setAsStatic(){static_mode = true;}
         inline void setAsDynamic(){static_mode = false;}
         inline bool isStatic(){return static_mode;}
+        inline int getScreenWidth(){return screen_width;}
+        inline int getScreeHeight(){return screen_height;}
+        inline void setScreenWidth(int s){screen_width = s;}
+        inline void setScreenHeight(int s){screen_height = s;}
 };
 
 #endif

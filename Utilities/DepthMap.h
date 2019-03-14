@@ -25,7 +25,9 @@ class DepthMap
         inline DepthMapLight* getLight(){return depth_light;}
         void setShader(Shader* s);
         void load();
-        void RenderToTexture(Window* window, ObjectContainer* o);
+        void RenderToTexture(ObjectContainer* o);
+        void BindTexture();
+        inline GLuint getTexture(){return depth_tex;}
 };
 
 #endif

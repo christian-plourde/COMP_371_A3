@@ -32,6 +32,7 @@ class Shader
         void setUniformData(const char* name, float);
         void setUniformData(const char* name, int);
         void setUniformData(const char* name, glm::vec3);
+        void setUniformData(const char* name, GLuint);
         void use();
 };
 
