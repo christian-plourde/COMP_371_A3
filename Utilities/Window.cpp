@@ -6,8 +6,6 @@ Window::Window() : width(800), height(800), title("Window"), back_color(glm::vec
     glClearColor(back_color.x, back_color.y, back_color.z, 1);
     glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
     glewExperimental = GL_TRUE;
-    mvp = new MVP();
-    mvp->setProjection(45.0f, width, height, 0.1f, 200.0f);
 }
 
 Window::Window(int width, int height, const char* title) : width(800), height(800), back_color(glm::vec3(0,0,0))
@@ -16,14 +14,10 @@ Window::Window(int width, int height, const char* title) : width(800), height(80
     glClearColor(back_color.x, back_color.y, back_color.z, 1);
     glfwWindowHint(GLFW_DOUBLEBUFFER, 1);
     glewExperimental = GL_TRUE;
-    mvp = new MVP();
-    mvp->setProjection(45.0f, width, height, 0.1f, 200.0f);
 }
 
 Window::~Window()
 {
-    delete mvp;
-    delete shader;
 }
 
 void Window::setBackColor(float red, float green, float blue)
@@ -66,14 +60,16 @@ void Window::set_keyboard_callback(GLFWkeyfun function)
     glfwSetKeyCallback(window_handle, function);
 }
 
-void Window::set_mouse_callback(GLFWmousebuttonfun function)
+void Window::PrepareDraw()
 {
-    glfwSetMouseButtonCallback(window_handle, function);
+    GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 }
 
-void Window::setShader(Shader* shader)
+void Window::EndDraw()
 {
-    this -> shader = shader;
+    GLCall(glfwSwapBuffers(window_handle));
+
+    GLCall(glfwPollEvents());
 }
 
 

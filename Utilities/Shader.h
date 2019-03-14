@@ -16,7 +16,6 @@ class Shader
         const char* fragment_shader_filepath;
         GLuint id;
         std::vector<Uniform> uniforms;
-        bool gouraud_lighting; //true for gouraud, false for phong
         bool lights_on;
 
     public:

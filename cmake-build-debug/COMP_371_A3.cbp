@@ -92,12 +92,6 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.cpp">
-			<Option target="COMP_371_A3"/>
-		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.h">
-			<Option target="COMP_371_A3"/>
-		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>

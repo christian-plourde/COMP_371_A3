@@ -149,33 +149,6 @@ Controls/KeyboardControls.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s
 .PHONY : Controls/KeyboardControls.cpp.s
 
-Controls/MouseControls.obj: Controls/MouseControls.cpp.obj
-
-.PHONY : Controls/MouseControls.obj
-
-# target to build an object file
-Controls/MouseControls.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj
-.PHONY : Controls/MouseControls.cpp.obj
-
-Controls/MouseControls.i: Controls/MouseControls.cpp.i
-
-.PHONY : Controls/MouseControls.i
-
-# target to preprocess a source file
-Controls/MouseControls.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.i
-.PHONY : Controls/MouseControls.cpp.i
-
-Controls/MouseControls.s: Controls/MouseControls.cpp.s
-
-.PHONY : Controls/MouseControls.s
-
-# target to generate assembly for a file
-Controls/MouseControls.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.s
-.PHONY : Controls/MouseControls.cpp.s
-
 Loaders/ObjectLoader.obj: Loaders/ObjectLoader.cpp.obj
 
 .PHONY : Loaders/ObjectLoader.obj
@@ -512,9 +485,6 @@ help:
 	@echo ... Controls/KeyboardControls.obj
 	@echo ... Controls/KeyboardControls.i
 	@echo ... Controls/KeyboardControls.s
-	@echo ... Controls/MouseControls.obj
-	@echo ... Controls/MouseControls.i
-	@echo ... Controls/MouseControls.s
 	@echo ... Loaders/ObjectLoader.obj
 	@echo ... Loaders/ObjectLoader.i
 	@echo ... Loaders/ObjectLoader.s

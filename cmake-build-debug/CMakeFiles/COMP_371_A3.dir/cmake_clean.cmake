@@ -6,7 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj"
-  "CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj"

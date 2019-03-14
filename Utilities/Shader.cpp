@@ -7,7 +7,6 @@ Shader::Shader(const char*vertex_filepath, const char *fragment_filepath)
     this -> vertex_shader_filepath = vertex_filepath;
     this -> fragment_shader_filepath = fragment_filepath;
     id = LoadShaders(vertex_filepath, fragment_filepath);
-    gouraud_lighting = false;
     lights_on = false;
 }
 

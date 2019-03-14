@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/KeyboardControls.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj"
-  "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Controls/MouseControls.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/MouseControls.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj"
   "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.cpp" "D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj"

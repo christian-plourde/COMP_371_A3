@@ -6,9 +6,13 @@ Object::Object(const char* filepath) : filepath(filepath)
     GLCall(glGenVertexArrays(1, &VAO));
     GLCall(glBindVertexArray(VAO));
     mesh_type = GL_TRIANGLES;
+    static_mode = false;
 }
 
-Object::~Object(){}
+Object::~Object()
+{
+    delete mvp;
+}
 
 bool Object::load()
 {
@@ -69,16 +73,4 @@ void Object::Draw(bool use_textures)
 
     if(use_textures)
         GLCall(glDisableVertexAttribArray(2));
-}
-
-void Object::DrawAsSingle(bool use_textures)
-{
-    shader -> use();
-    GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
-
-    Draw(use_textures);
-
-    GLCall(glfwSwapBuffers(window -> getHandle()));
-
-    GLCall(glfwPollEvents());
 }

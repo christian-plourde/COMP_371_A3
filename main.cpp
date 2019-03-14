@@ -9,7 +9,6 @@
 #include "Loaders/ShaderLoader.h"
 #include "Loaders/ObjectLoader.h"
 #include "Controls/KeyboardControls.h"
-#include "Controls/MouseControls.h"
 #include "Utilities/Light.h"
 #include "Utilities/Window.h"
 #include "Utilities/Object.h"
@@ -92,12 +91,6 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
     if(glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
         key_press_pg_down(myWindow);
 
-    if(glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS)
-        key_press_m(myWindow);
-
-    if(glfwGetKey(window, GLFW_KEY_G) == GLFW_PRESS)
-        key_press_g(myWindow);
-
     if(glfwGetKey(window, GLFW_KEY_F1) == GLFW_PRESS)
         key_press_F1(myWindow);
 
@@ -105,36 +98,27 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
         key_press_F2(myWindow);
 }
 
-void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
-{
-    if(button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
-        key_press_lm_button_down(myWindow);
-
-    if(button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_PRESS)
-        key_press_rm_button_down(myWindow);
-}
-
 int main()
 {
     myWindow = new Window();
     myWindow -> set_keyboard_callback(keyboard_callback);
-    myWindow -> set_mouse_callback(mouse_button_callback);
     myWindow -> setBackColor(0.8, 0.8, 0.8);
 
     Object heracles("../ObjectFiles/heracles.obj");
-    heracles.setWindow(myWindow);
     heracles.load();
+    MVP heraclesMVP;
+    heraclesMVP.setProjection(45.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    heracles.setMVP(&heraclesMVP);
 
     Shader* basicShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     heracles.setShader(basicShader);
     heracles.getShader() -> use();
-    myWindow -> setShader(basicShader);
     basicShader -> addUniform("view_matrix");
-    basicShader -> setUniformData("view_matrix", myWindow -> getMVP() -> getView());
+    basicShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
     basicShader -> addUniform("model_matrix");
-    basicShader -> setUniformData("model_matrix", myWindow -> getMVP() -> getModel());
+    basicShader -> setUniformData("model_matrix", heracles.getMVP() -> getModel());
     basicShader -> addUniform("projection_matrix");
-    basicShader -> setUniformData("projection_matrix", myWindow -> getMVP() -> getProjection());
+    basicShader -> setUniformData("projection_matrix", heracles.getMVP() -> getProjection());
     basicShader -> addUniform("view_position");
     basicShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
     Light light1(0, 20, 10, 0.2, 0.05, 0.05);
@@ -161,8 +145,9 @@ int main()
 
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
-
-        heracles.DrawAsSingle(false);
+        myWindow->PrepareDraw();
+        heracles.Draw(false);
+        myWindow->EndDraw();
     }
 
     delete myWindow;
