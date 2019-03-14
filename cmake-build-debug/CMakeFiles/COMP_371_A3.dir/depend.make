@@ -114,10 +114,13 @@ CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../GLM/glm/trigono
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../GLM/glm/vec2.hpp
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../GLM/glm/vec3.hpp
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../GLM/glm/vec4.hpp
+CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Loaders/ObjectLoader.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Loaders/ShaderLoader.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/ErrorHandlingFunctions.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/Light.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/MVP.h
+CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/Object.h
+CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/ObjectContainer.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/Shader.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/Uniform.h
 CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj: ../Utilities/Window.h

@@ -3,198 +3,368 @@
 #include "../GLM/glm/gtc/type_ptr.hpp"
 #include <iostream>
 
-void key_press_w(Window* window)
+void key_press_w(ObjectContainer* objects)
 {
     //when the w key is pressed on the keyboard, we should move the camera toward the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //out shader
-    //window -> getMVP() -> setView(glm::translate(window -> getMVP() -> getView(), glm::vec3(0, 0 , -1)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(0, 0 , -1)));
+
+            objects->getObject(i)->getShader()->setUniformData("view_matrix",objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_s(Window* window)
+void key_press_s(ObjectContainer* objects)
 {
     //when the s key is pressed on the keyboard, we should move the camera away from the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    //window -> getMVP() -> setView(glm::translate(window -> getMVP() -> getView(), glm::vec3(0, 0 , 1)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(0, 0 , 1)));
+
+            objects->getObject(i)->getShader()->setUniformData("view_matrix",objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_a(Window* window)
+void key_press_a(ObjectContainer* objects)
 {
     //when the a key is pressed on the keyboard, we should move the camera to the left the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    //window -> getMVP() -> setView(glm::translate(window -> getMVP() -> getView(), glm::vec3(-1, 0 , 0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(-1, 0 , 0)));
+
+            objects->getObject(i)->getShader()->setUniformData("view_matrix",objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_d(Window* window)
+void key_press_d(ObjectContainer* objects)
 {
     //when the d key is pressed on the keyboard, we should move the camera to the right of the object
     //this is done by translating the View matrix in the x direction and then resetting the value of the uniform in
     //our shader
-    //window -> getMVP() -> setView(glm::translate(window -> getMVP() -> getView(), glm::vec3(1, 0 , 0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getView(), glm::vec3(1, 0 , 0)));
+
+            objects->getObject(i)->getShader()->setUniformData("view_matrix",objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_o(Window* window)
+void key_press_o(ObjectContainer* objects)
 {
     //when the o key is pressed on the keyboard, we should scale the object up by 10%.
     //this is done by scaling the model matrix in all directions and then resetting the value of the uniform in
     //our shader
-    //window -> getMVP() -> setModel(glm::scale(window -> getMVP() -> getModel(), glm::vec3(1.01f, 1.01f, 1.01f)));
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0.9f, 0.9f, 0.9f)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_p(Window* window)
+void key_press_p(ObjectContainer* objects)
 {
     //when the p key is pressed on the keyboard, we should scale the object down by 10%.
     //this is done by scaling the model matrix in all directions and then resetting the value of the uniform in
     //our shader
-    //window -> getMVP() -> setModel(glm::scale(window -> getMVP() -> getModel(), glm::vec3(0.99f, 0.99f, 0.99f)));
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1.1f, 1.1f, 1.1f)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_left_arrow(Window* window)
+void key_press_left_arrow(ObjectContainer* objects)
 {
     //when the left arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //counterclockwise fashion).
-    //window -> getMVP() -> setView(glm::rotate(window -> getMVP() -> getView(), glm::radians(1.5f), glm::vec3(0,1,0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(1.5f), glm::vec3(0,1,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("view_matrix", objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_right_arrow(Window* window)
+void key_press_right_arrow(ObjectContainer* objects)
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    //window -> getMVP() -> setView(glm::rotate(window -> getMVP() -> getView(), glm::radians(-1.5f), glm::vec3(0,1,0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(-1.5f), glm::vec3(0,1,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("view_matrix", objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_up_arrow(Window* window)
+void key_press_up_arrow(ObjectContainer* objects)
 {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    //window -> getMVP() -> setView(glm::rotate(window -> getMVP() -> getView(), glm::radians(-1.5f), glm::vec3(1,0,0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getView(),glm::radians(-1.5f), glm::vec3(1,0,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("view_matrix", objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_down_arrow(Window* window)
-{
+void key_press_down_arrow(ObjectContainer* objects) {
     //when the right arrow is pressed, we need to rotate the camera (i.e the view matrix about the up vector in
     //clockwise fashion).
-    //window -> getMVP() -> setView(glm::rotate(window -> getMVP() -> getView(), glm::radians(1.5f), glm::vec3(1,0,0)));
-    //window -> getShader() -> setUniformData("view_matrix", window -> getMVP() -> getView());
+    for (int i = 0; i < objects->size; i++) {
+        if (!objects->getObject(i)->isStatic()) {
+
+            objects->getObject(i)->getMVP()->setView(
+                    glm::rotate(objects->getObject(i)->getMVP()->getView(), glm::radians(1.5f), glm::vec3(1, 0, 0)));
+
+            objects->getObject(i)->getShader()->setUniformData("view_matrix",
+                                                               objects->getObject(i)->getMVP()->getView());
+        }
+    }
 }
 
-void key_press_b(Window* window)
+void key_press_b(ObjectContainer* objects)
 {
     //when the b key is pressed, the OBJECT itself (not the camera) should be rotated about the x-axis.
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::rotate(window -> getMVP() -> getModel(), glm::radians(-0.2f), glm::vec3(1,0,0)));
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(-1.5f), glm::vec3(1,0,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_n(Window* window)
+void key_press_n(ObjectContainer* objects)
 {
     //when the n key is pressed, the OBJECT itself (not the camera) should be rotated about the y-axis.
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::rotate(window -> getMVP() -> getModel(), glm::radians(0.2f), glm::vec3(0,1,0)));
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(1.5f), glm::vec3(0,1,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_e(Window* window)
+void key_press_e(ObjectContainer* objects)
 {
     //when the n key is pressed, the OBJECT itself (not the camera) should be rotated about the z-axis.
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::rotate(window -> getMVP() -> getModel(), glm::radians(1.5f), glm::vec3(0,0,1)));
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::rotate(objects->getObject(i) -> getMVP() -> getModel(),glm::radians(1.5f), glm::vec3(0,0,1)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_j(Window* window)
+void key_press_j(ObjectContainer* objects)
 {
     //when the j key is pressed, the OBJECT itself (not the camera) should be translated along the x axis
     //in the positive direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(0.2f, 0 , 0))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1,0,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_l(Window* window)
+void key_press_l(ObjectContainer* objects)
 {
     //when the l key is pressed, the OBJECT itself (not the camera) should be translated along the x axis
     //in the positive direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(-0.2f, 0 , 0))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(-1,0,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_i(Window* window)
+void key_press_i(ObjectContainer* objects)
 {
     //when the i key is pressed, the OBJECT itself (not the camera) should be translated along the y axis
     //in the positive direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(0, 0.2f , 0))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,1,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_k(Window* window)
+void key_press_k(ObjectContainer* objects)
 {
     //when the k key is pressed, the OBJECT itself (not the camera) should be translated along the y axis
     //in the negative direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(0, -0.2f , 0))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,-1,0)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_pg_up(Window* window)
+void key_press_pg_up(ObjectContainer* objects)
 {
     //when the page up key is pressed, the OBJECT itself (not the camera) should be translated along the z axis
     //in the positive direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(0, 0 , 0.2f))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,0,1)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_pg_down(Window* window)
+void key_press_pg_down(ObjectContainer* objects)
 {
     //when the page down key is pressed, the OBJECT itself (not the camera) should be translated along the z axis
     //in the negative direction
     //in order to do this, we want to modify the Model matrix
-    //window -> getMVP() -> setModel(glm::translate(window -> getMVP() -> getModel(), glm::vec3(0, 0 , -0.2f))) ;
-    //window -> getShader() -> setUniformData("model_matrix", window -> getMVP() -> getModel());
+    for(int i = 0; i<objects->size; i++)
+    {
+        if(!objects->getObject(i) -> isStatic())
+        {
+
+            objects->getObject(i)->getMVP()->setModel(
+                    glm::translate(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0,0,-1)));
+
+            objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
+    }
 }
 
-void key_press_F1(Window* window)
+void key_press_F1(ObjectContainer* objects)
 {
     //when the F1 key is pressed, it should toggle between the scene having the 4 lights or only one
     //in order to do this, we can
-    //if(window -> getShader() -> lightsOn())
-    //{
-        //if the lights are on, we should make all of them dark except the first light and change its color
-        //and position to match the definition in part B
-    //    window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));
-    //    window -> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
-    //    window -> getShader() -> setUniformData("light_color_2", glm::vec3(0,0,0));
-    //    window -> getShader() -> setUniformData("light_color_3", glm::vec3(0,0,0));
-     //   window -> getShader() -> setUniformData("light_color_4", glm::vec3(0,0,0));
-     //   window -> getShader() -> setLightsOn(false);
-    //}
+    for(int i = 0; i < objects->size; i++)
+    {
+        if(objects->getObject(i)->getShader()->lightsOn())
+        {
+            //if the lights are on make them all dark
+            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0,0,0));
+            objects->getObject(i)-> getShader() -> setLightsOn(false);
+        }
 
-    //else
-    //{
-      //  window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));
-       // window -> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
-       // window -> getShader() -> setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
-        //window -> getShader() -> setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
-        //window -> getShader() -> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
-        //window -> getShader() -> setLightsOn(true);
-    //}
+        else
+        {
+            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
+            objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
+            objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
+            objects->getObject(i)-> getShader() -> setLightsOn(true);
+        }
+    }
 }
 
-void key_press_F2(Window* window)
+void key_press_F2(ObjectContainer* objects)
 {
     //first make sure only one light is being used (the one in the assignment description)
     //window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));

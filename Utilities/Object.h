@@ -45,6 +45,7 @@ class Object
         inline MVP* getMVP(){return mvp;}
         inline void setAsStatic(){static_mode = true;}
         inline void setAsDynamic(){static_mode = false;}
+        inline bool isStatic(){return static_mode;}
 };
 
 #endif
