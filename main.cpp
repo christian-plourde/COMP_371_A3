@@ -120,38 +120,6 @@ int main()
     floor.setMVP(&floorMVP);
     floor.setAsStatic();
 
-    Shader* heraclesShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
-    heracles.setShader(heraclesShader);
-    heracles.getShader() -> use();
-    heraclesShader -> addUniform("view_matrix");
-    heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
-    heraclesShader -> addUniform("model_matrix");
-    heraclesShader -> setUniformData("model_matrix", heracles.getMVP() -> getModel());
-    heraclesShader -> addUniform("projection_matrix");
-    heraclesShader -> setUniformData("projection_matrix", heracles.getMVP() -> getProjection());
-    heraclesShader -> addUniform("view_position");
-    heraclesShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
-    Light light1(0, 20, 10, 0.2, 0.05, 0.05);
-    Light light2(-10, 15, 5, 0.05, 0.2, 0.05);
-    Light light3(0, 15, 5, 0.05, 0.05, 0.2);
-    Light light4(0, 0, 25, 0.05, 0.05, 0.05);
-    heraclesShader -> addUniform("light_position_1");
-    heraclesShader -> addUniform("light_position_2");
-    heraclesShader -> addUniform("light_position_3");
-    heraclesShader -> addUniform("light_position_4");
-    heraclesShader -> addUniform("light_color_1");
-    heraclesShader -> addUniform("light_color_2");
-    heraclesShader -> addUniform("light_color_3");
-    heraclesShader -> addUniform("light_color_4");
-    heraclesShader -> setUniformData("light_position_1", light1.getPosition());
-    heraclesShader -> setUniformData("light_position_2", light2.getPosition());
-    heraclesShader -> setUniformData("light_position_3", light3.getPosition());
-    heraclesShader -> setUniformData("light_position_4", light4.getPosition());
-    heraclesShader -> setUniformData("light_color_1", light1.getColor());
-    heraclesShader -> setUniformData("light_color_2", light2.getColor());
-    heraclesShader -> setUniformData("light_color_3", light3.getColor());
-    heraclesShader -> setUniformData("light_color_4", light4.getColor());
-
     Shader* floorShader = new Shader("../Shaders/FloorVertexShader.glsl", "../Shaders/FloorFragmentShader.glsl");
     floor.setShader(floorShader);
     floor.getShader() -> use();
@@ -184,15 +152,46 @@ int main()
     floorShader -> setUniformData("light_color_3", floor_light3.getColor());
     floorShader -> setUniformData("light_color_4", floor_light4.getColor());
 
-    objects->addObject(&heracles);
+    Shader* heraclesShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
+    heracles.setShader(heraclesShader);
+    heracles.getShader() -> use();
+    heraclesShader -> addUniform("view_matrix");
+    heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
+    heraclesShader -> addUniform("model_matrix");
+    heraclesShader -> setUniformData("model_matrix", heracles.getMVP() -> getModel());
+    heraclesShader -> addUniform("projection_matrix");
+    heraclesShader -> setUniformData("projection_matrix", heracles.getMVP() -> getProjection());
+    heraclesShader -> addUniform("view_position");
+    heraclesShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
+    Light light1(0, 20, 10, 0.2, 0.05, 0.05);
+    Light light2(-10, 15, 5, 0.05, 0.2, 0.05);
+    Light light3(0, 15, 5, 0.05, 0.05, 0.2);
+    Light light4(0, 0, 25, 0.05, 0.05, 0.05);
+    heraclesShader -> addUniform("light_position_1");
+    heraclesShader -> addUniform("light_position_2");
+    heraclesShader -> addUniform("light_position_3");
+    heraclesShader -> addUniform("light_position_4");
+    heraclesShader -> addUniform("light_color_1");
+    heraclesShader -> addUniform("light_color_2");
+    heraclesShader -> addUniform("light_color_3");
+    heraclesShader -> addUniform("light_color_4");
+    heraclesShader -> setUniformData("light_position_1", light1.getPosition());
+    heraclesShader -> setUniformData("light_position_2", light2.getPosition());
+    heraclesShader -> setUniformData("light_position_3", light3.getPosition());
+    heraclesShader -> setUniformData("light_position_4", light4.getPosition());
+    heraclesShader -> setUniformData("light_color_1", light1.getColor());
+    heraclesShader -> setUniformData("light_color_2", light2.getColor());
+    heraclesShader -> setUniformData("light_color_3", light3.getColor());
+    heraclesShader -> setUniformData("light_color_4", light4.getColor());
+
     objects->addObject(&floor);
+    objects->addObject(&heracles);
+
 
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
         myWindow->PrepareDraw();
-        floor.getShader()->use();
         floor.Draw(false);
-        heracles.getShader()->use();
         heracles.Draw(false);
         myWindow->EndDraw();
     }

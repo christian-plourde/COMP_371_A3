@@ -44,6 +44,7 @@ bool Object::load()
 
 void Object::Draw(bool use_textures)
 {
+    shader -> use();
     //now we can set enable the buffers in our vao
     GLCall(glEnableVertexAttribArray(0));
     GLCall(glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer));
