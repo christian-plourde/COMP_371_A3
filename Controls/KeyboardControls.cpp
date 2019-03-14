@@ -202,7 +202,7 @@ void key_press_F1(Window* window)
         //if the lights are on, we should make all of them dark except the first light and change its color
         //and position to match the definition in part B
         window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));
-        window -> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
+        window -> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
         window -> getShader() -> setUniformData("light_color_2", glm::vec3(0,0,0));
         window -> getShader() -> setUniformData("light_color_3", glm::vec3(0,0,0));
         window -> getShader() -> setUniformData("light_color_4", glm::vec3(0,0,0));
@@ -212,7 +212,7 @@ void key_press_F1(Window* window)
     else
     {
         window -> getShader() -> setUniformData("light_position_1", glm::vec3(0,20,10));
-        window -> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
+        window -> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
         window -> getShader() -> setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
         window -> getShader() -> setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
         window -> getShader() -> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));

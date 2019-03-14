@@ -3,9 +3,6 @@
 out vec3 color;
 
 //the three color channels
-uniform float red_channel;
-uniform float green_channel;
-uniform float blue_channel;
 uniform vec3 light_color_1;
 uniform vec3 light_color_2;
 uniform vec3 light_color_3;
@@ -16,53 +13,14 @@ uniform vec3 light_position_3;
 uniform vec3 light_position_4;
 uniform vec3 view_position;
 
-//the flag to turn the light on and off
-uniform int light_on;
-
-//the flag to determine if the normal should be used as the color.
-uniform int normal_as_color;
-
-//the flag to use grayscale or not
-uniform int gray_scale;
-uniform int gouraudUsed;
-
 in vec3 fragment_position;
 in vec3 normal;
 in vec3 vertex_color;
 
 void main()
 {
-    if(gouraudUsed == 1)
-    {
-        if(light_on == 1)
-        {
-            color = vertex_color;
+        color = vec3(1,1,1);
 
-            if(gray_scale == 1)
-            color = vec3(color.x*0.2989+color.y*0.5870+color.z*0.1140);
-        }
-
-        else
-        {
-            color = vec3(1.0f, 1.0f, 1.0f);
-        }
-    }
-
-    else
-    {
-        if (normal_as_color == 1)
-        {
-            color = normal;
-        }
-
-        else
-        {
-            color = vec3(red_channel, green_channel, blue_channel);
-        }
-
-
-        if (light_on == 1)
-        {
             //Ambient light
             float ambient_strength = 0.25f;
             vec3 ambient = ambient_strength * light_color_1 + ambient_strength*light_color_2 + ambient_strength*light_color_3 + ambient_strength*light_color_4;
@@ -93,14 +51,4 @@ void main()
             vec3 specular = specular_strength_1*spec_coeff*light_color_1 + specular_strength_2*spec_coeff*light_color_2 + specular_strength_3*spec_coeff*light_color_3 + specular_strength_4*spec_coeff*light_color_4;
 
             color = (specular + ambient + diffuse)*color;
-
-            if (gray_scale == 1)
-            color = vec3(0.2989*color.x+0.5870*color.y+0.1140*color.z);
-        }
-
-        else
-        {
-            color = vec3(1.0f, 1.0f, 1.0f);
-        }
-    }
 }
