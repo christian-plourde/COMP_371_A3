@@ -4,6 +4,9 @@
 #include <glew.h>
 #include "Shader.h"
 #include "ErrorHandlingFunctions.h"
+#include "Window.h"
+#include "ObjectContainer.h"
+#include "DepthMapLight.h"
 
 class DepthMap
 {
@@ -13,13 +16,16 @@ class DepthMap
         GLuint SHADOW_HEIGHT;
         GLuint SHADOW_WIDTH;
         Shader* shader;
+        DepthMapLight* depth_light;
 
     public:
         DepthMap();
         DepthMap(GLuint shadow_width, GLuint shadow_height);
         ~DepthMap();
+        inline DepthMapLight* getLight(){return depth_light;}
         void setShader(Shader* s);
         void load();
+        void RenderToTexture(Window* window, ObjectContainer* o);
 };
 
 #endif

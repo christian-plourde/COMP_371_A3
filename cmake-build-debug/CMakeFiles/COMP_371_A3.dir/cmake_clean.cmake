@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj"
   "CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj"
+  "CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj"
   "COMP_371_A3.pdb"
   "COMP_371_A3.exe"
   "COMP_371_A3.exe.manifest"

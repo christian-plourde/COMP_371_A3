@@ -185,12 +185,22 @@ int main()
     objects->addObject(&floor);
     objects->addObject(&heracles);
 
+    //we will also be needing a depth map
+    DepthMap depth_map;
+    //the depth map will have its own shader
+    Shader* depth_map_shader = new Shader("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
+    depth_map.setShader(depth_map_shader);
+    depth_map_shader->addUniform("light_matrix");
+    depth_map_shader->setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
 
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
         myWindow->PrepareDraw();
-        heracles.Draw(false);
-        floor.Draw(false);
+
+
+
+        heracles.Draw(true);
+        floor.Draw(true);
 
         myWindow->EndDraw();
     }

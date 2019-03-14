@@ -230,6 +230,33 @@ Utilities/DepthMap.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.s
 .PHONY : Utilities/DepthMap.cpp.s
 
+Utilities/DepthMapLight.obj: Utilities/DepthMapLight.cpp.obj
+
+.PHONY : Utilities/DepthMapLight.obj
+
+# target to build an object file
+Utilities/DepthMapLight.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj
+.PHONY : Utilities/DepthMapLight.cpp.obj
+
+Utilities/DepthMapLight.i: Utilities/DepthMapLight.cpp.i
+
+.PHONY : Utilities/DepthMapLight.i
+
+# target to preprocess a source file
+Utilities/DepthMapLight.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.i
+.PHONY : Utilities/DepthMapLight.cpp.i
+
+Utilities/DepthMapLight.s: Utilities/DepthMapLight.cpp.s
+
+.PHONY : Utilities/DepthMapLight.s
+
+# target to generate assembly for a file
+Utilities/DepthMapLight.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.s
+.PHONY : Utilities/DepthMapLight.cpp.s
+
 Utilities/ErrorHandlingFunction.obj: Utilities/ErrorHandlingFunction.cpp.obj
 
 .PHONY : Utilities/ErrorHandlingFunction.obj
@@ -494,6 +521,9 @@ help:
 	@echo ... Utilities/DepthMap.obj
 	@echo ... Utilities/DepthMap.i
 	@echo ... Utilities/DepthMap.s
+	@echo ... Utilities/DepthMapLight.obj
+	@echo ... Utilities/DepthMapLight.i
+	@echo ... Utilities/DepthMapLight.s
 	@echo ... Utilities/ErrorHandlingFunction.obj
 	@echo ... Utilities/ErrorHandlingFunction.i
 	@echo ... Utilities/ErrorHandlingFunction.s

@@ -31,7 +31,9 @@ class Object
         Object(const char* filepath);
         ~Object();
         bool load();
-        void Draw(bool use_textures);
+        void Draw(bool use_textures, bool use_shader);
+        void Draw();
+        void Draw(bool use_shader);
         inline std::vector<glm::vec3> getVertices(){return vertices;}
         inline std::vector<glm::vec3> getNormals(){return normals;}
         inline std::vector<glm::vec2> getUVS(){return uvs;}

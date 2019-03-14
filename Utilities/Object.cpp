@@ -42,9 +42,10 @@ bool Object::load()
     return true;
 }
 
-void Object::Draw(bool use_textures)
+void Object::Draw(bool use_textures, bool use_shader)
 {
-    shader -> use();
+    if(use_shader)
+        shader -> use();
     //now we can set enable the buffers in our vao
     GLCall(glEnableVertexAttribArray(0));
     GLCall(glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer));
@@ -58,7 +59,7 @@ void Object::Draw(bool use_textures)
     {
         GLCall(glEnableVertexAttribArray(2));
         GLCall(glBindBuffer(GL_ARRAY_BUFFER, texture_buffer));
-        GLCall(glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0));
+        GLCall(glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, (void*)0));
     }
 
     //configuring z-buffer
@@ -74,4 +75,14 @@ void Object::Draw(bool use_textures)
 
     if(use_textures)
         GLCall(glDisableVertexAttribArray(2));
+}
+
+void Object::Draw()
+{
+    Draw(true, true);
+}
+
+void Object::Draw(bool use_textures)
+{
+    Draw(true, use_textures);
 }
