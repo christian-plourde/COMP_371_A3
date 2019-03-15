@@ -18,14 +18,18 @@ uniform vec3 view_position;
 uniform mat4 model_matrix;
 uniform mat4 view_matrix;
 uniform mat4 projection_matrix;
+uniform mat4 light_matrix;
 
 out vec3 fragment_position;
 out vec3 normal;
+out vec2 tex;
+out vec4 shadow_coords;
 
 void main()
 {
         normal = mat3(model_matrix)*normals;
         fragment_position = mat3(model_matrix)*vertexPosition_modelspace;
-
+        tex = tex_coords;
+        shadow_coords = light_matrix*vec4(vertexPosition_modelspace, 1.0);
         gl_Position = projection_matrix*view_matrix*model_matrix*vec4(vertexPosition_modelspace, 1);
 }

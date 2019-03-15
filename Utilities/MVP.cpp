@@ -33,3 +33,8 @@ void MVP::setProjection(float fov_degrees, int window_width, int window_height, 
     Projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
 }
 
+glm::mat4 MVP::getMVP()
+{
+    return Projection*View*Model;
+}
+

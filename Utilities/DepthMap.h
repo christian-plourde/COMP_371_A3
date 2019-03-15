@@ -26,7 +26,8 @@ class DepthMap
         void setShader(Shader* s);
         void load();
         void RenderToTexture(ObjectContainer* o);
-        void BindTexture();
+        void BindForWriting();
+        void BindForReading(GLenum tex_unit);
         inline GLuint getTexture(){return depth_tex;}
 };
 

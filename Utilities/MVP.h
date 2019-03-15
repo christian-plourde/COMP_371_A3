@@ -21,6 +21,7 @@ class MVP
         inline glm::mat4 getModel(){return Model;}
         inline glm::mat4 getView(){return View;}
         inline glm::mat4 getProjection(){return Projection;}
+        glm::mat4 getMVP();
 };
 
 #endif
