@@ -7,5 +7,5 @@ uniform mat4 model_matrix;
 
 void main()
 {
-    gl_Position = light_matrix*vec4(vertexPosition_modelspace, 1);
+    gl_Position = light_matrix*model_matrix*vec4(vertexPosition_modelspace, 1);
 }
