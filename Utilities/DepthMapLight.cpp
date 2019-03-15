@@ -23,5 +23,6 @@ void DepthMapLight::CalcLightMatrix()
 void DepthMapLight::setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane)
 {
     projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
+    CalcLightMatrix();
 }
 

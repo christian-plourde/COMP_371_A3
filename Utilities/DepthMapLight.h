@@ -23,13 +23,16 @@ class DepthMapLight
         DepthMapLight();
         ~DepthMapLight();
         inline glm::mat4 getLightMatrix(){return light_matrix;}
-        inline void setNearPlane(float v){near_plane = v;}
-        inline void setFarPlane(float v){far_plane = v;}
-        inline void setEye(glm::vec3 e){eye = e;}
-        inline void setLookingAt(glm::vec3 v){looking_at = v;}
-        inline void setUpVector(glm::vec3 v){up_vector = v;}
+        inline void setNearPlane(float v){near_plane = v; CalcLightMatrix();}
+        inline void setFarPlane(float v){far_plane = v; CalcLightMatrix();}
+        inline void setEye(glm::vec3 e){eye = e; CalcLightMatrix();}
+        inline void setLookingAt(glm::vec3 v){looking_at = v; CalcLightMatrix();}
+        inline void setUpVector(glm::vec3 v){up_vector = v; CalcLightMatrix();}
         void setProjection(float, int, int, float, float);
         inline glm::vec3 getEye(){return eye;}
+        inline glm::mat4 getModel(){return model;}
+        inline glm::mat4 getView(){return view;}
+        inline glm::mat4 getProjection(){return projection;}
 
 };
 

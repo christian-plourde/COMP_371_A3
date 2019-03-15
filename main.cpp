@@ -109,7 +109,7 @@ int main()
     Object heracles("../ObjectFiles/heracles.obj");
     heracles.load();
     MVP heraclesMVP;
-    heraclesMVP.setProjection(45.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    heraclesMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
     heracles.setMVP(&heraclesMVP);
     heracles.setScreenWidth(myWindow->getWidth());
     heracles.setScreenHeight(myWindow->getHeight());
@@ -118,7 +118,7 @@ int main()
     floor.load();
     floor.setMVP(&heraclesMVP);
     MVP floorMVP;
-    floorMVP.setProjection(45.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    floorMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
     floor.setMVP(&floorMVP);
     floor.setAsStatic();
     floor.setScreenWidth(myWindow->getWidth());

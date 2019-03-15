@@ -21,11 +21,12 @@ in vec4 shadow_coords;
 
 void main()
 {
+    /*
     float visibility = 1.0;
 
     if(texture(depth_tex, shadow_coords.xy).z < shadow_coords.z)
         visibility = 0.0;
-
+    */
     color = vec3(1,1,1);
 
     //Ambient light
@@ -57,5 +58,6 @@ void main()
     float specular_strength_4 = pow(max(dot(reflect_light_direction_4, view_direction), 0.0f), 32);
     vec3 specular = specular_strength_1*spec_coeff*light_color_1 + specular_strength_2*spec_coeff*light_color_2 + specular_strength_3*spec_coeff*light_color_3 + specular_strength_4*spec_coeff*light_color_4;
 
-    color = (specular + ambient + diffuse)*color*visibility;
+    color = (specular + ambient + diffuse)*color;
+    //color = color*visibility;
 }
