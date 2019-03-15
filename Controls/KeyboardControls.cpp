@@ -94,12 +94,10 @@ void key_press_p(ObjectContainer* objects)
     //our shader
     for(int i = 0; i<objects->size; i++)
     {
-
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1.1f, 1.1f, 1.1f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
-
     }
 }
 
@@ -371,6 +369,7 @@ void key_press_F2(ObjectContainer* objects)
 
         else
         {
+            //Here we want to turn only the spot light on
 
             objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,20,10));
             objects->getObject(i)->getShader()->setUniformData("light_position_2", glm::vec3(-10,15,5));
@@ -381,6 +380,7 @@ void key_press_F2(ObjectContainer* objects)
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
             objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
             objects->getObject(i)-> getShader() -> setLightsOn(true);
+
         }
     }
 }

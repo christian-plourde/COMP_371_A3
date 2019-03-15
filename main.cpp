@@ -9,12 +9,12 @@
 #include "Loaders/ShaderLoader.h"
 #include "Loaders/ObjectLoader.h"
 #include "Controls/KeyboardControls.h"
-#include "Utilities/Light.h"
-#include "Utilities/Window.h"
-#include "Utilities/Object.h"
-#include "Utilities/ErrorHandlingFunctions.h"
-#include "Utilities/ObjectContainer.h"
-#include "Utilities/DepthMap.h"
+#include "Utilities/Lights/Light.h"
+#include "Utilities/Window/Window.h"
+#include "Utilities/Objects/Object.h"
+#include "Utilities/ErrorHandling/ErrorHandlingFunctions.h"
+#include "Utilities/Objects/ObjectContainer.h"
+#include "Utilities/ShadowMapping/DepthMap.h"
 
 Window* myWindow; //the glfw window
 ObjectContainer* objects;
@@ -170,7 +170,6 @@ int main()
     floorShader -> setUniformData("depth_tex", depth_map.getTexture());
     floorShader -> addUniform("light_matrix");
     floorShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
-
 
     Shader* heraclesShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
     heracles.setShader(heraclesShader);

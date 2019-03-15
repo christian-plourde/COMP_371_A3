@@ -6,8 +6,8 @@
 #include <GLFW/glfw3.h>
 #include "../GLM/glm/matrix.hpp"
 #include "../GLM/glm/gtc/matrix_transform.hpp"
-#include "../Utilities/Window.h"
-#include "../Utilities/ObjectContainer.h"
+#include "../Utilities/Window/Window.h"
+#include "../Utilities/Objects/ObjectContainer.h"
 
 /*
  * This method defines what occurs when the w key is pressed on the keyboard. For this assignment, it modifies

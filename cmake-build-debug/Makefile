@@ -203,302 +203,302 @@ Loaders/ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.s
 .PHONY : Loaders/ShaderLoader.cpp.s
 
-Utilities/DepthMap.obj: Utilities/DepthMap.cpp.obj
+Utilities/ErrorHandling/ErrorHandlingFunction.obj: Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
 
-.PHONY : Utilities/DepthMap.obj
-
-# target to build an object file
-Utilities/DepthMap.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj
-.PHONY : Utilities/DepthMap.cpp.obj
-
-Utilities/DepthMap.i: Utilities/DepthMap.cpp.i
-
-.PHONY : Utilities/DepthMap.i
-
-# target to preprocess a source file
-Utilities/DepthMap.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.i
-.PHONY : Utilities/DepthMap.cpp.i
-
-Utilities/DepthMap.s: Utilities/DepthMap.cpp.s
-
-.PHONY : Utilities/DepthMap.s
-
-# target to generate assembly for a file
-Utilities/DepthMap.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.s
-.PHONY : Utilities/DepthMap.cpp.s
-
-Utilities/DepthMapLight.obj: Utilities/DepthMapLight.cpp.obj
-
-.PHONY : Utilities/DepthMapLight.obj
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.obj
 
 # target to build an object file
-Utilities/DepthMapLight.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj
-.PHONY : Utilities/DepthMapLight.cpp.obj
+Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
 
-Utilities/DepthMapLight.i: Utilities/DepthMapLight.cpp.i
+Utilities/ErrorHandling/ErrorHandlingFunction.i: Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i
 
-.PHONY : Utilities/DepthMapLight.i
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.i
 
 # target to preprocess a source file
-Utilities/DepthMapLight.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.i
-.PHONY : Utilities/DepthMapLight.cpp.i
+Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i
 
-Utilities/DepthMapLight.s: Utilities/DepthMapLight.cpp.s
+Utilities/ErrorHandling/ErrorHandlingFunction.s: Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s
 
-.PHONY : Utilities/DepthMapLight.s
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.s
 
 # target to generate assembly for a file
-Utilities/DepthMapLight.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.s
-.PHONY : Utilities/DepthMapLight.cpp.s
+Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s
+.PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s
 
-Utilities/ErrorHandlingFunction.obj: Utilities/ErrorHandlingFunction.cpp.obj
+Utilities/Lights/Light.obj: Utilities/Lights/Light.cpp.obj
 
-.PHONY : Utilities/ErrorHandlingFunction.obj
+.PHONY : Utilities/Lights/Light.obj
 
 # target to build an object file
-Utilities/ErrorHandlingFunction.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj
-.PHONY : Utilities/ErrorHandlingFunction.cpp.obj
+Utilities/Lights/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj
+.PHONY : Utilities/Lights/Light.cpp.obj
 
-Utilities/ErrorHandlingFunction.i: Utilities/ErrorHandlingFunction.cpp.i
+Utilities/Lights/Light.i: Utilities/Lights/Light.cpp.i
 
-.PHONY : Utilities/ErrorHandlingFunction.i
+.PHONY : Utilities/Lights/Light.i
 
 # target to preprocess a source file
-Utilities/ErrorHandlingFunction.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.i
-.PHONY : Utilities/ErrorHandlingFunction.cpp.i
+Utilities/Lights/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.i
+.PHONY : Utilities/Lights/Light.cpp.i
 
-Utilities/ErrorHandlingFunction.s: Utilities/ErrorHandlingFunction.cpp.s
+Utilities/Lights/Light.s: Utilities/Lights/Light.cpp.s
 
-.PHONY : Utilities/ErrorHandlingFunction.s
+.PHONY : Utilities/Lights/Light.s
 
 # target to generate assembly for a file
-Utilities/ErrorHandlingFunction.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.s
-.PHONY : Utilities/ErrorHandlingFunction.cpp.s
+Utilities/Lights/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.s
+.PHONY : Utilities/Lights/Light.cpp.s
 
-Utilities/Light.obj: Utilities/Light.cpp.obj
+Utilities/Lights/SpotLight.obj: Utilities/Lights/SpotLight.cpp.obj
 
-.PHONY : Utilities/Light.obj
+.PHONY : Utilities/Lights/SpotLight.obj
 
 # target to build an object file
-Utilities/Light.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
-.PHONY : Utilities/Light.cpp.obj
+Utilities/Lights/SpotLight.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj
+.PHONY : Utilities/Lights/SpotLight.cpp.obj
 
-Utilities/Light.i: Utilities/Light.cpp.i
+Utilities/Lights/SpotLight.i: Utilities/Lights/SpotLight.cpp.i
 
-.PHONY : Utilities/Light.i
+.PHONY : Utilities/Lights/SpotLight.i
 
 # target to preprocess a source file
-Utilities/Light.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i
-.PHONY : Utilities/Light.cpp.i
+Utilities/Lights/SpotLight.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.i
+.PHONY : Utilities/Lights/SpotLight.cpp.i
 
-Utilities/Light.s: Utilities/Light.cpp.s
+Utilities/Lights/SpotLight.s: Utilities/Lights/SpotLight.cpp.s
 
-.PHONY : Utilities/Light.s
+.PHONY : Utilities/Lights/SpotLight.s
 
 # target to generate assembly for a file
-Utilities/Light.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s
-.PHONY : Utilities/Light.cpp.s
+Utilities/Lights/SpotLight.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.s
+.PHONY : Utilities/Lights/SpotLight.cpp.s
 
-Utilities/MVP.obj: Utilities/MVP.cpp.obj
+Utilities/Objects/MVP.obj: Utilities/Objects/MVP.cpp.obj
 
-.PHONY : Utilities/MVP.obj
+.PHONY : Utilities/Objects/MVP.obj
 
 # target to build an object file
-Utilities/MVP.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj
-.PHONY : Utilities/MVP.cpp.obj
+Utilities/Objects/MVP.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj
+.PHONY : Utilities/Objects/MVP.cpp.obj
 
-Utilities/MVP.i: Utilities/MVP.cpp.i
+Utilities/Objects/MVP.i: Utilities/Objects/MVP.cpp.i
 
-.PHONY : Utilities/MVP.i
+.PHONY : Utilities/Objects/MVP.i
 
 # target to preprocess a source file
-Utilities/MVP.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i
-.PHONY : Utilities/MVP.cpp.i
+Utilities/Objects/MVP.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.i
+.PHONY : Utilities/Objects/MVP.cpp.i
 
-Utilities/MVP.s: Utilities/MVP.cpp.s
+Utilities/Objects/MVP.s: Utilities/Objects/MVP.cpp.s
 
-.PHONY : Utilities/MVP.s
+.PHONY : Utilities/Objects/MVP.s
 
 # target to generate assembly for a file
-Utilities/MVP.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s
-.PHONY : Utilities/MVP.cpp.s
+Utilities/Objects/MVP.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.s
+.PHONY : Utilities/Objects/MVP.cpp.s
 
-Utilities/Object.obj: Utilities/Object.cpp.obj
+Utilities/Objects/Object.obj: Utilities/Objects/Object.cpp.obj
 
-.PHONY : Utilities/Object.obj
+.PHONY : Utilities/Objects/Object.obj
 
 # target to build an object file
-Utilities/Object.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
-.PHONY : Utilities/Object.cpp.obj
+Utilities/Objects/Object.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj
+.PHONY : Utilities/Objects/Object.cpp.obj
 
-Utilities/Object.i: Utilities/Object.cpp.i
+Utilities/Objects/Object.i: Utilities/Objects/Object.cpp.i
 
-.PHONY : Utilities/Object.i
+.PHONY : Utilities/Objects/Object.i
 
 # target to preprocess a source file
-Utilities/Object.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.i
-.PHONY : Utilities/Object.cpp.i
+Utilities/Objects/Object.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.i
+.PHONY : Utilities/Objects/Object.cpp.i
 
-Utilities/Object.s: Utilities/Object.cpp.s
+Utilities/Objects/Object.s: Utilities/Objects/Object.cpp.s
 
-.PHONY : Utilities/Object.s
+.PHONY : Utilities/Objects/Object.s
 
 # target to generate assembly for a file
-Utilities/Object.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.s
-.PHONY : Utilities/Object.cpp.s
+Utilities/Objects/Object.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.s
+.PHONY : Utilities/Objects/Object.cpp.s
 
-Utilities/ObjectContainer.obj: Utilities/ObjectContainer.cpp.obj
+Utilities/Objects/ObjectContainer.obj: Utilities/Objects/ObjectContainer.cpp.obj
 
-.PHONY : Utilities/ObjectContainer.obj
+.PHONY : Utilities/Objects/ObjectContainer.obj
 
 # target to build an object file
-Utilities/ObjectContainer.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
-.PHONY : Utilities/ObjectContainer.cpp.obj
+Utilities/Objects/ObjectContainer.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj
+.PHONY : Utilities/Objects/ObjectContainer.cpp.obj
 
-Utilities/ObjectContainer.i: Utilities/ObjectContainer.cpp.i
+Utilities/Objects/ObjectContainer.i: Utilities/Objects/ObjectContainer.cpp.i
 
-.PHONY : Utilities/ObjectContainer.i
+.PHONY : Utilities/Objects/ObjectContainer.i
 
 # target to preprocess a source file
-Utilities/ObjectContainer.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.i
-.PHONY : Utilities/ObjectContainer.cpp.i
+Utilities/Objects/ObjectContainer.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.i
+.PHONY : Utilities/Objects/ObjectContainer.cpp.i
 
-Utilities/ObjectContainer.s: Utilities/ObjectContainer.cpp.s
+Utilities/Objects/ObjectContainer.s: Utilities/Objects/ObjectContainer.cpp.s
 
-.PHONY : Utilities/ObjectContainer.s
+.PHONY : Utilities/Objects/ObjectContainer.s
 
 # target to generate assembly for a file
-Utilities/ObjectContainer.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.s
-.PHONY : Utilities/ObjectContainer.cpp.s
+Utilities/Objects/ObjectContainer.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.s
+.PHONY : Utilities/Objects/ObjectContainer.cpp.s
 
-Utilities/Shader.obj: Utilities/Shader.cpp.obj
+Utilities/Shading/Shader.obj: Utilities/Shading/Shader.cpp.obj
 
-.PHONY : Utilities/Shader.obj
+.PHONY : Utilities/Shading/Shader.obj
 
 # target to build an object file
-Utilities/Shader.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
-.PHONY : Utilities/Shader.cpp.obj
+Utilities/Shading/Shader.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj
+.PHONY : Utilities/Shading/Shader.cpp.obj
 
-Utilities/Shader.i: Utilities/Shader.cpp.i
+Utilities/Shading/Shader.i: Utilities/Shading/Shader.cpp.i
 
-.PHONY : Utilities/Shader.i
+.PHONY : Utilities/Shading/Shader.i
 
 # target to preprocess a source file
-Utilities/Shader.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.i
-.PHONY : Utilities/Shader.cpp.i
+Utilities/Shading/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.i
+.PHONY : Utilities/Shading/Shader.cpp.i
 
-Utilities/Shader.s: Utilities/Shader.cpp.s
+Utilities/Shading/Shader.s: Utilities/Shading/Shader.cpp.s
 
-.PHONY : Utilities/Shader.s
+.PHONY : Utilities/Shading/Shader.s
 
 # target to generate assembly for a file
-Utilities/Shader.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.s
-.PHONY : Utilities/Shader.cpp.s
+Utilities/Shading/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.s
+.PHONY : Utilities/Shading/Shader.cpp.s
 
-Utilities/SpotLight.obj: Utilities/SpotLight.cpp.obj
+Utilities/Shading/Uniform.obj: Utilities/Shading/Uniform.cpp.obj
 
-.PHONY : Utilities/SpotLight.obj
+.PHONY : Utilities/Shading/Uniform.obj
 
 # target to build an object file
-Utilities/SpotLight.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj
-.PHONY : Utilities/SpotLight.cpp.obj
+Utilities/Shading/Uniform.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj
+.PHONY : Utilities/Shading/Uniform.cpp.obj
 
-Utilities/SpotLight.i: Utilities/SpotLight.cpp.i
+Utilities/Shading/Uniform.i: Utilities/Shading/Uniform.cpp.i
 
-.PHONY : Utilities/SpotLight.i
+.PHONY : Utilities/Shading/Uniform.i
 
 # target to preprocess a source file
-Utilities/SpotLight.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.i
-.PHONY : Utilities/SpotLight.cpp.i
+Utilities/Shading/Uniform.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.i
+.PHONY : Utilities/Shading/Uniform.cpp.i
 
-Utilities/SpotLight.s: Utilities/SpotLight.cpp.s
+Utilities/Shading/Uniform.s: Utilities/Shading/Uniform.cpp.s
 
-.PHONY : Utilities/SpotLight.s
+.PHONY : Utilities/Shading/Uniform.s
 
 # target to generate assembly for a file
-Utilities/SpotLight.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.s
-.PHONY : Utilities/SpotLight.cpp.s
+Utilities/Shading/Uniform.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.s
+.PHONY : Utilities/Shading/Uniform.cpp.s
 
-Utilities/Uniform.obj: Utilities/Uniform.cpp.obj
+Utilities/ShadowMapping/DepthMap.obj: Utilities/ShadowMapping/DepthMap.cpp.obj
 
-.PHONY : Utilities/Uniform.obj
+.PHONY : Utilities/ShadowMapping/DepthMap.obj
 
 # target to build an object file
-Utilities/Uniform.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj
-.PHONY : Utilities/Uniform.cpp.obj
+Utilities/ShadowMapping/DepthMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj
+.PHONY : Utilities/ShadowMapping/DepthMap.cpp.obj
 
-Utilities/Uniform.i: Utilities/Uniform.cpp.i
+Utilities/ShadowMapping/DepthMap.i: Utilities/ShadowMapping/DepthMap.cpp.i
 
-.PHONY : Utilities/Uniform.i
+.PHONY : Utilities/ShadowMapping/DepthMap.i
 
 # target to preprocess a source file
-Utilities/Uniform.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.i
-.PHONY : Utilities/Uniform.cpp.i
+Utilities/ShadowMapping/DepthMap.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.i
+.PHONY : Utilities/ShadowMapping/DepthMap.cpp.i
 
-Utilities/Uniform.s: Utilities/Uniform.cpp.s
+Utilities/ShadowMapping/DepthMap.s: Utilities/ShadowMapping/DepthMap.cpp.s
 
-.PHONY : Utilities/Uniform.s
+.PHONY : Utilities/ShadowMapping/DepthMap.s
 
 # target to generate assembly for a file
-Utilities/Uniform.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.s
-.PHONY : Utilities/Uniform.cpp.s
+Utilities/ShadowMapping/DepthMap.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.s
+.PHONY : Utilities/ShadowMapping/DepthMap.cpp.s
 
-Utilities/Window.obj: Utilities/Window.cpp.obj
+Utilities/ShadowMapping/DepthMapLight.obj: Utilities/ShadowMapping/DepthMapLight.cpp.obj
 
-.PHONY : Utilities/Window.obj
+.PHONY : Utilities/ShadowMapping/DepthMapLight.obj
 
 # target to build an object file
-Utilities/Window.cpp.obj:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj
-.PHONY : Utilities/Window.cpp.obj
+Utilities/ShadowMapping/DepthMapLight.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj
+.PHONY : Utilities/ShadowMapping/DepthMapLight.cpp.obj
 
-Utilities/Window.i: Utilities/Window.cpp.i
+Utilities/ShadowMapping/DepthMapLight.i: Utilities/ShadowMapping/DepthMapLight.cpp.i
 
-.PHONY : Utilities/Window.i
+.PHONY : Utilities/ShadowMapping/DepthMapLight.i
 
 # target to preprocess a source file
-Utilities/Window.cpp.i:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i
-.PHONY : Utilities/Window.cpp.i
+Utilities/ShadowMapping/DepthMapLight.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.i
+.PHONY : Utilities/ShadowMapping/DepthMapLight.cpp.i
 
-Utilities/Window.s: Utilities/Window.cpp.s
+Utilities/ShadowMapping/DepthMapLight.s: Utilities/ShadowMapping/DepthMapLight.cpp.s
 
-.PHONY : Utilities/Window.s
+.PHONY : Utilities/ShadowMapping/DepthMapLight.s
 
 # target to generate assembly for a file
-Utilities/Window.cpp.s:
-	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s
-.PHONY : Utilities/Window.cpp.s
+Utilities/ShadowMapping/DepthMapLight.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.s
+.PHONY : Utilities/ShadowMapping/DepthMapLight.cpp.s
+
+Utilities/Window/Window.obj: Utilities/Window/Window.cpp.obj
+
+.PHONY : Utilities/Window/Window.obj
+
+# target to build an object file
+Utilities/Window/Window.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj
+.PHONY : Utilities/Window/Window.cpp.obj
+
+Utilities/Window/Window.i: Utilities/Window/Window.cpp.i
+
+.PHONY : Utilities/Window/Window.i
+
+# target to preprocess a source file
+Utilities/Window/Window.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.i
+.PHONY : Utilities/Window/Window.cpp.i
+
+Utilities/Window/Window.s: Utilities/Window/Window.cpp.s
+
+.PHONY : Utilities/Window/Window.s
+
+# target to generate assembly for a file
+Utilities/Window/Window.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.s
+.PHONY : Utilities/Window/Window.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -545,39 +545,39 @@ help:
 	@echo ... Loaders/ShaderLoader.obj
 	@echo ... Loaders/ShaderLoader.i
 	@echo ... Loaders/ShaderLoader.s
-	@echo ... Utilities/DepthMap.obj
-	@echo ... Utilities/DepthMap.i
-	@echo ... Utilities/DepthMap.s
-	@echo ... Utilities/DepthMapLight.obj
-	@echo ... Utilities/DepthMapLight.i
-	@echo ... Utilities/DepthMapLight.s
-	@echo ... Utilities/ErrorHandlingFunction.obj
-	@echo ... Utilities/ErrorHandlingFunction.i
-	@echo ... Utilities/ErrorHandlingFunction.s
-	@echo ... Utilities/Light.obj
-	@echo ... Utilities/Light.i
-	@echo ... Utilities/Light.s
-	@echo ... Utilities/MVP.obj
-	@echo ... Utilities/MVP.i
-	@echo ... Utilities/MVP.s
-	@echo ... Utilities/Object.obj
-	@echo ... Utilities/Object.i
-	@echo ... Utilities/Object.s
-	@echo ... Utilities/ObjectContainer.obj
-	@echo ... Utilities/ObjectContainer.i
-	@echo ... Utilities/ObjectContainer.s
-	@echo ... Utilities/Shader.obj
-	@echo ... Utilities/Shader.i
-	@echo ... Utilities/Shader.s
-	@echo ... Utilities/SpotLight.obj
-	@echo ... Utilities/SpotLight.i
-	@echo ... Utilities/SpotLight.s
-	@echo ... Utilities/Uniform.obj
-	@echo ... Utilities/Uniform.i
-	@echo ... Utilities/Uniform.s
-	@echo ... Utilities/Window.obj
-	@echo ... Utilities/Window.i
-	@echo ... Utilities/Window.s
+	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.obj
+	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.i
+	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.s
+	@echo ... Utilities/Lights/Light.obj
+	@echo ... Utilities/Lights/Light.i
+	@echo ... Utilities/Lights/Light.s
+	@echo ... Utilities/Lights/SpotLight.obj
+	@echo ... Utilities/Lights/SpotLight.i
+	@echo ... Utilities/Lights/SpotLight.s
+	@echo ... Utilities/Objects/MVP.obj
+	@echo ... Utilities/Objects/MVP.i
+	@echo ... Utilities/Objects/MVP.s
+	@echo ... Utilities/Objects/Object.obj
+	@echo ... Utilities/Objects/Object.i
+	@echo ... Utilities/Objects/Object.s
+	@echo ... Utilities/Objects/ObjectContainer.obj
+	@echo ... Utilities/Objects/ObjectContainer.i
+	@echo ... Utilities/Objects/ObjectContainer.s
+	@echo ... Utilities/Shading/Shader.obj
+	@echo ... Utilities/Shading/Shader.i
+	@echo ... Utilities/Shading/Shader.s
+	@echo ... Utilities/Shading/Uniform.obj
+	@echo ... Utilities/Shading/Uniform.i
+	@echo ... Utilities/Shading/Uniform.s
+	@echo ... Utilities/ShadowMapping/DepthMap.obj
+	@echo ... Utilities/ShadowMapping/DepthMap.i
+	@echo ... Utilities/ShadowMapping/DepthMap.s
+	@echo ... Utilities/ShadowMapping/DepthMapLight.obj
+	@echo ... Utilities/ShadowMapping/DepthMapLight.i
+	@echo ... Utilities/ShadowMapping/DepthMapLight.s
+	@echo ... Utilities/Window/Window.obj
+	@echo ... Utilities/Window/Window.i
+	@echo ... Utilities/Window/Window.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

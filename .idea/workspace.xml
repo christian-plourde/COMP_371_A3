@@ -12,19 +12,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa210c78-ec2f-4fca-9937-978a4ea5baa1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Utilities/Lights/SpotLight.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controls/KeyboardControls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controls/KeyboardControls.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controls/KeyboardControls.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controls/KeyboardControls.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectFiles/floor.obj" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectFiles/floor.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shaders/FloorVertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/FloorVertexShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shaders/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/FragmentShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shaders/VertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/VertexShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/DepthMapLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/DepthMapLight.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/DepthMap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/DepthMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/DepthMapLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/DepthMapLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/ErrorHandlingFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ErrorHandling/ErrorHandlingFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/ErrorHandlingFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ErrorHandling/ErrorHandlingFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Light.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Lights/Light.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Light.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Lights/Light.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/MVP.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/MVP.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/MVP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/MVP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Object.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/Object.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/Object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/ObjectContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/ObjectContainer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/ObjectContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Objects/ObjectContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Shading/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Shading/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/SpotLight.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/SpotLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Lights/SpotLight.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Uniform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Shading/Uniform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Uniform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Shading/Uniform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Window/Window.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Window/Window.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -40,10 +80,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="205" column="31" lean-forward="true" selection-start-line="205" selection-start-column="31" selection-end-line="205" selection-end-column="31" />
+            <state relative-caret-position="644">
+              <caret line="172" selection-start-line="172" selection-end-line="172" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controls/KeyboardControls.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="382" selection-start-line="382" selection-end-line="382" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,22 +178,22 @@
         <option value="$PROJECT_DIR$/Utilities/Shader.cpp" />
         <option value="$PROJECT_DIR$/Utilities/DepthMap.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Utilities/SpotLight.h" />
-        <option value="$PROJECT_DIR$/Utilities/SpotLight.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Object.h" />
         <option value="$PROJECT_DIR$/Utilities/MVP.h" />
         <option value="$PROJECT_DIR$/Utilities/Object.cpp" />
-        <option value="$PROJECT_DIR$/Utilities/DepthMap.cpp" />
         <option value="$PROJECT_DIR$/Shaders/DepthMapVertexShader.glsl" />
-        <option value="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" />
         <option value="$PROJECT_DIR$/Shaders/FragmentShader.glsl" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Shaders/VertexShader.glsl" />
         <option value="$PROJECT_DIR$/Shaders/FloorVertexShader.glsl" />
-        <option value="$PROJECT_DIR$/Controls/KeyboardControls.cpp" />
         <option value="$PROJECT_DIR$/Utilities/MVP.cpp" />
-        <option value="$PROJECT_DIR$/ObjectFiles/floor.obj" />
         <option value="$PROJECT_DIR$/Utilities/DepthMapLight.cpp" />
+        <option value="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" />
+        <option value="$PROJECT_DIR$/Utilities/DepthMap.cpp" />
+        <option value="$PROJECT_DIR$/ObjectFiles/floor.obj" />
+        <option value="$PROJECT_DIR$/Utilities/SpotLight.h" />
+        <option value="$PROJECT_DIR$/Utilities/SpotLight.cpp" />
+        <option value="$PROJECT_DIR$/Controls/KeyboardControls.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -169,12 +221,7 @@
             <path>
               <item name="COMP_371_A3" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_A3" type="462c0819:PsiDirectoryNode" />
-              <item name="Controls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP_371_A3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP_371_A3" type="462c0819:PsiDirectoryNode" />
-              <item name="ObjectFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,8 +243,11 @@
       <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A2\ObjectFiles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A1\Shaders" />
-      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A1" />
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window" />
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights" />
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading" />
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects" />
+      <recent name="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandling" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,7 +358,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222002000" />
+    <option name="totallyTimeSpent" value="226298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,14 +460,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/Keyboard.cpp" />
     <entry file="file://$PROJECT_DIR$/Utilities/Keyboard.h" />
-    <entry file="file://$PROJECT_DIR$/Utilities/ErrorHandlingFunction.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/ErrorHandling/ErrorHandlingFunction.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/ErrorHandlingFunctions.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/ErrorHandling/ErrorHandlingFunctions.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
@@ -429,7 +479,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shaders/HeraclesVertexShader.glsl" />
     <entry file="file://$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl" />
-    <entry file="file://$PROJECT_DIR$/Utilities/Window.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Window/Window.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
@@ -440,14 +490,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controls/MouseControls.cpp" />
-    <entry file="file://$PROJECT_DIR$/Utilities/ObjectContainer.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/ObjectContainer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/ObjectContainer.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/ObjectContainer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
@@ -482,14 +532,14 @@
     <entry file="file://$PROJECT_DIR$/Shaders/shadow_map_vs.glsl" />
     <entry file="file://$PROJECT_DIR$/Shaders/LightCubeFragmentShader.glsl" />
     <entry file="file://$PROJECT_DIR$/Shaders/LightCubeVertexShader.glsl" />
-    <entry file="file://$PROJECT_DIR$/Utilities/DepthMapLight.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Shader.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Shading/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
@@ -499,35 +549,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Uniform.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Shading/Uniform.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Uniform.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Shading/Uniform.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Window.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Window/Window.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-184">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shaders/DepthMapFragmentShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Shader.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Shading/Shader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
@@ -537,24 +580,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Light.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Light.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Lights/Light.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/DepthMap.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/ShadowMapping/DepthMap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
@@ -571,21 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/SpotLight.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/SpotLight.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Object.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/Object.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
@@ -595,7 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/MVP.h">
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/MVP.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
@@ -605,31 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/Object.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/Object.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/DepthMap.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="54" column="86" lean-forward="true" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shaders/DepthMapVertexShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -647,34 +645,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/MVP.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controls/KeyboardControls.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFiles/floor.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/DepthMapLight.cpp">
+    <entry file="file://$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
@@ -688,10 +659,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFiles/floor.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Objects/MVP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Lights/Light.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/ShadowMapping/DepthMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="55" column="65" lean-forward="true" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/DepthMapVertexShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/DepthMapFragmentShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Lights/SpotLight.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/Lights/SpotLight.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controls/KeyboardControls.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="382" selection-start-line="382" selection-end-line="382" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="205" column="31" lean-forward="true" selection-start-line="205" selection-start-column="31" selection-end-line="205" selection-end-column="31" />
+        <state relative-caret-position="644">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

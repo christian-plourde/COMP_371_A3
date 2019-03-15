@@ -112,159 +112,159 @@ CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Controls\KeyboardControls.cpp" -o CMakeFiles\COMP_371_A3.dir\Controls\KeyboardControls.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj: ../Utilities/Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj: ../Utilities/Lights/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Lights\Light.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\Light.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\Light.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Lights\Light.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Light.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Light.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\Light.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Lights\Light.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj: ../Utilities/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj: ../Utilities/Window/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Window\Window.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window\Window.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window\Window.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Window\Window.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Window.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Window\Window.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Window\Window.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj: ../Utilities/MVP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj: ../Utilities/Objects/MVP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\MVP.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\MVP.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\MVP.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Objects\MVP.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\MVP.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\MVP.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\MVP.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\MVP.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj: ../Utilities/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Shader.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shader.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj: ../Utilities/Shading/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Shader.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Shader.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shader.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Shader.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Shader.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Shader.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shader.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Shader.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Shader.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Shader.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj: ../Utilities/Uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Uniform.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Uniform.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj: ../Utilities/Shading/Uniform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Uniform.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Uniform.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Uniform.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Uniform.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Uniform.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Uniform.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Uniform.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Uniform.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Shading\Uniform.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Shading\Uniform.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj: ../Utilities/Object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Object.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Object.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj: ../Utilities/Objects/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\Object.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\Object.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Object.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Object.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\Object.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Objects\Object.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Object.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Object.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\Object.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\Object.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj: ../Utilities/ErrorHandlingFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandlingFunction.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandlingFunction.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandling\ErrorHandlingFunction.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandling\ErrorHandlingFunction.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandlingFunction.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandlingFunction.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandling\ErrorHandlingFunction.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandling\ErrorHandlingFunction.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandlingFunction.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandlingFunction.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ErrorHandling\ErrorHandlingFunction.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\ErrorHandling\ErrorHandlingFunction.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj: ../Utilities/ObjectContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\ObjectContainer.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ObjectContainer.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj: ../Utilities/Objects/ObjectContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\ObjectContainer.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\ObjectContainer.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ObjectContainer.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\ObjectContainer.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\ObjectContainer.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Objects\ObjectContainer.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ObjectContainer.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\ObjectContainer.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Objects\ObjectContainer.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Objects\ObjectContainer.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj: ../Utilities/DepthMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\DepthMap.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMap.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj: ../Utilities/ShadowMapping/DepthMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMap.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMap.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMap.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\DepthMap.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMap.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMap.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMap.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\DepthMap.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMap.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMap.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj: ../Utilities/DepthMapLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\DepthMapLight.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMapLight.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj: ../Utilities/ShadowMapping/DepthMapLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMapLight.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMapLight.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMapLight.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\DepthMapLight.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMapLight.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMapLight.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\DepthMapLight.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\DepthMapLight.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\ShadowMapping\DepthMapLight.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\ShadowMapping\DepthMapLight.cpp.s
 
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj: ../Utilities/SpotLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\SpotLight.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\SpotLight.cpp"
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/flags.make
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj: CMakeFiles/COMP_371_A3.dir/includes_CXX.rsp
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj: ../Utilities/Lights/SpotLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP_371_A3.dir\Utilities\Lights\SpotLight.cpp.obj -c "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\SpotLight.cpp"
 
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\SpotLight.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\SpotLight.cpp.i
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\SpotLight.cpp" > CMakeFiles\COMP_371_A3.dir\Utilities\Lights\SpotLight.cpp.i
 
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\SpotLight.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\SpotLight.cpp.s
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Computer Science Assignments\COMP 371 Assignments\COMP_371_A3\Utilities\Lights\SpotLight.cpp" -o CMakeFiles\COMP_371_A3.dir\Utilities\Lights\SpotLight.cpp.s
 
 # Object files for target COMP_371_A3
 COMP_371_A3_OBJECTS = \
@@ -272,17 +272,17 @@ COMP_371_A3_OBJECTS = \
 "CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj" \
 "CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj" \
 "CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj" \
-"CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj"
+"CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj" \
+"CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj"
 
 # External object files for target COMP_371_A3
 COMP_371_A3_EXTERNAL_OBJECTS =
@@ -291,17 +291,17 @@ COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/main.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj
-COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj
+COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj
 COMP_371_A3.exe: CMakeFiles/COMP_371_A3.dir/build.make
 COMP_371_A3.exe: glew32.dll
 COMP_371_A3.exe: glfw3.dll

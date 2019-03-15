@@ -104,67 +104,67 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunction.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/SpotLight.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunction.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/SpotLight.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.cpp">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>
-		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h">
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp">

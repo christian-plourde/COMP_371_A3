@@ -28,6 +28,7 @@ CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj
  ../GLM/glm/fwd.hpp
  ../GLM/glm/geometric.hpp
  ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/type_ptr.hpp
  ../GLM/glm/integer.hpp
  ../GLM/glm/mat2x2.hpp
  ../GLM/glm/mat2x3.hpp
@@ -117,14 +118,14 @@ CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
 CMakeFiles/COMP_371_A3.dir/Loaders/ObjectLoader.cpp.obj
  ../GLM/glm/common.hpp
  ../GLM/glm/detail/_fixes.hpp
@@ -212,9 +213,100 @@ CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj
  ../GLFW/include/GLFW/glfw3.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj
+CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
  ../GLEW/include/GL/glew.h
- ../GLFW/include/GLFW/glfw3.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunction.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/Light.cpp.obj
+ ../GLEW/include/GL/glew.h
+ ../GLM/glm/common.hpp
+ ../GLM/glm/detail/_fixes.hpp
+ ../GLM/glm/detail/_swizzle.hpp
+ ../GLM/glm/detail/_swizzle_func.hpp
+ ../GLM/glm/detail/_vectorize.hpp
+ ../GLM/glm/detail/func_common.hpp
+ ../GLM/glm/detail/func_common.inl
+ ../GLM/glm/detail/func_exponential.hpp
+ ../GLM/glm/detail/func_exponential.inl
+ ../GLM/glm/detail/func_geometric.hpp
+ ../GLM/glm/detail/func_geometric.inl
+ ../GLM/glm/detail/func_integer.hpp
+ ../GLM/glm/detail/func_integer.inl
+ ../GLM/glm/detail/func_matrix.hpp
+ ../GLM/glm/detail/func_matrix.inl
+ ../GLM/glm/detail/func_packing.hpp
+ ../GLM/glm/detail/func_packing.inl
+ ../GLM/glm/detail/func_trigonometric.hpp
+ ../GLM/glm/detail/func_trigonometric.inl
+ ../GLM/glm/detail/func_vector_relational.hpp
+ ../GLM/glm/detail/func_vector_relational.inl
+ ../GLM/glm/detail/precision.hpp
+ ../GLM/glm/detail/setup.hpp
+ ../GLM/glm/detail/type_float.hpp
+ ../GLM/glm/detail/type_half.hpp
+ ../GLM/glm/detail/type_half.inl
+ ../GLM/glm/detail/type_int.hpp
+ ../GLM/glm/detail/type_mat.hpp
+ ../GLM/glm/detail/type_mat2x2.hpp
+ ../GLM/glm/detail/type_mat2x2.inl
+ ../GLM/glm/detail/type_mat2x3.hpp
+ ../GLM/glm/detail/type_mat2x3.inl
+ ../GLM/glm/detail/type_mat2x4.hpp
+ ../GLM/glm/detail/type_mat2x4.inl
+ ../GLM/glm/detail/type_mat3x2.hpp
+ ../GLM/glm/detail/type_mat3x2.inl
+ ../GLM/glm/detail/type_mat3x3.hpp
+ ../GLM/glm/detail/type_mat3x3.inl
+ ../GLM/glm/detail/type_mat3x4.hpp
+ ../GLM/glm/detail/type_mat3x4.inl
+ ../GLM/glm/detail/type_mat4x2.hpp
+ ../GLM/glm/detail/type_mat4x2.inl
+ ../GLM/glm/detail/type_mat4x3.hpp
+ ../GLM/glm/detail/type_mat4x3.inl
+ ../GLM/glm/detail/type_mat4x4.hpp
+ ../GLM/glm/detail/type_mat4x4.inl
+ ../GLM/glm/detail/type_vec.hpp
+ ../GLM/glm/detail/type_vec1.hpp
+ ../GLM/glm/detail/type_vec1.inl
+ ../GLM/glm/detail/type_vec2.hpp
+ ../GLM/glm/detail/type_vec2.inl
+ ../GLM/glm/detail/type_vec3.hpp
+ ../GLM/glm/detail/type_vec3.inl
+ ../GLM/glm/detail/type_vec4.hpp
+ ../GLM/glm/detail/type_vec4.inl
+ ../GLM/glm/detail/type_vec4_avx.inl
+ ../GLM/glm/detail/type_vec4_avx2.inl
+ ../GLM/glm/detail/type_vec4_sse2.inl
+ ../GLM/glm/exponential.hpp
+ ../GLM/glm/fwd.hpp
+ ../GLM/glm/geometric.hpp
+ ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
+ ../GLM/glm/integer.hpp
+ ../GLM/glm/mat2x2.hpp
+ ../GLM/glm/mat2x3.hpp
+ ../GLM/glm/mat2x4.hpp
+ ../GLM/glm/mat3x2.hpp
+ ../GLM/glm/mat3x3.hpp
+ ../GLM/glm/mat3x4.hpp
+ ../GLM/glm/mat4x2.hpp
+ ../GLM/glm/mat4x3.hpp
+ ../GLM/glm/mat4x4.hpp
+ ../GLM/glm/matrix.hpp
+ ../GLM/glm/packing.hpp
+ ../GLM/glm/trigonometric.hpp
+ ../GLM/glm/vec2.hpp
+ ../GLM/glm/vec3.hpp
+ ../GLM/glm/vec4.hpp
+ ../GLM/glm/vector_relational.hpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj
  ../GLM/glm/common.hpp
  ../GLM/glm/detail/_fixes.hpp
  ../GLM/glm/detail/_swizzle.hpp
@@ -294,345 +386,193 @@ CMakeFiles/COMP_371_A3.dir/Utilities/DepthMap.cpp.obj
  ../GLM/glm/vec3.hpp
  ../GLM/glm/vec4.hpp
  ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/SpotLight.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/SpotLight.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/MVP.cpp.obj
+ ../GLM/glm/common.hpp
+ ../GLM/glm/detail/_fixes.hpp
+ ../GLM/glm/detail/_swizzle.hpp
+ ../GLM/glm/detail/_swizzle_func.hpp
+ ../GLM/glm/detail/_vectorize.hpp
+ ../GLM/glm/detail/func_common.hpp
+ ../GLM/glm/detail/func_common.inl
+ ../GLM/glm/detail/func_exponential.hpp
+ ../GLM/glm/detail/func_exponential.inl
+ ../GLM/glm/detail/func_geometric.hpp
+ ../GLM/glm/detail/func_geometric.inl
+ ../GLM/glm/detail/func_integer.hpp
+ ../GLM/glm/detail/func_integer.inl
+ ../GLM/glm/detail/func_matrix.hpp
+ ../GLM/glm/detail/func_matrix.inl
+ ../GLM/glm/detail/func_packing.hpp
+ ../GLM/glm/detail/func_packing.inl
+ ../GLM/glm/detail/func_trigonometric.hpp
+ ../GLM/glm/detail/func_trigonometric.inl
+ ../GLM/glm/detail/func_vector_relational.hpp
+ ../GLM/glm/detail/func_vector_relational.inl
+ ../GLM/glm/detail/precision.hpp
+ ../GLM/glm/detail/setup.hpp
+ ../GLM/glm/detail/type_float.hpp
+ ../GLM/glm/detail/type_half.hpp
+ ../GLM/glm/detail/type_half.inl
+ ../GLM/glm/detail/type_int.hpp
+ ../GLM/glm/detail/type_mat.hpp
+ ../GLM/glm/detail/type_mat2x2.hpp
+ ../GLM/glm/detail/type_mat2x2.inl
+ ../GLM/glm/detail/type_mat2x3.hpp
+ ../GLM/glm/detail/type_mat2x3.inl
+ ../GLM/glm/detail/type_mat2x4.hpp
+ ../GLM/glm/detail/type_mat2x4.inl
+ ../GLM/glm/detail/type_mat3x2.hpp
+ ../GLM/glm/detail/type_mat3x2.inl
+ ../GLM/glm/detail/type_mat3x3.hpp
+ ../GLM/glm/detail/type_mat3x3.inl
+ ../GLM/glm/detail/type_mat3x4.hpp
+ ../GLM/glm/detail/type_mat3x4.inl
+ ../GLM/glm/detail/type_mat4x2.hpp
+ ../GLM/glm/detail/type_mat4x2.inl
+ ../GLM/glm/detail/type_mat4x3.hpp
+ ../GLM/glm/detail/type_mat4x3.inl
+ ../GLM/glm/detail/type_mat4x4.hpp
+ ../GLM/glm/detail/type_mat4x4.inl
+ ../GLM/glm/detail/type_vec.hpp
+ ../GLM/glm/detail/type_vec1.hpp
+ ../GLM/glm/detail/type_vec1.inl
+ ../GLM/glm/detail/type_vec2.hpp
+ ../GLM/glm/detail/type_vec2.inl
+ ../GLM/glm/detail/type_vec3.hpp
+ ../GLM/glm/detail/type_vec3.inl
+ ../GLM/glm/detail/type_vec4.hpp
+ ../GLM/glm/detail/type_vec4.inl
+ ../GLM/glm/detail/type_vec4_avx.inl
+ ../GLM/glm/detail/type_vec4_avx2.inl
+ ../GLM/glm/detail/type_vec4_sse2.inl
+ ../GLM/glm/exponential.hpp
+ ../GLM/glm/fwd.hpp
+ ../GLM/glm/geometric.hpp
+ ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/matrix_transform.hpp
+ ../GLM/glm/gtc/matrix_transform.inl
+ ../GLM/glm/integer.hpp
+ ../GLM/glm/mat2x2.hpp
+ ../GLM/glm/mat2x3.hpp
+ ../GLM/glm/mat2x4.hpp
+ ../GLM/glm/mat3x2.hpp
+ ../GLM/glm/mat3x3.hpp
+ ../GLM/glm/mat3x4.hpp
+ ../GLM/glm/mat4x2.hpp
+ ../GLM/glm/mat4x3.hpp
+ ../GLM/glm/mat4x4.hpp
+ ../GLM/glm/matrix.hpp
+ ../GLM/glm/packing.hpp
+ ../GLM/glm/trigonometric.hpp
+ ../GLM/glm/vec2.hpp
+ ../GLM/glm/vec3.hpp
+ ../GLM/glm/vec4.hpp
+ ../GLM/glm/vector_relational.hpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/Object.cpp.obj
+ ../GLEW/include/GL/glew.h
+ ../GLFW/include/GLFW/glfw3.h
+ ../GLM/glm/common.hpp
+ ../GLM/glm/detail/_fixes.hpp
+ ../GLM/glm/detail/_swizzle.hpp
+ ../GLM/glm/detail/_swizzle_func.hpp
+ ../GLM/glm/detail/_vectorize.hpp
+ ../GLM/glm/detail/func_common.hpp
+ ../GLM/glm/detail/func_common.inl
+ ../GLM/glm/detail/func_exponential.hpp
+ ../GLM/glm/detail/func_exponential.inl
+ ../GLM/glm/detail/func_geometric.hpp
+ ../GLM/glm/detail/func_geometric.inl
+ ../GLM/glm/detail/func_integer.hpp
+ ../GLM/glm/detail/func_integer.inl
+ ../GLM/glm/detail/func_matrix.hpp
+ ../GLM/glm/detail/func_matrix.inl
+ ../GLM/glm/detail/func_packing.hpp
+ ../GLM/glm/detail/func_packing.inl
+ ../GLM/glm/detail/func_trigonometric.hpp
+ ../GLM/glm/detail/func_trigonometric.inl
+ ../GLM/glm/detail/func_vector_relational.hpp
+ ../GLM/glm/detail/func_vector_relational.inl
+ ../GLM/glm/detail/precision.hpp
+ ../GLM/glm/detail/setup.hpp
+ ../GLM/glm/detail/type_float.hpp
+ ../GLM/glm/detail/type_half.hpp
+ ../GLM/glm/detail/type_half.inl
+ ../GLM/glm/detail/type_int.hpp
+ ../GLM/glm/detail/type_mat.hpp
+ ../GLM/glm/detail/type_mat2x2.hpp
+ ../GLM/glm/detail/type_mat2x2.inl
+ ../GLM/glm/detail/type_mat2x3.hpp
+ ../GLM/glm/detail/type_mat2x3.inl
+ ../GLM/glm/detail/type_mat2x4.hpp
+ ../GLM/glm/detail/type_mat2x4.inl
+ ../GLM/glm/detail/type_mat3x2.hpp
+ ../GLM/glm/detail/type_mat3x2.inl
+ ../GLM/glm/detail/type_mat3x3.hpp
+ ../GLM/glm/detail/type_mat3x3.inl
+ ../GLM/glm/detail/type_mat3x4.hpp
+ ../GLM/glm/detail/type_mat3x4.inl
+ ../GLM/glm/detail/type_mat4x2.hpp
+ ../GLM/glm/detail/type_mat4x2.inl
+ ../GLM/glm/detail/type_mat4x3.hpp
+ ../GLM/glm/detail/type_mat4x3.inl
+ ../GLM/glm/detail/type_mat4x4.hpp
+ ../GLM/glm/detail/type_mat4x4.inl
+ ../GLM/glm/detail/type_vec.hpp
+ ../GLM/glm/detail/type_vec1.hpp
+ ../GLM/glm/detail/type_vec1.inl
+ ../GLM/glm/detail/type_vec2.hpp
+ ../GLM/glm/detail/type_vec2.inl
+ ../GLM/glm/detail/type_vec3.hpp
+ ../GLM/glm/detail/type_vec3.inl
+ ../GLM/glm/detail/type_vec4.hpp
+ ../GLM/glm/detail/type_vec4.inl
+ ../GLM/glm/detail/type_vec4_avx.inl
+ ../GLM/glm/detail/type_vec4_avx2.inl
+ ../GLM/glm/detail/type_vec4_sse2.inl
+ ../GLM/glm/exponential.hpp
+ ../GLM/glm/fwd.hpp
+ ../GLM/glm/geometric.hpp
+ ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
+ ../GLM/glm/integer.hpp
+ ../GLM/glm/mat2x2.hpp
+ ../GLM/glm/mat2x3.hpp
+ ../GLM/glm/mat2x4.hpp
+ ../GLM/glm/mat3x2.hpp
+ ../GLM/glm/mat3x3.hpp
+ ../GLM/glm/mat3x4.hpp
+ ../GLM/glm/mat4x2.hpp
+ ../GLM/glm/mat4x3.hpp
+ ../GLM/glm/mat4x4.hpp
+ ../GLM/glm/matrix.hpp
+ ../GLM/glm/packing.hpp
+ ../GLM/glm/trigonometric.hpp
+ ../GLM/glm/vec2.hpp
+ ../GLM/glm/vec3.hpp
+ ../GLM/glm/vec4.hpp
+ ../GLM/glm/vector_relational.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
-CMakeFiles/COMP_371_A3.dir/Utilities/DepthMapLight.cpp.obj
- ../GLM/glm/common.hpp
- ../GLM/glm/detail/_fixes.hpp
- ../GLM/glm/detail/_swizzle.hpp
- ../GLM/glm/detail/_swizzle_func.hpp
- ../GLM/glm/detail/_vectorize.hpp
- ../GLM/glm/detail/func_common.hpp
- ../GLM/glm/detail/func_common.inl
- ../GLM/glm/detail/func_exponential.hpp
- ../GLM/glm/detail/func_exponential.inl
- ../GLM/glm/detail/func_geometric.hpp
- ../GLM/glm/detail/func_geometric.inl
- ../GLM/glm/detail/func_integer.hpp
- ../GLM/glm/detail/func_integer.inl
- ../GLM/glm/detail/func_matrix.hpp
- ../GLM/glm/detail/func_matrix.inl
- ../GLM/glm/detail/func_packing.hpp
- ../GLM/glm/detail/func_packing.inl
- ../GLM/glm/detail/func_trigonometric.hpp
- ../GLM/glm/detail/func_trigonometric.inl
- ../GLM/glm/detail/func_vector_relational.hpp
- ../GLM/glm/detail/func_vector_relational.inl
- ../GLM/glm/detail/precision.hpp
- ../GLM/glm/detail/setup.hpp
- ../GLM/glm/detail/type_float.hpp
- ../GLM/glm/detail/type_half.hpp
- ../GLM/glm/detail/type_half.inl
- ../GLM/glm/detail/type_int.hpp
- ../GLM/glm/detail/type_mat.hpp
- ../GLM/glm/detail/type_mat2x2.hpp
- ../GLM/glm/detail/type_mat2x2.inl
- ../GLM/glm/detail/type_mat2x3.hpp
- ../GLM/glm/detail/type_mat2x3.inl
- ../GLM/glm/detail/type_mat2x4.hpp
- ../GLM/glm/detail/type_mat2x4.inl
- ../GLM/glm/detail/type_mat3x2.hpp
- ../GLM/glm/detail/type_mat3x2.inl
- ../GLM/glm/detail/type_mat3x3.hpp
- ../GLM/glm/detail/type_mat3x3.inl
- ../GLM/glm/detail/type_mat3x4.hpp
- ../GLM/glm/detail/type_mat3x4.inl
- ../GLM/glm/detail/type_mat4x2.hpp
- ../GLM/glm/detail/type_mat4x2.inl
- ../GLM/glm/detail/type_mat4x3.hpp
- ../GLM/glm/detail/type_mat4x3.inl
- ../GLM/glm/detail/type_mat4x4.hpp
- ../GLM/glm/detail/type_mat4x4.inl
- ../GLM/glm/detail/type_vec.hpp
- ../GLM/glm/detail/type_vec1.hpp
- ../GLM/glm/detail/type_vec1.inl
- ../GLM/glm/detail/type_vec2.hpp
- ../GLM/glm/detail/type_vec2.inl
- ../GLM/glm/detail/type_vec3.hpp
- ../GLM/glm/detail/type_vec3.inl
- ../GLM/glm/detail/type_vec4.hpp
- ../GLM/glm/detail/type_vec4.inl
- ../GLM/glm/detail/type_vec4_avx.inl
- ../GLM/glm/detail/type_vec4_avx2.inl
- ../GLM/glm/detail/type_vec4_sse2.inl
- ../GLM/glm/exponential.hpp
- ../GLM/glm/fwd.hpp
- ../GLM/glm/geometric.hpp
- ../GLM/glm/glm.hpp
- ../GLM/glm/integer.hpp
- ../GLM/glm/mat2x2.hpp
- ../GLM/glm/mat2x3.hpp
- ../GLM/glm/mat2x4.hpp
- ../GLM/glm/mat3x2.hpp
- ../GLM/glm/mat3x3.hpp
- ../GLM/glm/mat3x4.hpp
- ../GLM/glm/mat4x2.hpp
- ../GLM/glm/mat4x3.hpp
- ../GLM/glm/mat4x4.hpp
- ../GLM/glm/matrix.hpp
- ../GLM/glm/packing.hpp
- ../GLM/glm/trigonometric.hpp
- ../GLM/glm/vec2.hpp
- ../GLM/glm/vec3.hpp
- ../GLM/glm/vec4.hpp
- ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.h
-CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandlingFunction.cpp.obj
- ../GLEW/include/GL/glew.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunction.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
-CMakeFiles/COMP_371_A3.dir/Utilities/Light.cpp.obj
- ../GLEW/include/GL/glew.h
- ../GLM/glm/common.hpp
- ../GLM/glm/detail/_fixes.hpp
- ../GLM/glm/detail/_swizzle.hpp
- ../GLM/glm/detail/_swizzle_func.hpp
- ../GLM/glm/detail/_vectorize.hpp
- ../GLM/glm/detail/func_common.hpp
- ../GLM/glm/detail/func_common.inl
- ../GLM/glm/detail/func_exponential.hpp
- ../GLM/glm/detail/func_exponential.inl
- ../GLM/glm/detail/func_geometric.hpp
- ../GLM/glm/detail/func_geometric.inl
- ../GLM/glm/detail/func_integer.hpp
- ../GLM/glm/detail/func_integer.inl
- ../GLM/glm/detail/func_matrix.hpp
- ../GLM/glm/detail/func_matrix.inl
- ../GLM/glm/detail/func_packing.hpp
- ../GLM/glm/detail/func_packing.inl
- ../GLM/glm/detail/func_trigonometric.hpp
- ../GLM/glm/detail/func_trigonometric.inl
- ../GLM/glm/detail/func_vector_relational.hpp
- ../GLM/glm/detail/func_vector_relational.inl
- ../GLM/glm/detail/precision.hpp
- ../GLM/glm/detail/setup.hpp
- ../GLM/glm/detail/type_float.hpp
- ../GLM/glm/detail/type_half.hpp
- ../GLM/glm/detail/type_half.inl
- ../GLM/glm/detail/type_int.hpp
- ../GLM/glm/detail/type_mat.hpp
- ../GLM/glm/detail/type_mat2x2.hpp
- ../GLM/glm/detail/type_mat2x2.inl
- ../GLM/glm/detail/type_mat2x3.hpp
- ../GLM/glm/detail/type_mat2x3.inl
- ../GLM/glm/detail/type_mat2x4.hpp
- ../GLM/glm/detail/type_mat2x4.inl
- ../GLM/glm/detail/type_mat3x2.hpp
- ../GLM/glm/detail/type_mat3x2.inl
- ../GLM/glm/detail/type_mat3x3.hpp
- ../GLM/glm/detail/type_mat3x3.inl
- ../GLM/glm/detail/type_mat3x4.hpp
- ../GLM/glm/detail/type_mat3x4.inl
- ../GLM/glm/detail/type_mat4x2.hpp
- ../GLM/glm/detail/type_mat4x2.inl
- ../GLM/glm/detail/type_mat4x3.hpp
- ../GLM/glm/detail/type_mat4x3.inl
- ../GLM/glm/detail/type_mat4x4.hpp
- ../GLM/glm/detail/type_mat4x4.inl
- ../GLM/glm/detail/type_vec.hpp
- ../GLM/glm/detail/type_vec1.hpp
- ../GLM/glm/detail/type_vec1.inl
- ../GLM/glm/detail/type_vec2.hpp
- ../GLM/glm/detail/type_vec2.inl
- ../GLM/glm/detail/type_vec3.hpp
- ../GLM/glm/detail/type_vec3.inl
- ../GLM/glm/detail/type_vec4.hpp
- ../GLM/glm/detail/type_vec4.inl
- ../GLM/glm/detail/type_vec4_avx.inl
- ../GLM/glm/detail/type_vec4_avx2.inl
- ../GLM/glm/detail/type_vec4_sse2.inl
- ../GLM/glm/exponential.hpp
- ../GLM/glm/fwd.hpp
- ../GLM/glm/geometric.hpp
- ../GLM/glm/glm.hpp
- ../GLM/glm/integer.hpp
- ../GLM/glm/mat2x2.hpp
- ../GLM/glm/mat2x3.hpp
- ../GLM/glm/mat2x4.hpp
- ../GLM/glm/mat3x2.hpp
- ../GLM/glm/mat3x3.hpp
- ../GLM/glm/mat3x4.hpp
- ../GLM/glm/mat4x2.hpp
- ../GLM/glm/mat4x3.hpp
- ../GLM/glm/mat4x4.hpp
- ../GLM/glm/matrix.hpp
- ../GLM/glm/packing.hpp
- ../GLM/glm/trigonometric.hpp
- ../GLM/glm/vec2.hpp
- ../GLM/glm/vec3.hpp
- ../GLM/glm/vec4.hpp
- ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
-CMakeFiles/COMP_371_A3.dir/Utilities/MVP.cpp.obj
- ../GLM/glm/common.hpp
- ../GLM/glm/detail/_fixes.hpp
- ../GLM/glm/detail/_vectorize.hpp
- ../GLM/glm/detail/func_common.hpp
- ../GLM/glm/detail/func_common.inl
- ../GLM/glm/detail/func_exponential.hpp
- ../GLM/glm/detail/func_exponential.inl
- ../GLM/glm/detail/func_geometric.hpp
- ../GLM/glm/detail/func_geometric.inl
- ../GLM/glm/detail/func_integer.hpp
- ../GLM/glm/detail/func_integer.inl
- ../GLM/glm/detail/func_matrix.hpp
- ../GLM/glm/detail/func_matrix.inl
- ../GLM/glm/detail/func_packing.hpp
- ../GLM/glm/detail/func_packing.inl
- ../GLM/glm/detail/func_trigonometric.hpp
- ../GLM/glm/detail/func_trigonometric.inl
- ../GLM/glm/detail/func_vector_relational.hpp
- ../GLM/glm/detail/func_vector_relational.inl
- ../GLM/glm/detail/precision.hpp
- ../GLM/glm/detail/type_float.hpp
- ../GLM/glm/detail/type_half.hpp
- ../GLM/glm/detail/type_half.inl
- ../GLM/glm/detail/type_int.hpp
- ../GLM/glm/detail/type_mat.hpp
- ../GLM/glm/detail/type_mat2x2.hpp
- ../GLM/glm/detail/type_mat2x2.inl
- ../GLM/glm/detail/type_mat2x3.hpp
- ../GLM/glm/detail/type_mat2x3.inl
- ../GLM/glm/detail/type_mat2x4.hpp
- ../GLM/glm/detail/type_mat2x4.inl
- ../GLM/glm/detail/type_mat3x2.hpp
- ../GLM/glm/detail/type_mat3x2.inl
- ../GLM/glm/detail/type_mat3x3.hpp
- ../GLM/glm/detail/type_mat3x3.inl
- ../GLM/glm/detail/type_mat3x4.hpp
- ../GLM/glm/detail/type_mat3x4.inl
- ../GLM/glm/detail/type_mat4x2.hpp
- ../GLM/glm/detail/type_mat4x2.inl
- ../GLM/glm/detail/type_mat4x3.hpp
- ../GLM/glm/detail/type_mat4x3.inl
- ../GLM/glm/detail/type_vec.hpp
- ../GLM/glm/detail/type_vec1.hpp
- ../GLM/glm/detail/type_vec1.inl
- ../GLM/glm/detail/type_vec2.hpp
- ../GLM/glm/detail/type_vec3.hpp
- ../GLM/glm/exponential.hpp
- ../GLM/glm/fwd.hpp
- ../GLM/glm/geometric.hpp
- ../GLM/glm/glm.hpp
- ../GLM/glm/integer.hpp
- ../GLM/glm/mat2x2.hpp
- ../GLM/glm/mat2x3.hpp
- ../GLM/glm/mat2x4.hpp
- ../GLM/glm/mat3x2.hpp
- ../GLM/glm/mat3x3.hpp
- ../GLM/glm/mat3x4.hpp
- ../GLM/glm/mat4x2.hpp
- ../GLM/glm/mat4x3.hpp
- ../GLM/glm/mat4x4.hpp
- ../GLM/glm/matrix.hpp
- ../GLM/glm/packing.hpp
- ../GLM/glm/trigonometric.hpp
- ../GLM/glm/vec2.hpp
- ../GLM/glm/vec3.hpp
- ../GLM/glm/vec4.hpp
- ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/_swizzle_func.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_mat.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_mat4x4.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec2.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec3.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4_avx.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4_avx2.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4_sse2.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/fwd.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
-CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Objects/ObjectContainer.cpp.obj
  ../GLEW/include/GL/glew.h
  ../GLFW/include/GLFW/glfw3.h
  ../GLM/glm/common.hpp
@@ -697,6 +637,12 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
  ../GLM/glm/fwd.hpp
  ../GLM/glm/geometric.hpp
  ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
  ../GLM/glm/integer.hpp
  ../GLM/glm/mat2x2.hpp
  ../GLM/glm/mat2x3.hpp
@@ -714,25 +660,18 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Object.cpp.obj
  ../GLM/glm/vec3.hpp
  ../GLM/glm/vec4.hpp
  ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
-CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Shader.cpp.obj
  ../GLEW/include/GL/glew.h
  ../GLFW/include/GLFW/glfw3.h
  ../GLM/glm/common.hpp
@@ -797,6 +736,12 @@ CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
  ../GLM/glm/fwd.hpp
  ../GLM/glm/geometric.hpp
  ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
  ../GLM/glm/integer.hpp
  ../GLM/glm/mat2x2.hpp
  ../GLM/glm/mat2x3.hpp
@@ -814,26 +759,205 @@ CMakeFiles/COMP_371_A3.dir/Utilities/ObjectContainer.cpp.obj
  ../GLM/glm/vec3.hpp
  ../GLM/glm/vec4.hpp
  ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Shading/Uniform.cpp.obj
+ ../GLEW/include/GL/glew.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMap.cpp.obj
+ ../GLEW/include/GL/glew.h
+ ../GLFW/include/GLFW/glfw3.h
+ ../GLM/glm/common.hpp
+ ../GLM/glm/detail/_fixes.hpp
+ ../GLM/glm/detail/_swizzle.hpp
+ ../GLM/glm/detail/_swizzle_func.hpp
+ ../GLM/glm/detail/_vectorize.hpp
+ ../GLM/glm/detail/func_common.hpp
+ ../GLM/glm/detail/func_common.inl
+ ../GLM/glm/detail/func_exponential.hpp
+ ../GLM/glm/detail/func_exponential.inl
+ ../GLM/glm/detail/func_geometric.hpp
+ ../GLM/glm/detail/func_geometric.inl
+ ../GLM/glm/detail/func_integer.hpp
+ ../GLM/glm/detail/func_integer.inl
+ ../GLM/glm/detail/func_matrix.hpp
+ ../GLM/glm/detail/func_matrix.inl
+ ../GLM/glm/detail/func_packing.hpp
+ ../GLM/glm/detail/func_packing.inl
+ ../GLM/glm/detail/func_trigonometric.hpp
+ ../GLM/glm/detail/func_trigonometric.inl
+ ../GLM/glm/detail/func_vector_relational.hpp
+ ../GLM/glm/detail/func_vector_relational.inl
+ ../GLM/glm/detail/precision.hpp
+ ../GLM/glm/detail/setup.hpp
+ ../GLM/glm/detail/type_float.hpp
+ ../GLM/glm/detail/type_half.hpp
+ ../GLM/glm/detail/type_half.inl
+ ../GLM/glm/detail/type_int.hpp
+ ../GLM/glm/detail/type_mat.hpp
+ ../GLM/glm/detail/type_mat2x2.hpp
+ ../GLM/glm/detail/type_mat2x2.inl
+ ../GLM/glm/detail/type_mat2x3.hpp
+ ../GLM/glm/detail/type_mat2x3.inl
+ ../GLM/glm/detail/type_mat2x4.hpp
+ ../GLM/glm/detail/type_mat2x4.inl
+ ../GLM/glm/detail/type_mat3x2.hpp
+ ../GLM/glm/detail/type_mat3x2.inl
+ ../GLM/glm/detail/type_mat3x3.hpp
+ ../GLM/glm/detail/type_mat3x3.inl
+ ../GLM/glm/detail/type_mat3x4.hpp
+ ../GLM/glm/detail/type_mat3x4.inl
+ ../GLM/glm/detail/type_mat4x2.hpp
+ ../GLM/glm/detail/type_mat4x2.inl
+ ../GLM/glm/detail/type_mat4x3.hpp
+ ../GLM/glm/detail/type_mat4x3.inl
+ ../GLM/glm/detail/type_mat4x4.hpp
+ ../GLM/glm/detail/type_mat4x4.inl
+ ../GLM/glm/detail/type_vec.hpp
+ ../GLM/glm/detail/type_vec1.hpp
+ ../GLM/glm/detail/type_vec1.inl
+ ../GLM/glm/detail/type_vec2.hpp
+ ../GLM/glm/detail/type_vec2.inl
+ ../GLM/glm/detail/type_vec3.hpp
+ ../GLM/glm/detail/type_vec3.inl
+ ../GLM/glm/detail/type_vec4.hpp
+ ../GLM/glm/detail/type_vec4.inl
+ ../GLM/glm/detail/type_vec4_avx.inl
+ ../GLM/glm/detail/type_vec4_avx2.inl
+ ../GLM/glm/detail/type_vec4_sse2.inl
+ ../GLM/glm/exponential.hpp
+ ../GLM/glm/fwd.hpp
+ ../GLM/glm/geometric.hpp
+ ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/matrix_transform.hpp
+ ../GLM/glm/gtc/matrix_transform.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
+ ../GLM/glm/integer.hpp
+ ../GLM/glm/mat2x2.hpp
+ ../GLM/glm/mat2x3.hpp
+ ../GLM/glm/mat2x4.hpp
+ ../GLM/glm/mat3x2.hpp
+ ../GLM/glm/mat3x3.hpp
+ ../GLM/glm/mat3x4.hpp
+ ../GLM/glm/mat4x2.hpp
+ ../GLM/glm/mat4x3.hpp
+ ../GLM/glm/mat4x4.hpp
+ ../GLM/glm/matrix.hpp
+ ../GLM/glm/packing.hpp
+ ../GLM/glm/trigonometric.hpp
+ ../GLM/glm/vec2.hpp
+ ../GLM/glm/vec3.hpp
+ ../GLM/glm/vec4.hpp
+ ../GLM/glm/vector_relational.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
-CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj
+ ../GLM/glm/common.hpp
+ ../GLM/glm/detail/_fixes.hpp
+ ../GLM/glm/detail/_swizzle.hpp
+ ../GLM/glm/detail/_swizzle_func.hpp
+ ../GLM/glm/detail/_vectorize.hpp
+ ../GLM/glm/detail/func_common.hpp
+ ../GLM/glm/detail/func_common.inl
+ ../GLM/glm/detail/func_exponential.hpp
+ ../GLM/glm/detail/func_exponential.inl
+ ../GLM/glm/detail/func_geometric.hpp
+ ../GLM/glm/detail/func_geometric.inl
+ ../GLM/glm/detail/func_integer.hpp
+ ../GLM/glm/detail/func_integer.inl
+ ../GLM/glm/detail/func_matrix.hpp
+ ../GLM/glm/detail/func_matrix.inl
+ ../GLM/glm/detail/func_packing.hpp
+ ../GLM/glm/detail/func_packing.inl
+ ../GLM/glm/detail/func_trigonometric.hpp
+ ../GLM/glm/detail/func_trigonometric.inl
+ ../GLM/glm/detail/func_vector_relational.hpp
+ ../GLM/glm/detail/func_vector_relational.inl
+ ../GLM/glm/detail/precision.hpp
+ ../GLM/glm/detail/setup.hpp
+ ../GLM/glm/detail/type_float.hpp
+ ../GLM/glm/detail/type_half.hpp
+ ../GLM/glm/detail/type_half.inl
+ ../GLM/glm/detail/type_int.hpp
+ ../GLM/glm/detail/type_mat.hpp
+ ../GLM/glm/detail/type_mat2x2.hpp
+ ../GLM/glm/detail/type_mat2x2.inl
+ ../GLM/glm/detail/type_mat2x3.hpp
+ ../GLM/glm/detail/type_mat2x3.inl
+ ../GLM/glm/detail/type_mat2x4.hpp
+ ../GLM/glm/detail/type_mat2x4.inl
+ ../GLM/glm/detail/type_mat3x2.hpp
+ ../GLM/glm/detail/type_mat3x2.inl
+ ../GLM/glm/detail/type_mat3x3.hpp
+ ../GLM/glm/detail/type_mat3x3.inl
+ ../GLM/glm/detail/type_mat3x4.hpp
+ ../GLM/glm/detail/type_mat3x4.inl
+ ../GLM/glm/detail/type_mat4x2.hpp
+ ../GLM/glm/detail/type_mat4x2.inl
+ ../GLM/glm/detail/type_mat4x3.hpp
+ ../GLM/glm/detail/type_mat4x3.inl
+ ../GLM/glm/detail/type_mat4x4.hpp
+ ../GLM/glm/detail/type_mat4x4.inl
+ ../GLM/glm/detail/type_vec.hpp
+ ../GLM/glm/detail/type_vec1.hpp
+ ../GLM/glm/detail/type_vec1.inl
+ ../GLM/glm/detail/type_vec2.hpp
+ ../GLM/glm/detail/type_vec2.inl
+ ../GLM/glm/detail/type_vec3.hpp
+ ../GLM/glm/detail/type_vec3.inl
+ ../GLM/glm/detail/type_vec4.hpp
+ ../GLM/glm/detail/type_vec4.inl
+ ../GLM/glm/detail/type_vec4_avx.inl
+ ../GLM/glm/detail/type_vec4_avx2.inl
+ ../GLM/glm/detail/type_vec4_sse2.inl
+ ../GLM/glm/exponential.hpp
+ ../GLM/glm/fwd.hpp
+ ../GLM/glm/geometric.hpp
+ ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/matrix_transform.hpp
+ ../GLM/glm/gtc/matrix_transform.inl
+ ../GLM/glm/integer.hpp
+ ../GLM/glm/mat2x2.hpp
+ ../GLM/glm/mat2x3.hpp
+ ../GLM/glm/mat2x4.hpp
+ ../GLM/glm/mat3x2.hpp
+ ../GLM/glm/mat3x3.hpp
+ ../GLM/glm/mat3x4.hpp
+ ../GLM/glm/mat4x2.hpp
+ ../GLM/glm/mat4x3.hpp
+ ../GLM/glm/mat4x4.hpp
+ ../GLM/glm/matrix.hpp
+ ../GLM/glm/packing.hpp
+ ../GLM/glm/trigonometric.hpp
+ ../GLM/glm/vec2.hpp
+ ../GLM/glm/vec3.hpp
+ ../GLM/glm/vec4.hpp
+ ../GLM/glm/vector_relational.hpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Window/Window.cpp.obj
  ../GLEW/include/GL/glew.h
  ../GLFW/include/GLFW/glfw3.h
  ../GLM/glm/common.hpp
@@ -898,6 +1022,12 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
  ../GLM/glm/fwd.hpp
  ../GLM/glm/geometric.hpp
  ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/constants.hpp
+ ../GLM/glm/gtc/constants.inl
+ ../GLM/glm/gtc/quaternion.hpp
+ ../GLM/glm/gtc/quaternion.inl
+ ../GLM/glm/gtc/type_ptr.hpp
+ ../GLM/glm/gtc/type_ptr.inl
  ../GLM/glm/integer.hpp
  ../GLM/glm/mat2x2.hpp
  ../GLM/glm/mat2x3.hpp
@@ -915,228 +1045,14 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.obj
  ../GLM/glm/vec3.hpp
  ../GLM/glm/vec4.hpp
  ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
-CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj
- ../GLM/glm/common.hpp
- ../GLM/glm/detail/_fixes.hpp
- ../GLM/glm/detail/_swizzle.hpp
- ../GLM/glm/detail/_swizzle_func.hpp
- ../GLM/glm/detail/_vectorize.hpp
- ../GLM/glm/detail/func_common.hpp
- ../GLM/glm/detail/func_common.inl
- ../GLM/glm/detail/func_exponential.hpp
- ../GLM/glm/detail/func_exponential.inl
- ../GLM/glm/detail/func_geometric.hpp
- ../GLM/glm/detail/func_geometric.inl
- ../GLM/glm/detail/func_integer.hpp
- ../GLM/glm/detail/func_integer.inl
- ../GLM/glm/detail/func_matrix.hpp
- ../GLM/glm/detail/func_matrix.inl
- ../GLM/glm/detail/func_packing.hpp
- ../GLM/glm/detail/func_packing.inl
- ../GLM/glm/detail/func_trigonometric.hpp
- ../GLM/glm/detail/func_trigonometric.inl
- ../GLM/glm/detail/func_vector_relational.hpp
- ../GLM/glm/detail/func_vector_relational.inl
- ../GLM/glm/detail/precision.hpp
- ../GLM/glm/detail/setup.hpp
- ../GLM/glm/detail/type_float.hpp
- ../GLM/glm/detail/type_half.hpp
- ../GLM/glm/detail/type_half.inl
- ../GLM/glm/detail/type_int.hpp
- ../GLM/glm/detail/type_mat.hpp
- ../GLM/glm/detail/type_mat2x2.hpp
- ../GLM/glm/detail/type_mat2x2.inl
- ../GLM/glm/detail/type_mat2x3.hpp
- ../GLM/glm/detail/type_mat2x3.inl
- ../GLM/glm/detail/type_mat2x4.hpp
- ../GLM/glm/detail/type_mat2x4.inl
- ../GLM/glm/detail/type_mat3x2.hpp
- ../GLM/glm/detail/type_mat3x2.inl
- ../GLM/glm/detail/type_mat3x3.hpp
- ../GLM/glm/detail/type_mat3x3.inl
- ../GLM/glm/detail/type_mat3x4.hpp
- ../GLM/glm/detail/type_mat3x4.inl
- ../GLM/glm/detail/type_mat4x2.hpp
- ../GLM/glm/detail/type_mat4x2.inl
- ../GLM/glm/detail/type_mat4x3.hpp
- ../GLM/glm/detail/type_mat4x3.inl
- ../GLM/glm/detail/type_mat4x4.hpp
- ../GLM/glm/detail/type_mat4x4.inl
- ../GLM/glm/detail/type_vec.hpp
- ../GLM/glm/detail/type_vec1.hpp
- ../GLM/glm/detail/type_vec1.inl
- ../GLM/glm/detail/type_vec2.hpp
- ../GLM/glm/detail/type_vec2.inl
- ../GLM/glm/detail/type_vec3.hpp
- ../GLM/glm/detail/type_vec3.inl
- ../GLM/glm/detail/type_vec4.hpp
- ../GLM/glm/detail/type_vec4.inl
- ../GLM/glm/detail/type_vec4_avx.inl
- ../GLM/glm/detail/type_vec4_avx2.inl
- ../GLM/glm/detail/type_vec4_sse2.inl
- ../GLM/glm/exponential.hpp
- ../GLM/glm/fwd.hpp
- ../GLM/glm/geometric.hpp
- ../GLM/glm/glm.hpp
- ../GLM/glm/integer.hpp
- ../GLM/glm/mat2x2.hpp
- ../GLM/glm/mat2x3.hpp
- ../GLM/glm/mat2x4.hpp
- ../GLM/glm/mat3x2.hpp
- ../GLM/glm/mat3x3.hpp
- ../GLM/glm/mat3x4.hpp
- ../GLM/glm/mat4x2.hpp
- ../GLM/glm/mat4x3.hpp
- ../GLM/glm/mat4x4.hpp
- ../GLM/glm/matrix.hpp
- ../GLM/glm/packing.hpp
- ../GLM/glm/trigonometric.hpp
- ../GLM/glm/vec2.hpp
- ../GLM/glm/vec3.hpp
- ../GLM/glm/vec4.hpp
- ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.h
-CMakeFiles/COMP_371_A3.dir/Utilities/Uniform.cpp.obj
- ../GLEW/include/GL/glew.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
-CMakeFiles/COMP_371_A3.dir/Utilities/Window.cpp.obj
- ../GLEW/include/GL/glew.h
- ../GLFW/include/GLFW/glfw3.h
- ../GLM/glm/common.hpp
- ../GLM/glm/detail/_fixes.hpp
- ../GLM/glm/detail/_swizzle.hpp
- ../GLM/glm/detail/_swizzle_func.hpp
- ../GLM/glm/detail/_vectorize.hpp
- ../GLM/glm/detail/func_common.hpp
- ../GLM/glm/detail/func_common.inl
- ../GLM/glm/detail/func_exponential.hpp
- ../GLM/glm/detail/func_exponential.inl
- ../GLM/glm/detail/func_geometric.hpp
- ../GLM/glm/detail/func_geometric.inl
- ../GLM/glm/detail/func_integer.hpp
- ../GLM/glm/detail/func_integer.inl
- ../GLM/glm/detail/func_matrix.hpp
- ../GLM/glm/detail/func_matrix.inl
- ../GLM/glm/detail/func_packing.hpp
- ../GLM/glm/detail/func_packing.inl
- ../GLM/glm/detail/func_trigonometric.hpp
- ../GLM/glm/detail/func_trigonometric.inl
- ../GLM/glm/detail/func_vector_relational.hpp
- ../GLM/glm/detail/func_vector_relational.inl
- ../GLM/glm/detail/precision.hpp
- ../GLM/glm/detail/setup.hpp
- ../GLM/glm/detail/type_float.hpp
- ../GLM/glm/detail/type_half.hpp
- ../GLM/glm/detail/type_half.inl
- ../GLM/glm/detail/type_int.hpp
- ../GLM/glm/detail/type_mat.hpp
- ../GLM/glm/detail/type_mat2x2.hpp
- ../GLM/glm/detail/type_mat2x2.inl
- ../GLM/glm/detail/type_mat2x3.hpp
- ../GLM/glm/detail/type_mat2x3.inl
- ../GLM/glm/detail/type_mat2x4.hpp
- ../GLM/glm/detail/type_mat2x4.inl
- ../GLM/glm/detail/type_mat3x2.hpp
- ../GLM/glm/detail/type_mat3x2.inl
- ../GLM/glm/detail/type_mat3x3.hpp
- ../GLM/glm/detail/type_mat3x3.inl
- ../GLM/glm/detail/type_mat3x4.hpp
- ../GLM/glm/detail/type_mat3x4.inl
- ../GLM/glm/detail/type_mat4x2.hpp
- ../GLM/glm/detail/type_mat4x2.inl
- ../GLM/glm/detail/type_mat4x3.hpp
- ../GLM/glm/detail/type_mat4x3.inl
- ../GLM/glm/detail/type_mat4x4.hpp
- ../GLM/glm/detail/type_mat4x4.inl
- ../GLM/glm/detail/type_vec.hpp
- ../GLM/glm/detail/type_vec1.hpp
- ../GLM/glm/detail/type_vec1.inl
- ../GLM/glm/detail/type_vec2.hpp
- ../GLM/glm/detail/type_vec2.inl
- ../GLM/glm/detail/type_vec3.hpp
- ../GLM/glm/detail/type_vec3.inl
- ../GLM/glm/detail/type_vec4.hpp
- ../GLM/glm/detail/type_vec4.inl
- ../GLM/glm/detail/type_vec4_avx.inl
- ../GLM/glm/detail/type_vec4_avx2.inl
- ../GLM/glm/detail/type_vec4_sse2.inl
- ../GLM/glm/exponential.hpp
- ../GLM/glm/fwd.hpp
- ../GLM/glm/geometric.hpp
- ../GLM/glm/glm.hpp
- ../GLM/glm/integer.hpp
- ../GLM/glm/mat2x2.hpp
- ../GLM/glm/mat2x3.hpp
- ../GLM/glm/mat2x4.hpp
- ../GLM/glm/mat3x2.hpp
- ../GLM/glm/mat3x3.hpp
- ../GLM/glm/mat3x4.hpp
- ../GLM/glm/mat4x2.hpp
- ../GLM/glm/mat4x3.hpp
- ../GLM/glm/mat4x4.hpp
- ../GLM/glm/matrix.hpp
- ../GLM/glm/packing.hpp
- ../GLM/glm/trigonometric.hpp
- ../GLM/glm/vec2.hpp
- ../GLM/glm/vec3.hpp
- ../GLM/glm/vec4.hpp
- ../GLM/glm/vector_relational.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/exponential.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/quaternion.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/type_ptr.inl
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat2x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat3x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.cpp
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.cpp
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj
  ../GLEW/include/GL/glew.h
  ../GLFW/include/GLFW/glfw3.h
@@ -1164,6 +1080,8 @@ CMakeFiles/COMP_371_A3.dir/main.cpp.obj
  ../GLM/glm/fwd.hpp
  ../GLM/glm/geometric.hpp
  ../GLM/glm/glm.hpp
+ ../GLM/glm/gtc/matrix_transform.hpp
+ ../GLM/glm/gtc/type_ptr.hpp
  ../GLM/glm/integer.hpp
  ../GLM/glm/mat2x2.hpp
  ../GLM/glm/mat2x3.hpp
@@ -1252,14 +1170,14 @@ CMakeFiles/COMP_371_A3.dir/main.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMap.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/DepthMapLight.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandlingFunctions.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Light.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/MVP.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Object.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ObjectContainer.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.h
- D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/main.cpp
