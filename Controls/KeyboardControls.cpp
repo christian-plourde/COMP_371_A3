@@ -84,7 +84,6 @@ void key_press_o(ObjectContainer* objects)
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0.9f, 0.9f, 0.9f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
-
     }
 }
 

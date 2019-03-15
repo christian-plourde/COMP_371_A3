@@ -202,11 +202,6 @@ int main()
     heraclesShader -> setUniformData("light_color_2", light2.getColor());
     heraclesShader -> setUniformData("light_color_3", light3.getColor());
     heraclesShader -> setUniformData("light_color_4", light4.getColor());
-    heraclesShader -> addUniform("depth_tex");
-    depth_map.BindForReading();
-    heraclesShader -> setUniformData("depth_tex", depth_map.getTexture());
-    heraclesShader -> addUniform("light_matrix");
-    heraclesShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
 
     objects->addObject(&floor);
     objects->addObject(&heracles);
