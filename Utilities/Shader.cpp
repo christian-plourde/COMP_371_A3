@@ -72,18 +72,18 @@ void Shader::setUniformData(const char *name, int value)
     glUniform1i(id, value);
 }
 
-void Shader::setUniformData(const char *name, glm::vec3 vector)
-{
-    this -> use();
-    GLint id = getUniformID(name);
-    glUniform3fv(id, 1, glm::value_ptr(vector));
-}
-
 void Shader::setUniformData(const char *name, GLuint value)
 {
     this -> use();
     GLint id = getUniformID(name);
     glUniform1i(id, value);
+}
+
+void Shader::setUniformData(const char *name, glm::vec3 vector)
+{
+    this -> use();
+    GLint id = getUniformID(name);
+    glUniform3fv(id, 1, glm::value_ptr(vector));
 }
 
 void Shader::use()

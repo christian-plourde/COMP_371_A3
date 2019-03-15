@@ -34,6 +34,7 @@ void DepthMap::load()
     GLCall(glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depth_tex, 0));
     GLCall(glDrawBuffer(GL_NONE));
     GLCall(glReadBuffer(GL_NONE));
+
 }
 
 void DepthMap::setShader(Shader *s)

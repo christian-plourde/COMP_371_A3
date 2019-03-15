@@ -164,6 +164,7 @@ int main()
     floorShader -> setUniformData("light_color_3", floor_light3.getColor());
     floorShader -> setUniformData("light_color_4", floor_light4.getColor());
     floorShader -> addUniform("depth_tex");
+    depth_map.BindForReading(GL_TEXTURE0);
     floorShader -> setUniformData("depth_tex", 0);
     floorShader -> addUniform("light_matrix");
     floorShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
@@ -200,6 +201,7 @@ int main()
     heraclesShader -> setUniformData("light_color_3", light3.getColor());
     heraclesShader -> setUniformData("light_color_4", light4.getColor());
     heraclesShader -> addUniform("depth_tex");
+    depth_map.BindForReading(GL_TEXTURE0);
     heraclesShader -> setUniformData("depth_tex", 0);
     heraclesShader -> addUniform("light_matrix");
     heraclesShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
