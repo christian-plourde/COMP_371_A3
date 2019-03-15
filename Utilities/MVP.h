@@ -10,6 +10,9 @@ class MVP
         glm::mat4 Model;
         glm::mat4 View;
         glm::mat4 Projection;
+        glm::vec3 view_eye;
+        glm::vec3 view_direction;
+        glm::vec3 view_up;
 
     public:
         MVP();
@@ -22,6 +25,12 @@ class MVP
         inline glm::mat4 getView(){return View;}
         inline glm::mat4 getProjection(){return Projection;}
         glm::mat4 getMVP();
+        inline glm::vec3 getViewEye(){return view_eye;}
+        inline glm::vec3 getViewDirection(){return view_direction;}
+        inline glm::vec3 getViewUp(){return view_up;}
+        void setViewEye(glm::vec3);
+        void setViewDirection(glm::vec3);
+        void setViewUp(glm::vec3);
 };
 
 #endif

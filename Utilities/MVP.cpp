@@ -4,7 +4,10 @@
 MVP::MVP()
 {
     Model = glm::mat4(1.0f);
-    View = glm::lookAt(glm::vec3(100,0,30),glm::vec3(0,0,0), glm::vec3(0, 0, 1));
+    view_eye = glm::vec3(100,0,30);
+    view_direction = glm::vec3(0,0,0);
+    view_up = glm::vec3(0, 0, 1);
+    View = glm::lookAt(view_eye,view_direction, view_up);
     Projection = glm::mat4(1.0f);
 }
 
@@ -20,12 +23,33 @@ void MVP::setModel(glm::mat4 model)
 
 void MVP::setView(glm::vec3 eye, glm::vec3 point, glm::vec3 up_vector)
 {
+    view_eye = eye;
+    view_direction = point;
+    view_up = up_vector;
     View = glm::lookAt(eye,point,up_vector);
 }
 
 void MVP::setView(glm::mat4 newView)
 {
     View = newView;
+}
+
+void MVP::setViewEye(glm::vec3 e)
+{
+    view_eye = e;
+    View = glm::lookAt(view_eye,view_direction,view_up);
+}
+
+void MVP::setViewDirection(glm::vec3 dir)
+{
+    view_direction = dir;
+    View = glm::lookAt(view_eye,view_direction,view_up);
+}
+
+void MVP::setViewUp(glm::vec3 up)
+{
+    view_up = up;
+    View = glm::lookAt(view_eye,view_direction,view_up);
 }
 
 void MVP::setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane)
