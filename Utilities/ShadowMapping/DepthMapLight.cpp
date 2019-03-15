@@ -2,7 +2,7 @@
 
 DepthMapLight::DepthMapLight()
 {
-    near_plane = 3.0f;
+    near_plane = 1.0f;
     far_plane = 120.0f;
     projection = glm::perspective(glm::radians(60.0f), 1.0f, near_plane, far_plane);
     eye = glm::vec3(0, 20, 10);

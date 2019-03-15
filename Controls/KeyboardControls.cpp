@@ -79,11 +79,13 @@ void key_press_o(ObjectContainer* objects)
     //our shader
     for(int i = 0; i<objects->size; i++)
     {
-
+        if(!objects->getObject(i)->isStatic())
+        {
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0.9f, 0.9f, 0.9f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
     }
 }
 
@@ -94,10 +96,13 @@ void key_press_p(ObjectContainer* objects)
     //our shader
     for(int i = 0; i<objects->size; i++)
     {
+        if(!objects->getObject(i)->isStatic())
+        {
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1.1f, 1.1f, 1.1f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
+        }
     }
 }
 

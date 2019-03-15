@@ -15,6 +15,7 @@
 #include "Utilities/ErrorHandling/ErrorHandlingFunctions.h"
 #include "Utilities/Objects/ObjectContainer.h"
 #include "Utilities/ShadowMapping/DepthMap.h"
+#include "Utilities/Lights/SpotLight.h"
 
 Window* myWindow; //the glfw window
 ObjectContainer* objects;
@@ -165,13 +166,23 @@ int main()
     floorShader -> setUniformData("light_color_2", floor_light2.getColor());
     floorShader -> setUniformData("light_color_3", floor_light3.getColor());
     floorShader -> setUniformData("light_color_4", floor_light4.getColor());
+    SpotLight floor_spot_light_1; //for when we press the F2 key
+    floorShader -> addUniform("spot_light_1_position");
+    floorShader -> setUniformData("spot_light_1_position", floor_spot_light_1.getPosition());
+    floorShader -> addUniform("spot_light_1_color");
+    floorShader -> setUniformData("spot_light_1_color", floor_spot_light_1.getColor());
+    floorShader -> addUniform("spot_light_1_direction");
+    floorShader -> setUniformData("spot_light_1_direction", floor_spot_light_1.getDirection());
+    floorShader -> addUniform("spot_light_1_cutoff");
+    floorShader -> setUniformData("spot_light_1_cutoff", floor_spot_light_1.getCutoffCosine());
     floorShader -> addUniform("depth_tex");
     depth_map.BindForReading();
     floorShader -> setUniformData("depth_tex", depth_map.getTexture());
     floorShader -> addUniform("light_matrix");
     floorShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
 
-    Shader* heraclesShader = new Shader("../Shaders/VertexShader.glsl", "../Shaders/FragmentShader.glsl");
+
+    Shader* heraclesShader = new Shader("../Shaders/HeraclesVertexShader.glsl", "../Shaders/HeraclesFragmentShader.glsl");
     heracles.setShader(heraclesShader);
     heraclesShader -> addUniform("view_matrix");
     heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
@@ -201,6 +212,15 @@ int main()
     heraclesShader -> setUniformData("light_color_2", light2.getColor());
     heraclesShader -> setUniformData("light_color_3", light3.getColor());
     heraclesShader -> setUniformData("light_color_4", light4.getColor());
+    SpotLight spot_light_1; //for when we press the F2 key
+    heraclesShader -> addUniform("spot_light_1_position");
+    heraclesShader -> setUniformData("spot_light_1_position", spot_light_1.getPosition());
+    heraclesShader -> addUniform("spot_light_1_color");
+    heraclesShader -> setUniformData("spot_light_1_color", spot_light_1.getColor());
+    heraclesShader -> addUniform("spot_light_1_direction");
+    heraclesShader -> setUniformData("spot_light_1_direction", spot_light_1.getDirection());
+    heraclesShader -> addUniform("spot_light_1_cutoff");
+    heraclesShader -> setUniformData("spot_light_1_cutoff", spot_light_1.getCutoffCosine());
 
     objects->addObject(&floor);
     objects->addObject(&heracles);

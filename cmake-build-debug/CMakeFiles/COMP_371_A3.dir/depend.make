@@ -1171,6 +1171,7 @@ CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Loaders/ObjectLoader.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Loaders/ShaderLoader.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunctions.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/Lights/Light.h
+CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/Lights/SpotLight.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/Objects/MVP.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/Objects/Object.h
 CMakeFiles/COMP_371_A3.dir/main.cpp.obj: ../Utilities/Objects/ObjectContainer.h

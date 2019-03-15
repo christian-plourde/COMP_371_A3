@@ -20,6 +20,7 @@ class SpotLight
         inline glm::vec3 getPosition(){return spot_position;}
         inline glm::vec3 getDirection(){return spot_direction;}
         inline glm::vec3 getColor(){return spot_color;}
+        inline float getCutoffAngle(){return cutoff_angle;}
         void setPosition(float x, float y, float z);
         void setDirection(float x, float y, float z);
         void setColor(float x, float y, float z);

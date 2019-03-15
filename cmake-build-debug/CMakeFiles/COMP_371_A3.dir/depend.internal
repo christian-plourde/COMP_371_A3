@@ -1172,6 +1172,7 @@ CMakeFiles/COMP_371_A3.dir/main.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/SpotLight.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
