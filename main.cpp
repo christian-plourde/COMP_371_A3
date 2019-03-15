@@ -135,6 +135,7 @@ int main()
     depth_map_shader->addUniform("light_matrix");
     depth_map_shader->setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
     depth_map_shader->addUniform("model_matrix");
+    //depth_map_shader->addUniform("view_matrix");
 
     Shader* floorShader = new Shader("../Shaders/FloorVertexShader.glsl", "../Shaders/FloorFragmentShader.glsl");
     floor.setShader(floorShader);

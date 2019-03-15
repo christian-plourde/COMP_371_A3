@@ -11,6 +11,11 @@ uniform vec3 light_position_1;
 uniform vec3 light_position_2;
 uniform vec3 light_position_3;
 uniform vec3 light_position_4;
+uniform vec3 spot_light_1_position;
+uniform vec3 spot_light_1_direction;
+uniform vec3 spot_light_1_color;
+uniform float spot_light_1_cutoff;
+
 uniform vec3 view_position;
 uniform sampler2D depth_tex;
 

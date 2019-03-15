@@ -12,22 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa210c78-ec2f-4fca-9937-978a4ea5baa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controls/KeyboardControls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controls/KeyboardControls.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shaders/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shaders/VertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/HeraclesVertexShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Lights/SpotLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Lights/SpotLight.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/Lights/SpotLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/Lights/SpotLight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Controls/KeyboardControls.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/Lights/SpotLight.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/Utilities/ShadowMapping/DepthMapLight.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP_371_A3.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP_371_A3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -43,12 +29,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="218" column="84" lean-forward="true" selection-start-line="218" selection-start-column="84" selection-end-line="218" selection-end-column="84" />
+            <state relative-caret-position="232">
+              <caret line="137" column="6" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#586#2984#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1047">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -95,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Shaders/FloorPhongVertexShader.glsl" />
         <option value="$PROJECT_DIR$/Shaders/FloorPhongFragmentShader.glsl" />
         <option value="$PROJECT_DIR$/Shaders/GouraudVertexShader.glsl" />
         <option value="$PROJECT_DIR$/Shaders/PhongFragmentShader.glsl" />
@@ -136,7 +139,6 @@
         <option value="$PROJECT_DIR$/Shaders/FloorVertexShader.glsl" />
         <option value="$PROJECT_DIR$/Utilities/MVP.cpp" />
         <option value="$PROJECT_DIR$/Utilities/DepthMapLight.cpp" />
-        <option value="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" />
         <option value="$PROJECT_DIR$/Utilities/DepthMap.cpp" />
         <option value="$PROJECT_DIR$/ObjectFiles/floor.obj" />
         <option value="$PROJECT_DIR$/Utilities/SpotLight.h" />
@@ -145,6 +147,8 @@
         <option value="$PROJECT_DIR$/Utilities/ShadowMapping/DepthMapLight.cpp" />
         <option value="$PROJECT_DIR$/Controls/KeyboardControls.cpp" />
         <option value="$PROJECT_DIR$/Utilities/Lights/SpotLight.h" />
+        <option value="$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl" />
+        <option value="$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -169,11 +173,6 @@
             <path>
               <item name="COMP_371_A3" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP_371_A3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP_371_A3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP_371_A3" type="462c0819:PsiDirectoryNode" />
-              <item name="Shaders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="COMP_371_A3" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +314,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228525000" />
+    <option name="totallyTimeSpent" value="230225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,12 +329,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2174616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2174616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2416357" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2416357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -643,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -688,17 +680,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/FloorFragmentShader.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1047">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shaders/HeraclesFragmentShader.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="348">
+          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="218" column="84" lean-forward="true" selection-start-line="218" selection-start-column="84" selection-end-line="218" selection-end-column="84" />
+        <state relative-caret-position="232">
+          <caret line="137" column="6" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#586#2984#0" />
