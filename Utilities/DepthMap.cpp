@@ -52,6 +52,7 @@ void DepthMap::RenderToTexture(ObjectContainer *o)
     for(int i = 0; i < o->size; i++)
     {
         //draw each object using the shader bound to the depth map
+        shader->setUniformData("model_matrix", o->getObject(i)->getMVP()->getModel());
         o->getObject(i)->Draw(false, false);
     }
     GLCall(glBindFramebuffer(GL_FRAMEBUFFER, 0));
