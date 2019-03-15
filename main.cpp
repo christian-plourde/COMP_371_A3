@@ -127,6 +127,7 @@ int main()
     //we will also be needing a depth map
     DepthMap depth_map;
     depth_map.load();
+    depth_map.setTextureSlot(GL_TEXTURE0);
     //the depth map will have its own shader
     Shader* depth_map_shader = new Shader("../Shaders/DepthMapVertexShader.glsl", "../Shaders/DepthMapFragmentShader.glsl");
     depth_map.setShader(depth_map_shader);
@@ -142,7 +143,7 @@ int main()
     floorShader -> addUniform("projection_matrix");
     floorShader -> setUniformData("projection_matrix", floor.getMVP() -> getProjection());
     floorShader -> addUniform("view_position");
-    floorShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
+    floorShader -> setUniformData("view_position", glm::vec3(30, 30, 30));
     Light floor_light1(0, 20, 10, 0.2, 0.05, 0.05);
     Light floor_light2(-10, 15, 5, 0.05, 0.2, 0.05);
     Light floor_light3(0, 15, 5, 0.05, 0.05, 0.2);
@@ -164,8 +165,8 @@ int main()
     floorShader -> setUniformData("light_color_3", floor_light3.getColor());
     floorShader -> setUniformData("light_color_4", floor_light4.getColor());
     floorShader -> addUniform("depth_tex");
-    depth_map.BindForReading(GL_TEXTURE0);
-    floorShader -> setUniformData("depth_tex", 0);
+    depth_map.BindForReading();
+    floorShader -> setUniformData("depth_tex", depth_map.getTexture());
     floorShader -> addUniform("light_matrix");
     floorShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
 
@@ -179,7 +180,7 @@ int main()
     heraclesShader -> addUniform("projection_matrix");
     heraclesShader -> setUniformData("projection_matrix", heracles.getMVP() -> getProjection());
     heraclesShader -> addUniform("view_position");
-    heraclesShader -> setUniformData("view_position", glm::vec3(20, 20, 20));
+    heraclesShader -> setUniformData("view_position", glm::vec3(30, 30, 30));
     Light light1(0, 20, 10, 0.2, 0.05, 0.05);
     Light light2(-10, 15, 5, 0.05, 0.2, 0.05);
     Light light3(0, 15, 5, 0.05, 0.05, 0.2);
@@ -201,8 +202,8 @@ int main()
     heraclesShader -> setUniformData("light_color_3", light3.getColor());
     heraclesShader -> setUniformData("light_color_4", light4.getColor());
     heraclesShader -> addUniform("depth_tex");
-    depth_map.BindForReading(GL_TEXTURE0);
-    heraclesShader -> setUniformData("depth_tex", 0);
+    depth_map.BindForReading();
+    heraclesShader -> setUniformData("depth_tex", depth_map.getTexture());
     heraclesShader -> addUniform("light_matrix");
     heraclesShader -> setUniformData("light_matrix", depth_map.getLight()->getLightMatrix());
 
@@ -214,7 +215,7 @@ int main()
         myWindow->PrepareDraw();
         depth_map.RenderToTexture(objects);
         heracles.setViewPort();
-        depth_map.BindForReading(GL_TEXTURE0);
+        depth_map.BindForReading();
         heracles.Draw();
         floor.Draw();
         myWindow->EndDraw();

@@ -419,6 +419,33 @@ Utilities/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Shader.cpp.s
 .PHONY : Utilities/Shader.cpp.s
 
+Utilities/SpotLight.obj: Utilities/SpotLight.cpp.obj
+
+.PHONY : Utilities/SpotLight.obj
+
+# target to build an object file
+Utilities/SpotLight.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.obj
+.PHONY : Utilities/SpotLight.cpp.obj
+
+Utilities/SpotLight.i: Utilities/SpotLight.cpp.i
+
+.PHONY : Utilities/SpotLight.i
+
+# target to preprocess a source file
+Utilities/SpotLight.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.i
+.PHONY : Utilities/SpotLight.cpp.i
+
+Utilities/SpotLight.s: Utilities/SpotLight.cpp.s
+
+.PHONY : Utilities/SpotLight.s
+
+# target to generate assembly for a file
+Utilities/SpotLight.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/SpotLight.cpp.s
+.PHONY : Utilities/SpotLight.cpp.s
+
 Utilities/Uniform.obj: Utilities/Uniform.cpp.obj
 
 .PHONY : Utilities/Uniform.obj
@@ -542,6 +569,9 @@ help:
 	@echo ... Utilities/Shader.obj
 	@echo ... Utilities/Shader.i
 	@echo ... Utilities/Shader.s
+	@echo ... Utilities/SpotLight.obj
+	@echo ... Utilities/SpotLight.i
+	@echo ... Utilities/SpotLight.s
 	@echo ... Utilities/Uniform.obj
 	@echo ... Utilities/Uniform.i
 	@echo ... Utilities/Uniform.s

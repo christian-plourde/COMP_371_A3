@@ -149,6 +149,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shader.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/SpotLight.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Uniform.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>

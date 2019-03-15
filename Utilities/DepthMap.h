@@ -17,18 +17,20 @@ class DepthMap
         GLuint SHADOW_WIDTH;
         Shader* shader;
         DepthMapLight* depth_light;
+        GLenum texture_slot;
 
     public:
         DepthMap();
         DepthMap(GLuint shadow_width, GLuint shadow_height);
         ~DepthMap();
+        inline void setTextureSlot(GLenum slot){texture_slot = slot;}
         inline DepthMapLight* getLight(){return depth_light;}
         void setShader(Shader* s);
         void load();
         void RenderToTexture(ObjectContainer* o);
         void BindForWriting();
-        void BindForReading(GLenum tex_unit);
-        inline GLuint getTexture(){return depth_tex;}
+        void BindForReading();
+        GLuint getTexture();
 };
 
 #endif

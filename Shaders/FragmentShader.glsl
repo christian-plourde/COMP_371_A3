@@ -72,5 +72,5 @@ void main()
 
             color = (specular + ambient + diffuse)*color;
             float shadow = ShadowCalculation(fragment_position_light_space);
-            color = color*(1-shadow);
+            //color = color*(1-shadow);
 }

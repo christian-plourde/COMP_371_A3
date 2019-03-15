@@ -62,9 +62,49 @@ void DepthMap::BindForWriting()
     GLCall(glBindFramebuffer(GL_FRAMEBUFFER, frame_buffer));
 }
 
-void DepthMap::BindForReading(GLenum tex_unit)
+void DepthMap::BindForReading()
 {
-    GLCall(glActiveTexture(tex_unit));
+    GLCall(glActiveTexture(texture_slot));
     GLCall(glBindTexture(GL_TEXTURE_2D, depth_tex));
+}
+
+GLuint DepthMap::getTexture()
+{
+    switch(texture_slot)
+    {
+        case GL_TEXTURE0: return 0;
+        case GL_TEXTURE1: return 1;
+        case GL_TEXTURE2: return 2;
+        case GL_TEXTURE3: return 3;
+        case GL_TEXTURE4: return 4;
+        case GL_TEXTURE5: return 5;
+        case GL_TEXTURE6: return 6;
+        case GL_TEXTURE7: return 7;
+        case GL_TEXTURE8: return 8;
+        case GL_TEXTURE9: return 9;
+        case GL_TEXTURE10: return 10;
+        case GL_TEXTURE11: return 11;
+        case GL_TEXTURE12: return 12;
+        case GL_TEXTURE13: return 13;
+        case GL_TEXTURE14: return 14;
+        case GL_TEXTURE15: return 15;
+        case GL_TEXTURE16: return 16;
+        case GL_TEXTURE17: return 17;
+        case GL_TEXTURE18: return 18;
+        case GL_TEXTURE19: return 19;
+        case GL_TEXTURE20: return 20;
+        case GL_TEXTURE21: return 21;
+        case GL_TEXTURE22: return 22;
+        case GL_TEXTURE23: return 23;
+        case GL_TEXTURE24: return 24;
+        case GL_TEXTURE25: return 25;
+        case GL_TEXTURE26: return 26;
+        case GL_TEXTURE27: return 27;
+        case GL_TEXTURE28: return 28;
+        case GL_TEXTURE29: return 29;
+        case GL_TEXTURE30: return 30;
+        case GL_TEXTURE31: return 31;
+        default: return 0;
+    }
 }
 

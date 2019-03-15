@@ -328,6 +328,10 @@ void key_press_F1(ObjectContainer* objects)
         {
 
             //if the lights are on make them all dark
+            objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_2", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_3", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_4", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0,0,0));
@@ -337,7 +341,10 @@ void key_press_F1(ObjectContainer* objects)
 
         else
         {
-
+            objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,20,10));
+            objects->getObject(i)->getShader()->setUniformData("light_position_2", glm::vec3(-10,15,5));
+            objects->getObject(i)->getShader()->setUniformData("light_position_3", glm::vec3(0,15,5));
+            objects->getObject(i)->getShader()->setUniformData("light_position_4", glm::vec3(0,0,25));
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
@@ -353,8 +360,11 @@ void key_press_F2(ObjectContainer* objects)
     {
         if(objects->getObject(i)->getShader()->lightsOn())
         {
-            //if the lights are on make them all dark
-
+            //if the lights are on make them all dark and move them to the origin
+            objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_2", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_3", glm::vec3(0,0,0));
+            objects->getObject(i)->getShader()->setUniformData("light_position_4", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0,0,0));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0,0,0));
@@ -366,7 +376,10 @@ void key_press_F2(ObjectContainer* objects)
         {
 
             objects->getObject(i)->getShader()->setUniformData("light_position_1", glm::vec3(0,20,10));
-            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.8,0.2,0.2));
+            objects->getObject(i)->getShader()->setUniformData("light_position_2", glm::vec3(-10,15,5));
+            objects->getObject(i)->getShader()->setUniformData("light_position_3", glm::vec3(0,15,5));
+            objects->getObject(i)->getShader()->setUniformData("light_position_4", glm::vec3(0,0,25));
+            objects->getObject(i)-> getShader() -> setUniformData("light_color_1", glm::vec3(0.2,0.05,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_2", glm::vec3(0.05,0.2,0.05));
             objects->getObject(i)-> getShader()->setUniformData("light_color_3", glm::vec3(0.05,0.05,0.2));
             objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
