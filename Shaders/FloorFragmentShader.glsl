@@ -18,6 +18,7 @@ uniform float spot_light_1_cutoff;
 
 uniform vec3 view_position;
 uniform sampler2D depth_tex;
+uniform int shadow_map_flag;
 
 in vec3 fragment_position;
 in vec3 normal;
@@ -95,5 +96,6 @@ void main()
 
     color = (specular + ambient + diffuse)*color;
     float shadow = ShadowCalculation(fragment_position_light_space);
-    color = color*(1.0-shadow);
+    if(shadow_map_flag == 1)
+        color = color*(1.0-shadow);
 }

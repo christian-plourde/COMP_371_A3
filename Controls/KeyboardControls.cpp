@@ -375,6 +375,8 @@ void key_press_F2(ObjectContainer* objects)
             objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0,0,0));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_position", glm::vec3(0,0,0));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_color", glm::vec3(0, 0, 0));
+            //set the shadow map flag back to false
+            objects->getObject(i)->getShader()->setUniformData("shadow_map_flag", 0);
 
             objects->getObject(i)-> getShader() -> setLightsOn(false);
         }
@@ -384,6 +386,8 @@ void key_press_F2(ObjectContainer* objects)
             //Here we want to turn only the spot light on
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_color", glm::vec3(0.8, 0.2, 0.2));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_position", glm::vec3(0,20, 10));
+            //set the shadow map flag
+            objects->getObject(i)->getShader()->setUniformData("shadow_map_flag", 1);
 
 
             objects->getObject(i)-> getShader() -> setLightsOn(true);
