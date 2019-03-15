@@ -1,11 +1,12 @@
 #include "SpotLight.h"
+#include <iostream>
 
 SpotLight::SpotLight()
 {
     spot_position = glm::vec3(0,20,10);
-    spot_direction = glm::vec3(0,0,0);
-    spot_color = glm::vec3(1,1,1);
-    cutoff_angle = 60.0f;
+    spot_direction = glm::vec3(0,-10,-10);
+    spot_color = glm::vec3(0,0,0);
+    cutoff_angle = 20.0f;
 }
 
 SpotLight::~SpotLight() {}

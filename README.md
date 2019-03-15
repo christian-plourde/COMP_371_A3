@@ -4,7 +4,7 @@ Student ID: 26572499
 This program loads in a heracles object file as well as a floor and allows the user to view it and interact with the
 model by using the mouse and keyboard inputs listed below.
 
-This program consists of a main function, found within the main.cpp file, as well as one set of shaders.
+This program consists of a main function, found within the main.cpp file, as well as three sets of shaders.
 The keyboard control functions are defined in the KeyboardControls.h file and implemented in the KeyboardControls.cpp
 file. The file used to generate the model of heracles is found in the heracles.obj file and the loader function to load
 it from the file is found in the ObjectLoader.cpp file (the implementation of the function defined in the ObjectLoader.h
@@ -32,14 +32,6 @@ I = Translate the objects along the positive y-axis
 K = Translate the objects along the negative y-axis
 Page Up = Translate the objects along the positive z-axis
 Page Down = Translate the objects along the negative z-axis
-1 = Toggle on/off the red color channel
-2 = Toggle on/off the green color channel
-3 = Toggle on/off the blue color channel
-4 = Turn all the color channels to max (1.0f)
-5 = Toggle between Gouraud and Phong Illumination models.
-6 = Toggle between the currently selected illumination model and no illumination model.
-M = Toggles the use of the normal as the color of each vertex/fragment.
-G = Toggles between grayscale or color rendering of the scene.
 F1 = Set the scene with four lights.
 F2 = Use Two-Pass Shadow Mapping with one light source.
 
