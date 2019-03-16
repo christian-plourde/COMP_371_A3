@@ -104,6 +104,12 @@
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h">
 			<Option target="COMP_371_A3"/>
 		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.cpp">
+			<Option target="COMP_371_A3"/>
+		</Unit>
+		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.h">
+			<Option target="COMP_371_A3"/>
+		</Unit>
 		<Unit filename="D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunction.cpp">
 			<Option target="COMP_371_A3"/>
 		</Unit>

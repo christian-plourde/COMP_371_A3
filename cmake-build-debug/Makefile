@@ -203,6 +203,33 @@ Loaders/ShaderLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.s
 .PHONY : Loaders/ShaderLoader.cpp.s
 
+Utilities/Camera/Camera.obj: Utilities/Camera/Camera.cpp.obj
+
+.PHONY : Utilities/Camera/Camera.obj
+
+# target to build an object file
+Utilities/Camera/Camera.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj
+.PHONY : Utilities/Camera/Camera.cpp.obj
+
+Utilities/Camera/Camera.i: Utilities/Camera/Camera.cpp.i
+
+.PHONY : Utilities/Camera/Camera.i
+
+# target to preprocess a source file
+Utilities/Camera/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.i
+.PHONY : Utilities/Camera/Camera.cpp.i
+
+Utilities/Camera/Camera.s: Utilities/Camera/Camera.cpp.s
+
+.PHONY : Utilities/Camera/Camera.s
+
+# target to generate assembly for a file
+Utilities/Camera/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP_371_A3.dir\build.make CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.s
+.PHONY : Utilities/Camera/Camera.cpp.s
+
 Utilities/ErrorHandling/ErrorHandlingFunction.obj: Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
 
 .PHONY : Utilities/ErrorHandling/ErrorHandlingFunction.obj
@@ -545,6 +572,9 @@ help:
 	@echo ... Loaders/ShaderLoader.obj
 	@echo ... Loaders/ShaderLoader.i
 	@echo ... Loaders/ShaderLoader.s
+	@echo ... Utilities/Camera/Camera.obj
+	@echo ... Utilities/Camera/Camera.i
+	@echo ... Utilities/Camera/Camera.s
 	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.obj
 	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.i
 	@echo ... Utilities/ErrorHandling/ErrorHandlingFunction.s

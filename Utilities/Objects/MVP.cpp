@@ -4,7 +4,7 @@
 MVP::MVP()
 {
     Model = glm::mat4(1.0f);
-    view_eye = glm::vec3(100,0,30);
+    view_eye = glm::vec3(50,-30,10);
     view_direction = glm::vec3(0,0,0);
     view_up = glm::vec3(0, 0, 1);
     View = glm::lookAt(view_eye,view_direction, view_up);
@@ -31,6 +31,9 @@ void MVP::setView(glm::vec3 eye, glm::vec3 point, glm::vec3 up_vector)
 
 void MVP::setView(glm::mat4 newView)
 {
+    //view_eye = glm::vec3(newView[3][0], newView[3][1], newView[3][2]);
+    //view_direction = glm::vec3(-newView[2][0], -newView[2][1], -newView[2][2]);
+    //view_up = glm::vec3(newView[1][0], newView[1][1], newView[1][2]);
     View = newView;
 }
 

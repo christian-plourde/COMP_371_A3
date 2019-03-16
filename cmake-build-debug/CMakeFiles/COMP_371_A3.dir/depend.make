@@ -213,6 +213,8 @@ CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj: ../GLFW/include/GLFW/gl
 CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj: ../Loaders/ShaderLoader.cpp
 CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj: ../Loaders/ShaderLoader.h
 
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Camera/Camera.cpp
+
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../GLEW/include/GL/glew.h
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunction.cpp
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunctions.h

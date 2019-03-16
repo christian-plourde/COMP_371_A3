@@ -79,13 +79,13 @@ void key_press_o(ObjectContainer* objects)
     //our shader
     for(int i = 0; i<objects->size; i++)
     {
-        if(!objects->getObject(i)->isStatic())
-        {
+        //if(!objects->getObject(i)->isStatic())
+        //{
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(0.9f, 0.9f, 0.9f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
-        }
+        //}
     }
 }
 
@@ -96,13 +96,13 @@ void key_press_p(ObjectContainer* objects)
     //our shader
     for(int i = 0; i<objects->size; i++)
     {
-        if(!objects->getObject(i)->isStatic())
-        {
+        //if(!objects->getObject(i)->isStatic())
+        //{
             objects->getObject(i)->getMVP()->setModel(
                     glm::scale(objects->getObject(i) -> getMVP() -> getModel(), glm::vec3(1.1f, 1.1f, 1.1f)));
 
             objects->getObject(i)-> getShader() -> setUniformData("model_matrix", objects->getObject(i)->getMVP()->getModel());
-        }
+        //}
     }
 }
 
@@ -338,6 +338,7 @@ void key_press_F1(ObjectContainer* objects)
             objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0,0,0));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_position", glm::vec3(0,0,0));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_color", glm::vec3(0, 0, 0));
+            objects->getObject(i)->getShader()->setUniformData("shadow_map_flag", 0);
             objects->getObject(i)-> getShader() -> setLightsOn(false);
         }
 
@@ -353,6 +354,7 @@ void key_press_F1(ObjectContainer* objects)
             objects->getObject(i)-> getShader()-> setUniformData("light_color_4", glm::vec3(0.05,0.05,0.05));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_position", glm::vec3(0,0,0));
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_color", glm::vec3(0, 0, 0));
+            objects->getObject(i)->getShader()->setUniformData("shadow_map_flag", 0);
             objects->getObject(i)-> getShader() -> setLightsOn(true);
         }
     }
@@ -388,7 +390,6 @@ void key_press_F2(ObjectContainer* objects)
             objects->getObject(i)->getShader()->setUniformData("spot_light_1_position", glm::vec3(0,20, 10));
             //set the shadow map flag
             objects->getObject(i)->getShader()->setUniformData("shadow_map_flag", 1);
-
 
             objects->getObject(i)-> getShader() -> setLightsOn(true);
 

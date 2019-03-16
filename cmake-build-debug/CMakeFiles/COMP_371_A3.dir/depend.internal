@@ -213,6 +213,8 @@ CMakeFiles/COMP_371_A3.dir/Loaders/ShaderLoader.cpp.obj
  ../GLFW/include/GLFW/glfw3.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.cpp
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.cpp
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
  ../GLEW/include/GL/glew.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunction.cpp
