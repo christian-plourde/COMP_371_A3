@@ -16,9 +16,11 @@
 #include "Utilities/Objects/ObjectContainer.h"
 #include "Utilities/ShadowMapping/DepthMap.h"
 #include "Utilities/Lights/SpotLight.h"
+#include "Utilities/Camera/Camera.h"
 
 Window* myWindow; //the glfw window
 ObjectContainer* objects;
+Camera* camera;
 
 void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -106,6 +108,11 @@ int main()
     myWindow -> set_keyboard_callback(keyboard_callback);
     myWindow -> setBackColor(0.8, 0.8, 0.8);
     objects = new ObjectContainer();
+
+    camera = new Camera("../ObjectFiles/cube.obj");
+    camera->setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
+    camera->setShader(camera_shader);
 
     Object heracles("../ObjectFiles/heracles.obj");
     heracles.load();
@@ -235,11 +242,13 @@ int main()
         depth_map.BindForReading();
         heracles.Draw();
         floor.Draw();
+        camera->Render();
         myWindow->EndDraw();
     }
 
 
     delete objects;
+    delete camera;
     delete myWindow;
 
     glfwTerminate();
