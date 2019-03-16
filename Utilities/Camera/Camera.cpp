@@ -11,14 +11,17 @@ Camera::Camera(const char* filepath)
     GLCall(glGenVertexArrays(1, &VAO));
     GLCall(glBindVertexArray(VAO));
     mesh_type = GL_TRIANGLES;
-    camera_position = glm::vec3(0,0,3);
+    camera_position = glm::vec3(0,0,1);
     glm::vec3 camera_target = glm::vec3(0,0,0); //point the camera to the origin of the world
-    camera_direction = glm::normalize(camera_position - camera_target);
+    camera_direction = glm::normalize(camera_target - camera_position);
     glm::vec3 up = glm::vec3(0,1,0);
-    right_axis = glm::normalize(glm::cross(up, camera_direction));
-    up_axis = glm::cross(camera_direction, right_axis);
-    Model = glm::mat4(1.0f);
+    right_axis = glm::normalize(glm::cross(camera_direction, up));
+    up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
+    Model = glm::mat4(-1.0f);
     camera_speed = 0.1;
+    pitch = 0.0f;
+    yaw = 0.0f;
+    roll = 0.0f;
 }
 
 bool Camera::load()
@@ -62,30 +65,119 @@ glm::mat4 Camera::getView()
 void Camera::move_forward()
 {
     camera_position += camera_speed*camera_direction;
-    shader -> setUniformData("view_matrix", compute_view());
+
+    //when this occurs we should set the view matrix to the inverse of the view matrix of the camera?
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+
+    //shader -> setUniformData("view_matrix", compute_view());
 }
 
 void Camera::move_backward()
 {
-    camera_position -= camera_speed*camera_direction;
-    shader -> setUniformData("view_matrix", compute_view());
+    camera_position -= camera_speed * camera_direction;
+
+    for (int i = 0; i < objects->size; i++) {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+
 }
 
 void Camera::move_left()
 {
-    camera_position -= glm::normalize(glm::cross(camera_direction, up_axis))*camera_speed;
-    shader->setUniformData("view_matrix", compute_view());
+    camera_position += right_axis*camera_speed;
+
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
 }
 
 void Camera::move_right()
 {
-    camera_position += glm::normalize(glm::cross(camera_direction, up_axis))*camera_speed;
-    shader -> setUniformData("view_matrix", compute_view());
+    camera_position -= right_axis*camera_speed;
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
 }
 
-void Camera::setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane)
+void Camera::pitch_up()
 {
-    Projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
+    pitch += camera_speed;
+    if(pitch >= 90)
+        pitch = 90;
+    camera_direction.y = glm::sin(glm::radians(pitch));
+    glm::normalize(camera_direction);
+    up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+}
+
+void Camera::pitch_down()
+{
+    pitch -= camera_speed;
+    if(pitch <= -90)
+        pitch = -90;
+    camera_direction.y = glm::sin(glm::radians(pitch));
+    glm::normalize(camera_direction);
+    up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+}
+
+void Camera::yaw_left()
+{
+    yaw -= camera_speed;
+    camera_direction.x = glm::cos(glm::radians(yaw));
+    camera_direction.z = glm::sin(glm::radians(yaw));
+    glm::normalize(camera_direction);
+    right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+}
+
+void Camera::yaw_right()
+{
+    yaw += camera_speed;
+    camera_direction.x = glm::cos(glm::radians(yaw));
+    camera_direction.z = glm::sin(glm::radians(yaw));
+    glm::normalize(camera_direction);
+    right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+}
+
+void Camera::roll_right()
+{
+    roll+=camera_speed;
+    //up_axis.x = glm::
+
+    for(int i = 0; i < objects->size; i++)
+    {
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+    }
+}
+
+void Camera::roll_left()
+{
+    roll-=camera_speed;
+}
+
+void Camera::setProjection(float left, float right ,float bottom, float top, float near_plane, float far_plane)
+{
+    //Projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
+    Projection = glm::ortho(left, right, bottom, top, near_plane, far_plane);
 }
 
 void Camera::Render()

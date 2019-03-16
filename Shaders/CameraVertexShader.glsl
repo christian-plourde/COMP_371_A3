@@ -8,5 +8,5 @@ uniform mat4 projection_matrix;
 
 void main()
 {
-    gl_Position = projection_matrix*view_matrix*model_matrix*vec4(vertexPosition_modelspace, 1);
+    gl_Position = projection_matrix*view_matrix*model_matrix*vec4(vertexPosition_modelspace, 1.0f);
 }

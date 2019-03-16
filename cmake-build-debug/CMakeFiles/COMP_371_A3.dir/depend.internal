@@ -317,8 +317,12 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+ D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj
  ../GLEW/include/GL/glew.h
  D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunction.cpp

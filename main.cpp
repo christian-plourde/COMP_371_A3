@@ -72,16 +72,35 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
         key_press_p(objects);
 
     if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
-        key_press_left_arrow(objects);
+    {
+        camera->yaw_left();
+        //key_press_left_arrow(objects);
+    }
 
     if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
-        key_press_right_arrow(objects);
+    {
+        camera->yaw_right();
+        //key_press_right_arrow(objects);
+    }
 
     if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-        key_press_up_arrow(objects);
+    {
+        camera->pitch_up();
+        //key_press_up_arrow(objects);
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-        key_press_down_arrow(objects);
+    {
+        camera->pitch_down();
+        //key_press_down_arrow(objects);
+    }
+
+    if(glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS)
+    {
+        camera->roll_right();
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
         key_press_b(objects);
@@ -124,18 +143,6 @@ int main()
     myWindow -> set_keyboard_callback(keyboard_callback);
     myWindow -> setBackColor(0.8, 0.8, 0.8);
     objects = new ObjectContainer();
-
-    camera = new Camera("../ObjectFiles/cube.obj");
-    camera->load();
-    camera->setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
-    Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
-    camera->setShader(camera_shader);
-    camera_shader->addUniform("model_matrix");
-    camera_shader->addUniform("view_matrix");
-    camera_shader->addUniform("projection_matrix");
-    camera_shader->setUniformData("model_matrix", camera->getModel());
-    camera_shader->setUniformData("view_matrix", camera->getView());
-    camera_shader->setUniformData("projection_matrix", camera->getProjection());
 
     Object heracles("../ObjectFiles/heracles.obj");
     heracles.load();
@@ -255,6 +262,21 @@ int main()
 
     objects->addObject(&floor);
     objects->addObject(&heracles);
+
+    camera = new Camera("../ObjectFiles/cube.obj");
+    camera->load();
+    camera->setProjection(-1000.0f, 1000.0f, -1000.0f, 1000.0f, 0.1f, 200.0f);
+    camera->setSpeed(1.0f);
+    Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
+    camera->setShader(camera_shader);
+    camera_shader->addUniform("model_matrix");
+    camera_shader->setUniformData("model_matrix", camera->getModel());
+    camera_shader->addUniform("view_matrix");
+    camera_shader->setUniformData("view_matrix", camera->getView());
+    camera_shader->addUniform("projection_matrix");
+    camera_shader->setUniformData("projection_matrix", camera->getProjection());
+
+    camera->setObjects(objects);
 
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {

@@ -316,8 +316,12 @@ CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Camera/
 CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Camera/Camera.h
 CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunctions.h
 CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Lights/Light.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Objects/MVP.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Objects/Object.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Objects/ObjectContainer.h
 CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Shading/Shader.h
 CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Shading/Uniform.h
+CMakeFiles/COMP_371_A3.dir/Utilities/Camera/Camera.cpp.obj: ../Utilities/Window/Window.h
 
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../GLEW/include/GL/glew.h
 CMakeFiles/COMP_371_A3.dir/Utilities/ErrorHandling/ErrorHandlingFunction.cpp.obj: ../Utilities/ErrorHandling/ErrorHandlingFunction.cpp

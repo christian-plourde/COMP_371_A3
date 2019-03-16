@@ -5,6 +5,7 @@
 #include "../Shading/Shader.h"
 #include "../ErrorHandling/ErrorHandlingFunctions.h"
 #include "../../Loaders/ObjectLoader.h"
+#include "../Objects/ObjectContainer.h"
 
 class Camera
 {
@@ -13,6 +14,9 @@ class Camera
         glm::vec3 camera_direction;
         glm::vec3 right_axis;
         glm::vec3 up_axis;
+        float pitch; //pitch angle
+        float yaw; //yaw angle
+        float roll; //roll angle
         float camera_speed;
         Shader* shader;
         glm::mat4 compute_view();
@@ -29,6 +33,7 @@ class Camera
         GLuint mesh_type;
         glm::mat4 Model;
         glm::mat4 Projection;
+        ObjectContainer* objects;
 
     public:
         Camera(const char* filepath);
@@ -46,15 +51,22 @@ class Camera
         inline void setUpAxis(glm::vec3 up){up_axis = up;}
         inline void setShader(Shader* s){shader = s;}
         inline Shader* getShader(){return shader;}
+        inline void setObjects(ObjectContainer* o){objects = o;}
         glm::mat4 getView();
         void Render();
         void move_forward();
         void move_backward();
         void move_left();
         void move_right();
+        void pitch_up();
+        void pitch_down();
+        void yaw_right();
+        void yaw_left();
+        void roll_right();
+        void roll_left();
         inline glm::mat4 getProjection(){return Projection;}
         inline glm::mat4 getModel(){return Model;}
-        void setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane);
+        void setProjection(float left, float right, float bottom, float top, float near_plane, float far_plane);
 };
 
 #endif
