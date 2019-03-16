@@ -38,16 +38,32 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
     //which key is pressed
 
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        key_press_w(objects);
+    {
+        camera->move_forward();
+        //key_press_w(objects);
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        key_press_s(objects);
+    {
+        camera ->move_backward();
+        //key_press_s(objects);
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        key_press_a(objects);
+    {
+        camera -> move_left();
+        //key_press_a(objects);
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        key_press_d(objects);
+    {
+        camera -> move_right();
+        //key_press_d(objects);
+    }
+
 
     if(glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
         key_press_o(objects);
@@ -110,9 +126,16 @@ int main()
     objects = new ObjectContainer();
 
     camera = new Camera("../ObjectFiles/cube.obj");
+    camera->load();
     camera->setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
     Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
     camera->setShader(camera_shader);
+    camera_shader->addUniform("model_matrix");
+    camera_shader->addUniform("view_matrix");
+    camera_shader->addUniform("projection_matrix");
+    camera_shader->setUniformData("model_matrix", camera->getModel());
+    camera_shader->setUniformData("view_matrix", camera->getView());
+    camera_shader->setUniformData("projection_matrix", camera->getProjection());
 
     Object heracles("../ObjectFiles/heracles.obj");
     heracles.load();
@@ -191,7 +214,6 @@ int main()
     floorShader -> addUniform("shadow_map_flag");
     floorShader -> setUniformData("shadow_map_flag", 0);
 
-
     Shader* heraclesShader = new Shader("../Shaders/HeraclesVertexShader.glsl", "../Shaders/HeraclesFragmentShader.glsl");
     heracles.setShader(heraclesShader);
     heraclesShader -> addUniform("view_matrix");
@@ -237,12 +259,13 @@ int main()
     while (!glfwWindowShouldClose(myWindow -> getHandle()))
     {
         myWindow->PrepareDraw();
+
         depth_map.RenderToTexture(objects);
         heracles.setViewPort();
         depth_map.BindForReading();
+        camera->Render();
         heracles.Draw();
         floor.Draw();
-        camera->Render();
         myWindow->EndDraw();
     }
 

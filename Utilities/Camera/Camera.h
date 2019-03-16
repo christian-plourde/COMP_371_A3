@@ -13,13 +13,10 @@ class Camera
         glm::vec3 camera_direction;
         glm::vec3 right_axis;
         glm::vec3 up_axis;
-        glm::mat4 Projection;
-        glm::mat4 Model;
         float camera_speed;
         Shader* shader;
         glm::mat4 compute_view();
         const char* file_path;
-        bool load();
         std::vector<int> indices;
         std::vector<glm::vec3> vertices;
         std::vector<glm::vec3> normals;
@@ -30,10 +27,13 @@ class Camera
         GLuint texture_buffer;
         GLuint EBO;
         GLuint mesh_type;
+        glm::mat4 Model;
+        glm::mat4 Projection;
 
     public:
         Camera(const char* filepath);
         ~Camera();
+        bool load();
         inline glm::vec3 getPosition(){return camera_position;}
         inline glm::vec3 getDirection(){return camera_direction;}
         inline glm::vec3 getRightAxis(){return right_axis;}
@@ -45,9 +45,13 @@ class Camera
         inline void setRightAxis(glm::vec3 r){right_axis = r;}
         inline void setUpAxis(glm::vec3 up){up_axis = up;}
         inline void setShader(Shader* s){shader = s;}
+        inline Shader* getShader(){return shader;}
         glm::mat4 getView();
         void Render();
         void move_forward();
+        void move_backward();
+        void move_left();
+        void move_right();
         inline glm::mat4 getProjection(){return Projection;}
         inline glm::mat4 getModel(){return Model;}
         void setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane);

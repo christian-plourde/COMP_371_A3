@@ -21,32 +21,6 @@ Camera::Camera(const char* filepath)
     camera_speed = 0.1;
 }
 
-glm::mat4 Camera::compute_view()
-{
-    return glm::lookAt(camera_position, camera_position + camera_direction, up_axis);
-}
-
-glm::mat4 Camera::getView()
-{
-    return compute_view();
-}
-
-void Camera::move_forward()
-{
-    camera_position += camera_speed*camera_direction;
-}
-
-void Camera::setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane)
-{
-    Projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
-}
-
-void Camera::Render()
-{
-    shader -> use();
-    glDrawArrays(GL_TRIANGLES, 0, 3);
-}
-
 bool Camera::load()
 {
     //function to load an object into the class
@@ -73,5 +47,56 @@ bool Camera::load()
     GLCall(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO));
     GLCall(glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*indices.size(), &indices.front(), GL_STATIC_DRAW));
     return true;
+}
+
+glm::mat4 Camera::compute_view()
+{
+    return glm::lookAt(camera_position, camera_position + camera_direction, up_axis);
+}
+
+glm::mat4 Camera::getView()
+{
+    return compute_view();
+}
+
+void Camera::move_forward()
+{
+    camera_position += camera_speed*camera_direction;
+    shader -> setUniformData("view_matrix", compute_view());
+}
+
+void Camera::move_backward()
+{
+    camera_position -= camera_speed*camera_direction;
+    shader -> setUniformData("view_matrix", compute_view());
+}
+
+void Camera::move_left()
+{
+    camera_position -= glm::normalize(glm::cross(camera_direction, up_axis))*camera_speed;
+    shader->setUniformData("view_matrix", compute_view());
+}
+
+void Camera::move_right()
+{
+    camera_position += glm::normalize(glm::cross(camera_direction, up_axis))*camera_speed;
+    shader -> setUniformData("view_matrix", compute_view());
+}
+
+void Camera::setProjection(float fov_degrees, int window_width, int window_height, float near_plane, float far_plane)
+{
+    Projection = glm::perspective(glm::radians(fov_degrees), (float)window_width/window_height, near_plane, far_plane);
+}
+
+void Camera::Render()
+{
+    shader -> use();
+    GLCall(glEnableVertexAttribArray(0));
+    GLCall(glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer));
+    GLCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0));
+    GLCall(glEnable(GL_DEPTH_TEST));
+    GLCall(glDepthFunc(GL_LESS));
+    GLCall(glDrawArrays(mesh_type, 0, vertices.size()));
+    GLCall(glDisableVertexAttribArray(0));
 }
 
