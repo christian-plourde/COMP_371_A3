@@ -48,9 +48,17 @@ void main()
     vec3 spot_light_color_1 = spot_light_1_color;
     float theta = dot(spot_light_dir_1, normalize(-spot_light_1_direction));
     float spot_light_1_modifier = 1.0;
+    //assume we have a alpha% tolerance for the outer edge
+    float alpha = 0.3;
 
-    if(theta < spot_light_1_cutoff)
+    if(theta < (1-alpha)*spot_light_1_cutoff)
         spot_light_1_modifier = 0.0;
+
+    if(theta >= (1-alpha)*spot_light_1_cutoff && theta < spot_light_1_cutoff)
+    {
+        //if we are in the 10% outer ring of the spot light we do linear interpolation
+        spot_light_1_modifier = (theta - (1-alpha)*spot_light_1_cutoff)/alpha*spot_light_1_cutoff;
+    }
 
     //Ambient light
     float ambient_strength = 0.25f;
