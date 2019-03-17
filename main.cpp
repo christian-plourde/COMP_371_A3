@@ -197,7 +197,7 @@ int main()
     floorShader -> addUniform("projection_matrix");
     floorShader -> setUniformData("projection_matrix", floor.getMVP() -> getProjection());
     floorShader -> addUniform("view_position");
-    floorShader -> setUniformData("view_position", glm::vec3(30, 30, 30));
+    floorShader -> setUniformData("view_position", camera->getPosition());
     Light floor_light1(0, 20, 10, 0.2, 0.05, 0.05);
     Light floor_light2(-10, 15, 5, 0.05, 0.2, 0.05);
     Light floor_light3(0, 15, 5, 0.05, 0.05, 0.2);
@@ -246,7 +246,7 @@ int main()
     heraclesShader -> addUniform("projection_matrix");
     heraclesShader -> setUniformData("projection_matrix", heracles.getMVP() -> getProjection());
     heraclesShader -> addUniform("view_position");
-    heraclesShader -> setUniformData("view_position", glm::vec3(30, 30, 30));
+    heraclesShader -> setUniformData("view_position", camera->getPosition());
     Light light1(0, 20, 10, 0.2, 0.05, 0.05);
     Light light2(-10, 15, 5, 0.05, 0.2, 0.05);
     Light light3(0, 15, 5, 0.05, 0.05, 0.2);

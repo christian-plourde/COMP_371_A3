@@ -66,6 +66,7 @@ void Camera::move_forward()
     for(int i = 0; i < objects->size; i++)
     {
         objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
+        objects->getObject(i)->getShader()->setUniformData("view_position", camera_position);
     }
 }
 
@@ -76,6 +77,7 @@ void Camera::move_backward()
     for (int i = 0; i < objects->size; i++)
     {
         objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
+        objects->getObject(i)->getShader()->setUniformData("view_position", camera_position);
     }
 }
 
@@ -86,6 +88,7 @@ void Camera::move_left()
     for(int i = 0; i < objects->size; i++)
     {
         objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
+        objects->getObject(i)->getShader()->setUniformData("view_position", camera_position);
     }
 }
 
@@ -95,6 +98,7 @@ void Camera::move_right()
     for(int i = 0; i < objects->size; i++)
     {
         objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
+        objects->getObject(i)->getShader()->setUniformData("view_position", camera_position);
     }
 }
 
