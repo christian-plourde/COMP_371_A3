@@ -325,12 +325,12 @@
       <workItem from="1552613541855" duration="5579000" />
       <workItem from="1552703234001" duration="3744000" />
       <workItem from="1552742782013" duration="40596000" />
-      <workItem from="1552831869596" duration="8267000" />
+      <workItem from="1552831869596" duration="8297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290979000" />
+    <option name="totallyTimeSpent" value="291009000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,21 +343,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2271625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899627" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22118959" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22118959" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39962825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899627" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32899627" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899627" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32899627" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32899627" />
