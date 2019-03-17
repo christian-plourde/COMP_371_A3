@@ -6,6 +6,62 @@
 
 #IncludeRegexTransform: 
 
+../GLEW/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+
+../GLFW/include/GLFW/glfw3.h
+stddef.h
+-
+stdint.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/glcorearb.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES2/gl2ext.h
+-
+vulkan/vulkan.h
+-
+GL/gl.h
+-
+GL/glext.h
+-
+GL/glu.h
+-
+
 ../GLM/glm/common.hpp
 detail/func_common.hpp
 ../GLM/glm/detail/func_common.hpp
@@ -596,6 +652,66 @@ matrix_transform.inl
 ../matrix.hpp
 ../GLM/glm/matrix.hpp
 
+../GLM/glm/gtc/quaternion.hpp
+../mat3x3.hpp
+../GLM/glm/mat3x3.hpp
+../mat4x4.hpp
+../GLM/glm/mat4x4.hpp
+../vec3.hpp
+../GLM/glm/vec3.hpp
+../vec4.hpp
+../GLM/glm/vec4.hpp
+../gtc/constants.hpp
+../GLM/glm/gtc/constants.hpp
+quaternion.inl
+../GLM/glm/gtc/quaternion.inl
+
+../GLM/glm/gtc/quaternion.inl
+../trigonometric.hpp
+../GLM/glm/trigonometric.hpp
+../geometric.hpp
+../GLM/glm/geometric.hpp
+../exponential.hpp
+../GLM/glm/exponential.hpp
+limits
+-
+
+../GLM/glm/gtc/type_ptr.hpp
+../gtc/quaternion.hpp
+../GLM/glm/gtc/quaternion.hpp
+../vec2.hpp
+../GLM/glm/vec2.hpp
+../vec3.hpp
+../GLM/glm/vec3.hpp
+../vec4.hpp
+../GLM/glm/vec4.hpp
+../mat2x2.hpp
+../GLM/glm/mat2x2.hpp
+../mat2x3.hpp
+../GLM/glm/mat2x3.hpp
+../mat2x4.hpp
+../GLM/glm/mat2x4.hpp
+../mat3x2.hpp
+../GLM/glm/mat3x2.hpp
+../mat3x3.hpp
+../GLM/glm/mat3x3.hpp
+../mat3x4.hpp
+../GLM/glm/mat3x4.hpp
+../mat4x2.hpp
+../GLM/glm/mat4x2.hpp
+../mat4x3.hpp
+../GLM/glm/mat4x3.hpp
+../mat4x4.hpp
+../GLM/glm/mat4x4.hpp
+cstring
+-
+type_ptr.inl
+../GLM/glm/gtc/type_ptr.inl
+
+../GLM/glm/gtc/type_ptr.inl
+cstring
+-
+
 ../GLM/glm/integer.hpp
 detail/func_integer.hpp
 ../GLM/glm/detail/func_integer.hpp
@@ -664,7 +780,95 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../GLM/glm/detail/func_vector_relational.hpp
 
-D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.cpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/glm.hpp
+vector
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+glew.h
+-
+GLFW/glfw3.h
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+glew.h
+-
+iostream
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/glm.hpp
+gtc/type_ptr.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/gtc/type_ptr.hpp
+glew.h
+-
+iostream
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/glm.hpp
+iostream
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+glew.h
+-
+../../Loaders/ObjectLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
+vector
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/glm.hpp
+../ErrorHandling/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+../Window/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+MVP.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
+Object.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/Object.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+glew.h
+-
+../../Loaders/ShaderLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ShaderLoader.h
+Uniform.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+vector
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/glm.hpp
+gtc/type_ptr.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/gtc/type_ptr.hpp
+../Lights/Light.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Lights/Light.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Uniform.h
+glew.h
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.cpp
+DepthMap.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMap.h
+glew.h
+-
+../Shading/Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+../ErrorHandling/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+../Window/Window.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+../Objects/ObjectContainer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
 DepthMapLight.h
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/DepthMapLight.h
 
@@ -673,4 +877,18 @@ glm.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/glm.hpp
 gtc/matrix_transform.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ShadowMapping/gtc/matrix_transform.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/Window.h
+glew.h
+-
+GLFW/glfw3.h
+-
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Window/glm.hpp
+../Objects/MVP.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/MVP.h
+../Shading/Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+../ErrorHandling/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
 

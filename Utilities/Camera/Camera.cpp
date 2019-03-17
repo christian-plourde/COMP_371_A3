@@ -61,10 +61,7 @@ glm::mat4 Camera::getView()
 
 void Camera::move_forward()
 {
-    std::cout << " before : " << camera_position.x << " " << camera_position.y << " " << camera_position.z << std::endl;
     camera_position += camera_speed*camera_direction;
-    std::cout << " after : " <<  camera_position.x << " " << camera_position.y << " " << camera_position.z << std::endl;
-
     //when this occurs we should set the view matrix to the inverse of the view matrix of the camera?
     for(int i = 0; i < objects->size; i++)
     {
