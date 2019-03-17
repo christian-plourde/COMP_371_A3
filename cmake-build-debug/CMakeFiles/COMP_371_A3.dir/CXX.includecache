@@ -780,6 +780,86 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../GLM/glm/detail/func_vector_relational.hpp
 
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
+cassert
+-
+cstddef
+-
+cuda.h
+-
+intrin.h
+-
+immintrin.h
+-
+immintrin.h
+-
+smmintrin.h
+-
+pmmintrin.h
+-
+emmintrin.h
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
+detail/func_geometric.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_geometric.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
+../detail/setup.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/setup.hpp
+constants.inl
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.inl
+limits
+-
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
+../mat4x4.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
+../vec2.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
+../vec3.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
+../vec4.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
+../gtc/constants.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/constants.hpp
+matrix_transform.inl
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.inl
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.inl
+../geometric.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/geometric.hpp
+../trigonometric.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
+../matrix.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/mat4x4.hpp
+detail/type_mat4x4.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_mat4x4.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/matrix.hpp
+detail/func_matrix.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_matrix.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/trigonometric.hpp
+detail/func_trigonometric.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/func_trigonometric.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec2.hpp
+detail/type_vec2.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec2.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec3.hpp
+detail/type_vec3.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec3.hpp
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/vec4.hpp
+detail/type_vec4.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/detail/type_vec4.hpp
+
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
 glm.hpp
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/glm.hpp
@@ -791,6 +871,24 @@ glew.h
 -
 GLFW/glfw3.h
 -
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.cpp
+Camera.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.h
+
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/Camera.h
+glm.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Camera/glm.hpp
+../../GLM/glm/gtc/matrix_transform.hpp
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/GLM/glm/gtc/matrix_transform.hpp
+../Shading/Shader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Shading/Shader.h
+../ErrorHandling/ErrorHandlingFunctions.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
+../../Loaders/ObjectLoader.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Loaders/ObjectLoader.h
+../Objects/ObjectContainer.h
+D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/Objects/ObjectContainer.h
 
 D:/Computer Science Assignments/COMP 371 Assignments/COMP_371_A3/Utilities/ErrorHandling/ErrorHandlingFunctions.h
 glew.h
