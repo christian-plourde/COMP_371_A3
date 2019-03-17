@@ -14,9 +14,6 @@ class Camera
         glm::vec3 camera_direction;
         glm::vec3 right_axis;
         glm::vec3 up_axis;
-        float pitch; //pitch angle
-        float yaw; //yaw angle
-        float roll; //roll angle
         float camera_speed;
         Shader* shader;
         glm::mat4 compute_view();
@@ -34,9 +31,9 @@ class Camera
         glm::mat4 Model;
         glm::mat4 Projection;
         ObjectContainer* objects;
-        glm::mat3 pitch_matrix();
-        glm::mat3 yaw_matrix();
-        glm::mat3 roll_matrix();
+        glm::mat3 pitch_matrix(float degrees);
+        glm::mat3 yaw_matrix(float degrees);
+        glm::mat3 roll_matrix(float degrees);
 
     public:
         Camera(const char* filepath);

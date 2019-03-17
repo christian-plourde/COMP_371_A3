@@ -3,7 +3,7 @@
 
 SpotLight::SpotLight()
 {
-    spot_position = glm::vec3(0,20,30);
+    spot_position = glm::vec3(0,20,35);
     spot_direction = glm::vec3(0,-10,-10);
     spot_color = glm::vec3(0,0,0);
     cutoff_angle = 20.0f;

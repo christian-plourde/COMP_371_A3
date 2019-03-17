@@ -9,37 +9,6 @@
 #include "../Utilities/Window/Window.h"
 #include "../Utilities/Objects/ObjectContainer.h"
 
-/*
- * This method defines what occurs when the w key is pressed on the keyboard. For this assignment, it modifies
- * the viewing angle of the camera and so to change this, we need to pass in the View, Projection, and Model
- * matrices, as well as the shader ID since we will need to update the value in the uniform in the shader program
- * once we have recalculated the location of the camera.
- */
-void key_press_w(ObjectContainer*);
-
-/*
- * This method defines what occurs when the s key is pressed on the keyboard. For this assignment, it modifies
- * the viewing angle of the camera and so to change this, we need to pass in the View, Projection, and Model
- * matrices, as well as the shader ID since we will need to update the value in the uniform in the shader program
- * once we have recalculated the location of the camera.
- */
-void key_press_s(ObjectContainer*);
-
-/*
- * This method defines what occurs when the a key is pressed on the keyboard. For this assignment, it modifies
- * the viewing angle of the camera and so to change this, we need to pass in the View, Projection, and Model
- * matrices, as well as the shader ID since we will need to update the value in the uniform in the shader program
- * once we have recalculated the location of the camera.
- */
-void key_press_a(ObjectContainer*);
-
-/*
- * This method defines what occurs when the d key is pressed on the keyboard. For this assignment, it modifies
- * the viewing angle of the camera and so to change this, we need to pass in the View, Projection, and Model
- * matrices, as well as the shader ID since we will need to update the value in the uniform in the shader program
- * once we have recalculated the location of the camera.
- */
-void key_press_d(ObjectContainer*);
 
 /*
  * This method defines what occurs when the o key is pressed on the keyboard. For this assignment, it modifies
@@ -56,30 +25,6 @@ void key_press_o(ObjectContainer*);
  * once we have recalculated the size of the model.
  */
 void key_press_p(ObjectContainer*);
-
-/*
- * This method defines what occurs when the left arrow key is pressed on the keyboard. When this occurs, the camera
- * should rotate counterclockwise about the up vector.
- */
-void key_press_left_arrow(ObjectContainer* objects);
-
-/*
- * This method defines what occurs when the right arrow key is pressed on the keyboard. When this occurs, the camera
- * should rotate clockwise about the up vector.
- */
-void key_press_right_arrow(ObjectContainer* objects);
-
-/*
- * This method defines what occurs when the up arrow key is pressed on the keyboard. When this occurs, the camera
- * should rotate counterclockwise about the right vector.
- */
-void key_press_up_arrow(ObjectContainer* objects);
-
-/*
- * This method defines what occurs when the down arrow key is pressed on the keyboard. When this occurs, the camera
- * should rotate clockwise about the right vector.
- */
-void key_press_down_arrow(ObjectContainer* objects);
 
 /*
  * This method defined what happens when b is pressed on the keyboard. When this occurs, the OBJECT (i.e. the model)

@@ -19,9 +19,6 @@ Camera::Camera(const char* filepath)
     up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
     Model = glm::mat4(1.0f);
     camera_speed = 0.1;
-    pitch = 0.0f;
-    yaw = -90.0f;
-    roll = 0.0f;
 }
 
 bool Camera::load()
@@ -64,12 +61,14 @@ glm::mat4 Camera::getView()
 
 void Camera::move_forward()
 {
+    std::cout << " before : " << camera_position.x << " " << camera_position.y << " " << camera_position.z << std::endl;
     camera_position += camera_speed*camera_direction;
+    std::cout << " after : " <<  camera_position.x << " " << camera_position.y << " " << camera_position.z << std::endl;
 
     //when this occurs we should set the view matrix to the inverse of the view matrix of the camera?
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
@@ -79,101 +78,92 @@ void Camera::move_backward()
 
     for (int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::move_left()
 {
-    camera_position += right_axis*camera_speed;
+    camera_position -= right_axis*camera_speed;
 
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::move_right()
 {
-    camera_position -= right_axis*camera_speed;
-    std::cout << camera_direction.x << " " << camera_direction.y << " " << camera_direction.z << std::endl;
+    camera_position += right_axis*camera_speed;
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::pitch_up()
 {
-    pitch += glm::radians(camera_speed);
-    camera_direction.y = glm::sin(pitch);
+    camera_direction = pitch_matrix(camera_speed)*camera_direction;
     glm::normalize(camera_direction);
     up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::pitch_down()
 {
-    pitch -= glm::radians(camera_speed);
-    camera_direction.y = glm::sin(pitch);
+    camera_direction = pitch_matrix(-camera_speed)*camera_direction;
     glm::normalize(camera_direction);
     up_axis = glm::normalize(glm::cross(right_axis, camera_direction));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::yaw_left()
 {
-    yaw -= camera_speed;
-    camera_direction.x = glm::cos(glm::radians(yaw));
-    camera_direction.z = glm::sin(glm::radians(yaw));
+    camera_direction = yaw_matrix(-camera_speed)*camera_direction;
     glm::normalize(camera_direction);
     right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::yaw_right()
 {
-    yaw += camera_speed;
-    camera_direction.x = glm::cos(glm::radians(yaw));
-    camera_direction.z = glm::sin(glm::radians(yaw));
+    camera_direction = yaw_matrix(camera_speed)*camera_direction;
     glm::normalize(camera_direction);
     right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::roll_right()
 {
-    roll+=camera_speed;
-    up_axis.x = -glm::sin(glm::radians(roll));
-    glm::normalize(up_axis);
+    camera_direction = roll_matrix(camera_speed)*camera_direction;
+    glm::normalize(camera_direction);
     right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
 void Camera::roll_left()
 {
-    roll+=camera_speed;
-    up_axis.x = glm::sin(glm::radians(roll));
-    glm::normalize(up_axis);
+    camera_direction = roll_matrix(-camera_speed)*camera_direction;
+    glm::normalize(camera_direction);
     right_axis = glm::normalize(glm::cross(camera_direction, up_axis));
     for(int i = 0; i < objects->size; i++)
     {
-        objects->getObject(i)->getShader()->setUniformData("view_matrix", glm::inverse(compute_view()));
+        objects->getObject(i)->getShader()->setUniformData("view_matrix", compute_view());
     }
 }
 
@@ -204,17 +194,17 @@ void Camera::setObjects(ObjectContainer *o)
     }
 }
 
-glm::mat3 Camera::pitch_matrix()
+glm::mat3 Camera::pitch_matrix(float degrees)
 {
-    return glm::mat3(glm::cos(pitch), glm::sin(pitch), 0, -glm::sin(pitch), glm::cos(pitch), 0, 0, 0, 1);
+    return glm::mat3(glm::cos(glm::radians(degrees)), glm::sin(glm::radians(degrees)), 0, -glm::sin(glm::radians(degrees)), glm::cos(glm::radians(degrees)), 0, 0, 0, 1);
 }
 
-glm::mat3 Camera::yaw_matrix()
+glm::mat3 Camera::yaw_matrix(float degrees)
 {
-    return glm::mat3(glm::cos(yaw), 0, -glm::sin(yaw), 0, 1, 0, glm::sin(yaw), 0, glm::cos(yaw));
+    return glm::mat3(glm::cos(glm::radians(degrees)), 0, -glm::sin(glm::radians(degrees)), 0, 1, 0, glm::sin(glm::radians(degrees)), 0, glm::cos(glm::radians(degrees)));
 }
 
-glm::mat3 Camera::roll_matrix()
+glm::mat3 Camera::roll_matrix(float degrees)
 {
-    return glm::mat3(1, 0, 0, 0, glm::cos(roll), glm::sin(roll), 0, -glm::sin(roll), glm::cos(roll));
+    return glm::mat3(1, 0, 0, 0, glm::cos(glm::radians(degrees)), glm::sin(glm::radians(degrees)), 0, -glm::sin(glm::radians(degrees)), glm::cos(glm::radians(degrees)));
 }
