@@ -34,6 +34,9 @@ class Camera
         glm::mat4 Model;
         glm::mat4 Projection;
         ObjectContainer* objects;
+        glm::mat3 pitch_matrix();
+        glm::mat3 yaw_matrix();
+        glm::mat3 roll_matrix();
 
     public:
         Camera(const char* filepath);
@@ -51,7 +54,7 @@ class Camera
         inline void setUpAxis(glm::vec3 up){up_axis = up;}
         inline void setShader(Shader* s){shader = s;}
         inline Shader* getShader(){return shader;}
-        inline void setObjects(ObjectContainer* o){objects = o;}
+        void setObjects(ObjectContainer* o);
         glm::mat4 getView();
         void Render();
         void move_forward();

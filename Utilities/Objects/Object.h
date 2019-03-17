@@ -29,7 +29,6 @@ class Object
         int screen_width;
         int screen_height;
 
-
     public:
         Object(const char* filepath);
         ~Object();

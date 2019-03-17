@@ -101,7 +101,8 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
         camera->roll_right();
     }
 
-
+    if(glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS)
+        camera->roll_left();
     if(glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
         key_press_b(objects);
 
@@ -144,10 +145,23 @@ int main()
     myWindow -> setBackColor(0.8, 0.8, 0.8);
     objects = new ObjectContainer();
 
+    camera = new Camera("../ObjectFiles/cube.obj");
+    camera->load();
+    camera->setProjection(-1000.0f, 1000.0f, -1000.0f, 1000.0f, 0.1f, 10000.0f);
+    camera->setSpeed(1.0f);
+    Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
+    camera->setShader(camera_shader);
+    camera_shader->addUniform("model_matrix");
+    camera_shader->setUniformData("model_matrix", camera->getModel());
+    camera_shader->addUniform("view_matrix");
+    camera_shader->setUniformData("view_matrix", camera->getView());
+    camera_shader->addUniform("projection_matrix");
+    camera_shader->setUniformData("projection_matrix", camera->getProjection());
+
     Object heracles("../ObjectFiles/heracles.obj");
     heracles.load();
     MVP heraclesMVP;
-    heraclesMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    heraclesMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 10000.0f);
     heracles.setMVP(&heraclesMVP);
     heracles.setScreenWidth(myWindow->getWidth());
     heracles.setScreenHeight(myWindow->getHeight());
@@ -156,7 +170,7 @@ int main()
     floor.load();
     floor.setMVP(&heraclesMVP);
     MVP floorMVP;
-    floorMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 200.0f);
+    floorMVP.setProjection(60.0f, myWindow->getWidth(), myWindow->getHeight(), 0.1f, 10000.0f);
     floor.setMVP(&floorMVP);
     floor.setAsStatic();
     floor.setScreenWidth(myWindow->getWidth());
@@ -176,7 +190,8 @@ int main()
     Shader* floorShader = new Shader("../Shaders/FloorVertexShader.glsl", "../Shaders/FloorFragmentShader.glsl");
     floor.setShader(floorShader);
     floorShader -> addUniform("view_matrix");
-    floorShader -> setUniformData("view_matrix", floor.getMVP() -> getView());
+    //floorShader -> setUniformData("view_matrix", floor.getMVP() -> getView());
+    floorShader -> setUniformData("view_matrix", camera->getView());
     floorShader -> addUniform("model_matrix");
     floorShader -> setUniformData("model_matrix", floor.getMVP() -> getModel());
     floorShader -> addUniform("projection_matrix");
@@ -224,7 +239,8 @@ int main()
     Shader* heraclesShader = new Shader("../Shaders/HeraclesVertexShader.glsl", "../Shaders/HeraclesFragmentShader.glsl");
     heracles.setShader(heraclesShader);
     heraclesShader -> addUniform("view_matrix");
-    heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
+    //heraclesShader -> setUniformData("view_matrix", heracles.getMVP() -> getView());
+    heraclesShader -> setUniformData("view_matrix", camera->getView());
     heraclesShader -> addUniform("model_matrix");
     heraclesShader -> setUniformData("model_matrix", heracles.getMVP() -> getModel());
     heraclesShader -> addUniform("projection_matrix");
@@ -262,19 +278,6 @@ int main()
 
     objects->addObject(&floor);
     objects->addObject(&heracles);
-
-    camera = new Camera("../ObjectFiles/cube.obj");
-    camera->load();
-    camera->setProjection(-1000.0f, 1000.0f, -1000.0f, 1000.0f, 0.1f, 200.0f);
-    camera->setSpeed(1.0f);
-    Shader* camera_shader = new Shader("../Shaders/CameraVertexShader.glsl", "../Shaders/CameraFragmentShader.glsl");
-    camera->setShader(camera_shader);
-    camera_shader->addUniform("model_matrix");
-    camera_shader->setUniformData("model_matrix", camera->getModel());
-    camera_shader->addUniform("view_matrix");
-    camera_shader->setUniformData("view_matrix", camera->getView());
-    camera_shader->addUniform("projection_matrix");
-    camera_shader->setUniformData("projection_matrix", camera->getProjection());
 
     camera->setObjects(objects);
 
